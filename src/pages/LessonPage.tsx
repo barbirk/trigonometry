@@ -15,6 +15,10 @@ import ErrorAnalysis from '../components/ErrorAnalysis';
 import TeachBackPrompt from '../components/TeachBackPrompt';
 import ModuleQuiz from '../components/ModuleQuiz';
 import problemsImport from '../data/problems/index.json';
+
+// Ensure modules data is properly typed
+const typedModulesFR = modulesFR as any[];
+const typedModulesEN = modulesEN as any[];
 const problemsData = (problemsImport as any).problems || problemsImport;
 
 
@@ -27,14 +31,15 @@ export default function LessonPage() {
   const completedLessons = useProgressStore(state => state.completedLessons);
   const teachBackScores = useProgressStore(state => state.teachBackScores);
 
-  const modulesData = i18n.language === 'en' ? modulesEN : modulesFR;
+  const modulesData = i18n.language === 'en' ? typedModulesEN : typedModulesFR;
 
   // Find lesson data
   let lesson: any = null;
   let parentModule: any = null;
   let lessonIndex = -1;
-  for (const mod of modulesData) {
-    const idx = mod.lessons.findIndex((x: any) => x.lessonId === lessonId);
+  for (const mod of modulesData || []) {
+    if (!mod?.lessons?.length) continue;
+    const idx = mod.lessons.findIndex((x: any) => x?.lessonId === lessonId);
     if (idx !== -1) {
       lesson = mod.lessons[idx];
       lessonIndex = idx;
@@ -51,11 +56,11 @@ export default function LessonPage() {
   const [showQuiz, setShowQuiz] = useState(false);
   const [teachBackCompleted, setTeachBackCompleted] = useState(false);
 
-  if (!lesson) {
+  if (!lesson || !parentModule) {
     return <div className="p-8 text-white">{t('lesson.notFound')}</div>;
   }
 
-  const isLastLesson = lessonIndex === parentModule.lessons.length - 1;
+  const isLastLesson = lessonIndex === (parentModule?.lessons?.length || 0) - 1;
   const teachBackScore = teachBackScores[parentModule.moduleId];
   const quizUnlocked = teachBackScore && teachBackScore >= 2;
 
@@ -105,11 +110,11 @@ export default function LessonPage() {
   const isComplete = completedLessons.includes(lesson.lessonId);
 
   // Get a problem for StepSolver if needed
-  const sampleProblem = problemsData.problems.find((p: any) => p.moduleId === parentModule.moduleId);
+  const sampleProblem = problemsData?.find?.((p: any) => p?.moduleId === parentModule?.moduleId);
   
   // Get error analysis exercise
-  const errorExercise = problemsData.find((p: any) => 
-    p.moduleId === parentModule.moduleId && p.type === 'error_analysis'
+  const errorExercise = problemsData?.find?.((p: any) => 
+    p?.moduleId === parentModule?.moduleId && p?.type === 'error_analysis'
   );
 
   // Warm-up quiz at the start
