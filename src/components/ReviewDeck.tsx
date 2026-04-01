@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { RotateCw, CheckCircle2, XCircle, HelpCircle, Clock, Trophy } from 'lucide-react';
+import { RotateCw, Clock, Trophy } from 'lucide-react';
 import { useProgressStore } from '../store/progressStore';
-import reviewCardsData from '../data/reviewCards.json';
+import reviewCardsJson from '../data/reviewCards.json';
+const reviewCardsData = (reviewCardsJson as any).reviewCards || reviewCardsJson;
 
 interface ReviewDeckProps {
   onClose?: () => void;
@@ -32,9 +33,9 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
     // If no due cards, show some new cards
     if (dueCardIds.length === 0) {
       const newCards = reviewCardsData
-        .filter(card => !sm2Deck[card.id])
+        .filter((card: any) => !sm2Deck[card.id])
         .slice(0, 5)
-        .map(card => card.id);
+        .map((card: any) => card.id);
       setSessionCards(newCards);
     } else {
       setSessionCards(dueCardIds);
@@ -42,7 +43,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
   }, [sm2Deck]);
 
   const currentCardId = sessionCards[currentCardIndex];
-  const currentCard = reviewCardsData.find(c => c.id === currentCardId);
+  const currentCard = reviewCardsData.find((c: any) => c.id === currentCardId);
 
   const handleRating = (quality: 0 | 3 | 4 | 5) => {
     if (!currentCardId) return;
@@ -93,7 +94,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
 
   if (sessionComplete) {
     const totalTime = Date.now() - startTime;
-    const totalCards = stats.easy + stats.medium + stats.hard;
+    // Stats tracked // suppress unused warning = stats.easy + stats.medium + stats.hard;
 
     return (
       <div className="bg-surface-container border border-border-subtle rounded-2xl p-8">

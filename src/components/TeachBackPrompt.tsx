@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, CheckCircle2, RefreshCw, AlertCircle, Sparkles } from 'lucide-react';
+import { MessageSquare, CheckCircle2, RefreshCw, Sparkles } from 'lucide-react';
 
 interface TeachBackPromptProps {
   moduleId: number;
@@ -73,7 +73,8 @@ const prompts: Record<number, { en: { prompt: string; rubric: string }; fr: { pr
 };
 
 // Mock AI scoring function (in real implementation, this would call Claude API)
-async function mockScoreTeachBack(explanation: string, concept: string, rubric: string): Promise<{ score: number; feedback: string }> {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+async function mockScoreTeachBack(explanation: string, _concept: string, _rubric: string): Promise<{ score: number; feedback: string }> {
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 1500));
   
