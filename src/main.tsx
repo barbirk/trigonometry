@@ -27,7 +27,9 @@ const router = createBrowserRouter([
       }
     ]
   }
-]);
+], {
+  basename: "/trigonometry"
+});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
