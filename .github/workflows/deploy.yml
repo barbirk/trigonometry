@@ -39,6 +39,13 @@ jobs:
         
       - name: Build
         run: npm run build
+
+      - name: Verify dist contents
+        run: |
+          echo "=== Dist folder contents ==="
+          ls -la dist/
+          echo "=== Dist index.html ==="
+          cat dist/index.html
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
