@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Mono", monospace;
+  --font-body: "Literata", serif;
+  --font-math: "JetBrains Mono", monospace;
+
+  --color-primary: #4DFFA4;
+  --color-primary-container: #04dd86;
+  --color-surface: #0F1117;
+  --color-surface-container: #1C1F2E;
+  --color-text-primary: #F0F4FF;
+  --color-text-secondary: #8892A4;
+  --color-accent-error: #FF6B6B;
+  --color-accent-hint: #FFD166;
+  --color-border-subtle: rgba(136, 146, 164, 0.15);
+}
+
+/* Light mode overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-surface: #F0F4FF;
+    --color-surface-container: #FFFFFF;
+    --color-text-primary: #0F1117;
+    --color-text-secondary: #444758;
+    --color-border-subtle: rgba(15, 17, 23, 0.15);
+    /* primary remains electric mint, though we may need darker shades for high-contrast */
+  }
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+.math, .font-math {
+  font-family: var(--font-math);
+}
