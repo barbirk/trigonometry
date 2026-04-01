@@ -9,7 +9,7 @@ import modulesFR from '../data/modules/fr.json';
 import modulesEN from '../data/modules/en.json';
 import TriangleExplorer from '../components/TriangleExplorer';
 import DiagramLabeler from '../components/DiagramLabeler';
-import WarmUpQuiz from '../components/WarmUpQuiz';
+
 import StepSolver from '../components/StepSolver';
 import ErrorAnalysis from '../components/ErrorAnalysis';
 import TeachBackPrompt from '../components/TeachBackPrompt';
@@ -51,7 +51,7 @@ export default function LessonPage() {
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [hasValidated, setHasValidated] = useState(false);
-  const [showWarmUp, setShowWarmUp] = useState(true);
+
   const [showTeachBack, setShowTeachBack] = useState(false);
   const [showQuiz, setShowQuiz] = useState(false);
   const [teachBackCompleted, setTeachBackCompleted] = useState(false);
@@ -91,10 +91,6 @@ export default function LessonPage() {
     }
   };
 
-  const handleWarmUpComplete = () => {
-    setShowWarmUp(false);
-  };
-
   const handleTeachBackComplete = (result: { score: number; passed: boolean }) => {
     setTeachBackCompleted(true);
     if (result.passed) {
@@ -116,19 +112,6 @@ export default function LessonPage() {
   const errorExercise = problemsData?.find?.((p: any) => 
     p?.moduleId === parentModule?.moduleId && p?.type === 'error_analysis'
   );
-
-  // Warm-up quiz at the start
-  if (showWarmUp && !isComplete) {
-    return (
-      <div className="min-h-full p-4 md:p-8 max-w-4xl mx-auto">
-        <button onClick={() => navigate('/')} className="text-text-secondary hover:text-white flex items-center gap-2 font-display uppercase tracking-widest text-sm mb-8 w-fit">
-          <ArrowLeft className="w-4 h-4" />
-          {t('common.back')}
-        </button>
-        <WarmUpQuiz onComplete={handleWarmUpComplete} onSkip={handleWarmUpComplete} />
-      </div>
-    );
-  }
 
   // Teach-back after last lesson
   if (showTeachBack && isLastLesson) {

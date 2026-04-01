@@ -170,7 +170,7 @@ export default function DashboardPage() {
 
                   <div className="bg-surface border border-border-subtle rounded-xl p-4 md:p-6 flex flex-col sm:flex-row gap-6 mb-6">
                      <div className="h-32 sm:w-48 shrink-0 bg-[#151822] rounded-lg border border-border-subtle overflow-hidden">
-                       <img src={mod.hook.imageUrl} alt="Module Hook" className="w-full h-full object-cover mix-blend-luminosity opacity-50" onError={(e) => (e.currentTarget.style.display='none')} />
+                       <img src={mod.hook.imageUrl?.startsWith('./') ? mod.hook.imageUrl.replace('./', '/trigonometry/') : mod.hook.imageUrl} alt="Module Hook" className="w-full h-full object-cover mix-blend-luminosity opacity-50" onError={(e) => (e.currentTarget.style.display='none')} />
                      </div>
                      <div className="flex-1">
                         <p className="text-text-secondary font-body italic">"{mod.hook.question}"</p>
