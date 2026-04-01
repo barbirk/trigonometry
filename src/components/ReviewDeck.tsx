@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { RotateCw, Clock, Trophy } from 'lucide-react';
 import { useProgressStore } from '../store/progressStore';
 import reviewCardsJson from '../data/reviewCards.json';
-const reviewCardsData = (reviewCardsJson as any).reviewCards || reviewCardsJson;
+const reviewCardsData = (reviewCardsJson as any).reviewCards || reviewCardsJson || [];
 
 interface ReviewDeckProps {
   onClose?: () => void;
@@ -32,10 +32,12 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
 
     // If no due cards, show some new cards
     if (dueCardIds.length === 0) {
-      const newCards = reviewCardsData
-        .filter((card: any) => !sm2Deck[card.id])
-        .slice(0, 5)
-        .map((card: any) => card.id);
+      const newCards = Array.isArray(reviewCardsData)
+        ? reviewCardsData
+          .filter((card: any) => card?.id && !sm2Deck[card.id])
+          .slice(0, 5)
+          .map((card: any) => card.id)
+        : [];
       setSessionCards(newCards);
     } else {
       setSessionCards(dueCardIds);
@@ -43,7 +45,9 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
   }, [sm2Deck]);
 
   const currentCardId = sessionCards[currentCardIndex];
-  const currentCard = reviewCardsData.find((c: any) => c.id === currentCardId);
+  const currentCard = Array.isArray(reviewCardsData) 
+    ? reviewCardsData.find((c: any) => c?.id === currentCardId)
+    : undefined;
 
   const handleRating = (quality: 0 | 3 | 4 | 5) => {
     if (!currentCardId) return;
