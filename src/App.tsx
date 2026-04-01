@@ -1,121 +1,84 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Outlet, Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Settings, Map, LayoutDashboard, TriangleRight } from 'lucide-react';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { t, i18n } = useTranslation();
+  const location = useLocation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === 'fr' ? 'en' : 'fr');
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
+    <div className="flex bg-surface min-h-screen font-body text-text-primary selection:bg-primary/20">
+      
+      {/* Sidebar Navigation */}
+      <nav className="w-24 md:w-64 bg-surface-container border-r border-border-subtle p-4 flex flex-col justify-between hidden sm:flex">
         <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+          <h1 className="text-primary font-display font-bold text-2xl tracking-tighter mb-12 flex items-center gap-3">
+             <TriangleRight className="w-8 h-8 shrink-0 text-primary" />
+             <span className="hidden md:block">{t('app.title')}</span>
+          </h1>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
+          <ul className="space-y-4 font-display">
             <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
+              <Link 
+                to="/" 
+                className={`flex items-center gap-4 px-4 py-3 rounded-lg transition-colors ${
+                  location.pathname === '/' 
+                  ? 'bg-primary/10 text-primary group' 
+                  : 'text-text-secondary hover:bg-surface hover:text-text-primary'
+                }`}
+              >
+                <LayoutDashboard className="w-6 h-6" />
+                <span className="hidden md:block">{t('dashboard.journeyMap')}</span>
+              </Link>
             </li>
             <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
+              <Link 
+                to="/explorer" 
+                className={`flex items-center gap-4 px-4 py-3 rounded-lg transition-colors ${
+                  location.pathname === '/explorer' 
+                  ? 'bg-primary/10 text-primary' 
+                  : 'text-text-secondary hover:bg-surface hover:text-text-primary'
+                }`}
+              >
+                <Map className="w-6 h-6" />
+                <span className="hidden md:block">Playground</span>
+              </Link>
             </li>
           </ul>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        <div className="border-t border-border-subtle pt-6">
+           <button 
+             onClick={toggleLanguage}
+             className="w-full flex items-center justify-center md:justify-start gap-4 px-4 py-3 text-text-secondary hover:text-text-primary transition-colors font-display"
+           >
+             <Settings className="w-6 h-6" />
+             <span className="hidden md:block uppercase tracking-widest text-xs font-bold">{i18n.language === 'fr' ? 'FR → EN' : 'EN → FR'}</span>
+           </button>
+        </div>
+      </nav>
+
+      {/* Main Content Area */}
+      <main className="flex-1 overflow-y-auto">
+        <header className="p-6 md:p-8 flex justify-between items-center lg:hidden">
+          <h1 className="text-primary font-display font-bold text-xl flex items-center gap-2">
+            <TriangleRight className="w-6 h-6" />
+            {t('app.title')}
+          </h1>
+          <button onClick={toggleLanguage} className="font-display font-bold uppercase text-text-secondary">
+             {i18n.language}
+          </button>
+        </header>
+        
+        <Outlet />
+      </main>
+
+    </div>
+  );
 }
 
-export default App
+export default App;

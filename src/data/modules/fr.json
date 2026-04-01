@@ -1,0 +1,60 @@
+[
+  {
+    "moduleId": 0,
+    "title": "Le Pourquoi de la Trigonométrie",
+    "hook": {
+      "question": "Comment les ingénieurs d'un GPS savent-ils exactement où vous êtes ? La réponse repose sur les triangles. Aujourd'hui, on découvre pourquoi.",
+      "imageUrl": "/scenarios/gps-satellite.jpg"
+    },
+    "lessons": [
+      {
+        "lessonId": "0-1",
+        "title": "Visualiser l'Invisible",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "La trigonométrie n'est pas qu'une série de formules à mémoriser. C'est le langage secret des ponts, de la navigation spatiale, et même des jeux vidéo. Avant de calculer quoi que ce soit, apprenons à simplement observer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "title": "Les Fondations du Triangle Rectangle",
+    "hook": {
+      "question": "Un hélicoptère de sauvetage repère un randonneur. Le pilote sait que l'angle de dépression est de 32° et qu'il est à 800m d'altitude. À quelle distance se trouve le randonneur ? Vous saurez le calculer dans un instant.",
+      "imageUrl": "/scenarios/helicopter.jpg"
+    },
+    "lessons": [
+      {
+        "lessonId": "1-1",
+        "title": "Les Parties d'un Triangle Rectangle",
+        "type": "interactive",
+        "explorerConfig": {
+          "mode": "label_exploration",
+          "showRatios": false,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Avant de commencer à calculer, nous devons apprendre le vocabulaire des triangles. Contrairement aux mots normaux, ceux-ci changent de place en fonction de notre point de vue."
+          },
+          {
+            "type": "explorer",
+            "prompt": "Glissez le repère d'angle à chaque coin. Observez comment les mots Hypoténuse, Opposé et Adjacent bougent. Que remarquez-vous ?"
+          },
+          {
+            "type": "check",
+            "question": "Si l'angle de référence est en bas à gauche, quel côté est l'Hypoténuse ?",
+            "options": ["Le côté le plus long", "Le côté en face de l'angle", "Le côté à côté de l'angle"],
+            "correct": 0,
+            "explanation": "L'hypoténuse est toujours le côté le plus long : c'est le seul qui fait face à l'angle droit, peu importe l'angle de référence."
+          }
+        ]
+      }
+    ]
+  }
+]

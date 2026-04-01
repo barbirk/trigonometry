@@ -1,0 +1,60 @@
+[
+  {
+    "moduleId": 0,
+    "title": "The Why of Trigonometry",
+    "hook": {
+      "question": "How do GPS engineers know exactly where you are? The answer relies on triangles. Today, we discover why.",
+      "imageUrl": "/scenarios/gps-satellite.jpg"
+    },
+    "lessons": [
+      {
+        "lessonId": "0-1",
+        "title": "Seeing the Unseen",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Trigonometry isn't just a list of formulas to memorize. It's the secret language of bridges, space navigation, and even video games. Before calculating anything, let's learn how to simply observe."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "title": "Right Triangle Foundations",
+    "hook": {
+      "question": "A rescue helicopter spots a stranded hiker. The pilot knows the angle of depression is 32° and the helicopter is 800m above the ground. How far away is the hiker? You'll know how to find this in 30 minutes.",
+      "imageUrl": "/scenarios/helicopter.jpg"
+    },
+    "lessons": [
+      {
+        "lessonId": "1-1",
+        "title": "The Parts of a Right Triangle",
+        "type": "interactive",
+        "explorerConfig": {
+          "mode": "label_exploration",
+          "showRatios": false,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Before we calculate anything, we need to speak the language of triangles. Unlike normal words, these change depending on where we are looking from."
+          },
+          {
+            "type": "explorer",
+            "prompt": "Drag the reference angle marker to each corner. Watch how the labels Hypotenuse, Opposite, and Adjacent move. What do you notice?"
+          },
+          {
+            "type": "check",
+            "question": "If the reference angle is at the bottom-left, which side is the Hypotenuse?",
+            "options": ["The longest side", "The side across from the angle", "The side next to the angle"],
+            "correct": 0,
+            "explanation": "The Hypotenuse is always the longest side — opposite the right angle, not the reference angle."
+          }
+        ]
+      }
+    ]
+  }
+]
