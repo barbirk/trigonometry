@@ -3,14 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RotateCw, Clock, Trophy } from 'lucide-react';
 import { useProgressStore } from '../store/progressStore';
-// Import review cards - handle both direct array and wrapped object formats
-import reviewCardsJson from '../data/reviewCards.json';
-const importedData = reviewCardsJson as any;
-const reviewCardsData: any[] = Array.isArray(importedData?.reviewCards) 
-  ? importedData.reviewCards 
-  : Array.isArray(importedData) 
-    ? importedData 
-    : [];
 
 interface ReviewDeckProps {
   onClose?: () => void;
@@ -25,18 +17,37 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
   const [sessionComplete, setSessionComplete] = useState(false);
   const [startTime] = useState(Date.now());
   const [stats, setStats] = useState({ easy: 0, medium: 0, hard: 0 });
+  const [reviewCardsData, setReviewCardsData] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const lang = i18n.language as 'en' | 'fr';
 
-  // Get due cards on mount
+  // Load review cards from public folder
   useEffect(() => {
+    fetch('/trigonometry/data/reviewCards.json')
+      .then(res => res.json())
+      .then(data => {
+        const cards = data?.reviewCards || data || [];
+        setReviewCardsData(cards);
+        setIsLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load review cards:', err);
+        setReviewCardsData([]);
+        setIsLoading(false);
+      });
+  }, []);
+
+  // Get due cards once data is loaded
+  useEffect(() => {
+    if (isLoading || reviewCardsData.length === 0) return;
+    
     const today = new Date().toISOString().split('T')[0];
     const dueCardIds = Object.entries(sm2Deck)
-      .filter(([_, card]) => !card.nextReviewDate || card.nextReviewDate <= today)
+      .filter(([_, card]: [string, any]) => !card.nextReviewDate || card.nextReviewDate <= today)
       .map(([id, _]) => id)
-      .slice(0, 10); // Max 10 cards per session
+      .slice(0, 10);
 
-    // If no due cards, show some new cards
     if (dueCardIds.length === 0) {
       const newCards = reviewCardsData
         .filter((card: any) => card?.id && !sm2Deck[card.id])
@@ -46,7 +57,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
     } else {
       setSessionCards(dueCardIds);
     }
-  }, [sm2Deck]);
+  }, [sm2Deck, reviewCardsData, isLoading]);
 
   const currentCardId = sessionCards[currentCardIndex];
   const currentCard = reviewCardsData.find((c: any) => c?.id === currentCardId);
@@ -56,12 +67,10 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
 
     updateCardReview(currentCardId, quality);
 
-    // Update stats
     if (quality === 5) setStats(s => ({ ...s, easy: s.easy + 1 }));
     else if (quality === 4) setStats(s => ({ ...s, medium: s.medium + 1 }));
     else if (quality === 3) setStats(s => ({ ...s, hard: s.hard + 1 }));
 
-    // Move to next card
     if (currentCardIndex < sessionCards.length - 1) {
       setCurrentCardIndex(currentCardIndex + 1);
       setIsFlipped(false);
@@ -76,7 +85,18 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
   };
 
-  if (sessionCards.length === 0) {
+  if (isLoading) {
+    return (
+      <div className="bg-surface-container border border-border-subtle rounded-2xl p-8 text-center">
+        <div className="animate-pulse">
+          <div className="h-4 bg-surface rounded w-3/4 mx-auto mb-4"></div>
+          <div className="h-4 bg-surface rounded w-1/2 mx-auto"></div>
+        </div>
+      </div>
+    );
+  }
+
+  if (sessionCards.length === 0 || reviewCardsData.length === 0) {
     return (
       <div className="bg-surface-container border border-border-subtle rounded-2xl p-8 text-center">
         <Trophy className="w-16 h-16 text-primary mx-auto mb-4" />
@@ -100,7 +120,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
 
   if (sessionComplete) {
     const totalTime = Date.now() - startTime;
-    // Stats tracked // suppress unused warning = stats.easy + stats.medium + stats.hard;
+    
 
     return (
       <div className="bg-surface-container border border-border-subtle rounded-2xl p-8">
@@ -144,6 +164,8 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
 
   if (!currentCard) return null;
 
+  const progress = ((currentCardIndex + (isFlipped ? 1 : 0)) / sessionCards.length) * 100;
+
   return (
     <div className="bg-surface-container border border-border-subtle rounded-2xl p-6">
       {/* Progress */}
@@ -152,9 +174,9 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
           {t('reviewDeck.cardProgress', { current: currentCardIndex + 1, total: sessionCards.length })}
         </span>
         <div className="flex-1 mx-4 h-2 bg-surface rounded-full overflow-hidden">
-          <div
+          <motion.div
             className="h-full bg-primary transition-all"
-            style={{ width: `${((currentCardIndex + 1) / sessionCards.length) * 100}%` }}
+            style={{ width: `${progress}%` }}
           />
         </div>
       </div>
@@ -177,7 +199,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
               {t('reviewDeck.question')}
             </p>
             <p className="text-text-primary text-center text-lg font-body">
-              {currentCard.front[lang]}
+              {currentCard.front?.[lang] || currentCard.front?.en}
             </p>
             <p className="text-text-secondary text-xs mt-8 flex items-center gap-2">
               <RotateCw className="w-4 h-4" />
@@ -194,7 +216,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
               {t('reviewDeck.answer')}
             </p>
             <p className="text-text-primary text-center text-lg font-body">
-              {currentCard.back[lang]}
+              {currentCard.back?.[lang] || currentCard.back?.en}
             </p>
           </div>
         </motion.div>
