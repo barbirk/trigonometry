@@ -50,6 +50,16 @@ const resources = {
         opposite: "Opposé",
         adjacent: "Adjacent"
       },
+      explorer: {
+        title: "Explorateur de Triangle",
+        mode345: "Mode 3-4-5",
+        reports: "Rapports Trigonométriques",
+        tip: "Astuce : SOH-CAH-TOA",
+        sinHint: "Observez comment Sinus change en même temps que la hauteur (Opposé), tandis que le Cosinus est lié à la base (Adjacent).",
+        base: "Base",
+        height: "Hauteur",
+        units: "unités"
+      },
       solver: {
         stepDiagram: "Schéma",
         stepLabel: "Étiqueter",
@@ -226,6 +236,16 @@ const resources = {
         hypotenuse: "Hypotenuse",
         opposite: "Opposite",
         adjacent: "Adjacent"
+      },
+      explorer: {
+        title: "Triangle Explorer",
+        mode345: "3-4-5 Mode",
+        reports: "Trigonometric Ratios",
+        tip: "Tip: SOH-CAH-TOA",
+        sinHint: "Watch how Sine changes as the height (Opposite) changes, while Cosine is tied to the base (Adjacent).",
+        base: "Base",
+        height: "Height",
+        units: "units"
       },
       solver: {
         stepDiagram: "Diagram",

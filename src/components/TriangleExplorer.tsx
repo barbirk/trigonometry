@@ -42,7 +42,7 @@ const TriangleExplorer = () => {
       {/* Interactive Visualizer */}
       <div className="flex-1 bg-surface-container border border-border-subtle rounded-2xl overflow-hidden flex flex-col">
          <div className="p-4 border-b border-border-subtle bg-surface/50 text-text-secondary font-display text-sm tracking-widest uppercase font-bold flex items-center justify-between">
-            <span>Explorateur de Triangle ({t('explorer.mode345')} par défaut)</span>
+            <span>{t('explorer.title')}</span>
             <TriangleRight className="w-5 h-5 text-primary" />
          </div>
          
@@ -79,7 +79,7 @@ const TriangleExplorer = () => {
                  fillOpacity="0.1"
                />
                
-               {/* Adjacent (Base) */}
+               {/* Adjacent ({t('explorer.base')}) */}
                <line 
                  x1={toSVGX(0)} y1={toSVGY(0)} 
                  x2={toSVGX(base)} y2={toSVGY(0)} 
@@ -109,8 +109,8 @@ const TriangleExplorer = () => {
                <circle cx={toSVGX(0)} cy={toSVGY(0)} r="6" fill="white" />
 
                {/* Labels */}
-               <text x={toSVGX(base / 2)} y={toSVGY(-25)} fill="#8892A4" className="font-display text-lg" textAnchor="middle">{t('explorer.adjacent')} ({base})</text>
-               <text x={toSVGX(-25)} y={toSVGY(height / 2)} fill="#FF6B6B" className="font-display text-lg" textAnchor="middle" transform={`rotate(-90, ${toSVGX(-25)}, ${toSVGY(height / 2)})`}>{t('explorer.opposite')} ({height})</text>
+               <text x={toSVGX(base / 2)} y={toSVGY(-25)} fill="#8892A4" className="font-display text-lg" textAnchor="middle">{t('triangle.adjacent')} ({base})</text>
+               <text x={toSVGX(-25)} y={toSVGY(height / 2)} fill="#FF6B6B" className="font-display text-lg" textAnchor="middle" transform={`rotate(-90, ${toSVGX(-25)}, ${toSVGY(height / 2)})`}>{t('triangle.opposite')} ({height})</text>
                
                {/* Angle Arc at base vertex */}
                <path 
@@ -127,8 +127,8 @@ const TriangleExplorer = () => {
          <div className="p-6 bg-surface-container border-t border-border-subtle grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
                <label className="flex justify-between font-display text-sm text-text-secondary mb-2">
-                 <span>{t('explorer.adjacent')} (Base)</span>
-                 <span className="text-white">{base} units</span>
+                 <span>{t('triangle.adjacent')} (Base)</span>
+                 <span className="text-white">{base} {t('explorer.units')}</span>
                </label>
                <input 
                  type="range" min="50" max="500" step="1" 
@@ -138,8 +138,8 @@ const TriangleExplorer = () => {
             </div>
             <div>
                <label className="flex justify-between font-display text-sm text-text-secondary mb-2">
-                 <span className="text-[#FF6B6B]">{t('explorer.opposite')} (Hauteur)</span>
-                 <span className="text-white">{height} units</span>
+                 <span className="text-[#FF6B6B]">{t('triangle.opposite')} ({t('explorer.height')})</span>
+                 <span className="text-white">{height} {t('explorer.units')}</span>
                </label>
                <input 
                  type="range" min="50" max="350" step="1" 
@@ -155,7 +155,7 @@ const TriangleExplorer = () => {
          <div className="bg-surface-container border border-border-subtle rounded-2xl p-6 shadow-xl">
             <h3 className="font-display font-bold text-xl text-white mb-6 flex items-center gap-2">
               <Ruler className="w-5 h-5 text-primary" />
-              Rapports Trigonométriques
+              {t('explorer.reports')}
             </h3>
 
             <div className="space-y-6 font-math text-lg">
@@ -167,7 +167,7 @@ const TriangleExplorer = () => {
                     <span className="font-bold text-[#FF6B6B]">{sinVal}</span>
                   </div>
                   <div className="text-sm text-text-secondary/70 border-t border-border-subtle pt-2 mt-2">
-                    Opposé ({height}) / Hypoténuse ({hypotenuse.toFixed(1)})
+                    {t('triangle.opposite')} ({height}) / {t('triangle.hypotenuse')} ({hypotenuse.toFixed(1)})
                   </div>
                </div>
 
@@ -179,7 +179,7 @@ const TriangleExplorer = () => {
                     <span className="font-bold text-text-secondary">{cosVal}</span>
                   </div>
                   <div className="text-sm text-text-secondary/70 border-t border-border-subtle pt-2 mt-2">
-                    Adjacent ({base}) / Hypoténuse ({hypotenuse.toFixed(1)})
+                    {t('triangle.adjacent')} ({base}) / {t('triangle.hypotenuse')} ({hypotenuse.toFixed(1)})
                   </div>
                </div>
 
@@ -191,16 +191,16 @@ const TriangleExplorer = () => {
                     <span className="font-bold text-primary">{tanVal}</span>
                   </div>
                   <div className="text-sm text-text-secondary/70 border-t border-border-subtle pt-2 mt-2">
-                    Opposé ({height}) / Adjacent ({base})
+                    {t('triangle.opposite')} ({height}) / {t('triangle.adjacent')} ({base})
                   </div>
                </div>
             </div>
          </div>
          
          <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6">
-            <h4 className="font-display font-bold text-primary mb-2">Astuce : SOH-CAH-TOA</h4>
+            <h4 className="font-display font-bold text-primary mb-2">{t('explorer.tip')}</h4>
             <p className="text-sm text-text-secondary font-body leading-relaxed">
-              Observez comment <strong>Sinus</strong> change en même temps que la hauteur (Opposé), tandis que le <strong>Cosinus</strong> est lié à la base (Adjacent).
+              {t('explorer.sinHint')}
             </p>
          </div>
       </div>
