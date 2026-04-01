@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#0F1117"/>
+  <circle cx="200" cy="150" r="80" fill="#1C1F2E" stroke="#4DFFA4" stroke-width="2"/>
+  <circle cx="200" cy="150" r="60" fill="none" stroke="#4DFFA4" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M200 70 L200 50 M200 230 L200 250 M120 150 L100 150 M280 150 L300 150" stroke="#4DFFA4" stroke-width="2"/>
+  <rect x="180" y="130" width="40" height="40" rx="4" fill="#4DFFA4" opacity="0.3"/>
+  <rect x="185" y="135" width="30" height="30" rx="2" fill="#4DFFA4"/>
+  <path d="M160 140 L140 120 M240 140 L260 120 M160 160 L140 180 M240 160 L260 180" stroke="#4DFFA4" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="150" r="8" fill="#0F1117"/>
+  <circle cx="200" cy="150" r="4" fill="#4DFFA4"/>
+  <text x="200" y="280" text-anchor="middle" fill="#F0F4FF" font-family="Space Mono" font-size="14">GPS Satellite</text>
+</svg>

@@ -4,7 +4,7 @@
     "title": "Le Pourquoi de la Trigonométrie",
     "hook": {
       "question": "Comment les ingénieurs d'un GPS savent-ils exactement où vous êtes ? La réponse repose sur les triangles. Aujourd'hui, on découvre pourquoi.",
-      "imageUrl": "/scenarios/gps-satellite.jpg"
+      "imageUrl": "./scenarios/gps-satellite.svg"
     },
     "lessons": [
       {
@@ -25,7 +25,7 @@
     "title": "Les Fondations du Triangle Rectangle",
     "hook": {
       "question": "Un hélicoptère de sauvetage repère un randonneur. Le pilote sait que l'angle de dépression est de 32° et qu'il est à 800m d'altitude. À quelle distance se trouve le randonneur ? Vous saurez le calculer dans un instant.",
-      "imageUrl": "/scenarios/helicopter.jpg"
+      "imageUrl": "./scenarios/helicopter.svg"
     },
     "lessons": [
       {

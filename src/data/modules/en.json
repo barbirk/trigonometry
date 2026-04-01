@@ -4,7 +4,7 @@
     "title": "The Why of Trigonometry",
     "hook": {
       "question": "How do GPS engineers know exactly where you are? The answer relies on triangles. Today, we discover why.",
-      "imageUrl": "/scenarios/gps-satellite.jpg"
+      "imageUrl": "./scenarios/gps-satellite.svg"
     },
     "lessons": [
       {
@@ -25,7 +25,7 @@
     "title": "Right Triangle Foundations",
     "hook": {
       "question": "A rescue helicopter spots a stranded hiker. The pilot knows the angle of depression is 32° and the helicopter is 800m above the ground. How far away is the hiker? You'll know how to find this in 30 minutes.",
-      "imageUrl": "/scenarios/helicopter.jpg"
+      "imageUrl": "./scenarios/helicopter.svg"
     },
     "lessons": [
       {
