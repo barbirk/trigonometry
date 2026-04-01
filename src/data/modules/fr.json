@@ -15,6 +15,44 @@
           {
             "type": "text",
             "body": "La trigonométrie n'est pas qu'une série de formules à mémoriser. C'est le langage secret des ponts, de la navigation spatiale, et même des jeux vidéo. Avant de calculer quoi que ce soit, apprenons à simplement observer."
+          },
+          {
+            "type": "text",
+            "body": "Regardez autour de vous. Chaque structure, chaque ombre, chaque pente cache un triangle. Les ingénieurs utilisent ces triangles cachés pour calculer des distances qu'ils ne pourraient jamais mesurer directement."
+          },
+          {
+            "type": "check",
+            "question": "Pourquoi les anciens constructeurs avaient-ils besoin de calculer la hauteur d'une pyramide sans l'escalader ?",
+            "options": ["Pour savoir combien de pierres commander", "Pour prédire les ombres pour les cérémonies", "Pour assurer la stabilité structurelle", "Toutes les réponses"],
+            "correct": 3,
+            "explanation": "Les ingénieurs anciens avaient besoin de la trigonométrie pour la construction pratique, les cérémonies religieuses et la sécurité—toutes des raisons pour lesquelles nous l'utilisons encore aujourd'hui !"
+          }
+        ]
+      },
+      {
+        "lessonId": "0-2",
+        "title": "Votre Premier Triangle",
+        "type": "explorer",
+        "explorerConfig": {
+          "mode": "full_explorer",
+          "showRatios": false,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Voici le triangle rectangle : une forme avec un coin à 90°. Cette forme simple est le fondement de toute la trigonométrie."
+          },
+          {
+            "type": "explorer",
+            "prompt": "Faites glisser les sommets du triangle. Observez comment les côtés changent de longueur, mais un angle reste toujours à 90°. Que se passe-t-il avec les deux autres angles ?"
+          },
+          {
+            "type": "check",
+            "question": "Dans un triangle rectangle, quelle est la somme des deux angles non droits ?",
+            "options": ["45°", "90°", "180°", "Ça dépend du triangle"],
+            "correct": 1,
+            "explanation": "Les trois angles de tout triangle somment à 180°. Comme l'angle droit est 90°, les deux autres doivent aussi sommer à 90°."
           }
         ]
       }
@@ -44,7 +82,7 @@
           },
           {
             "type": "explorer",
-            "prompt": "Glissez le repère d'angle à chaque coin. Observez comment les mots Hypoténuse, Opposé et Adjacent bougent. Que remarquez-vous ?"
+            "prompt": "Glissez le repère d'angle à chaque coin. Observez comment les étiquettes H, O, A bougent. Que remarquez-vous ?"
           },
           {
             "type": "check",
@@ -52,6 +90,341 @@
             "options": ["Le côté le plus long", "Le côté en face de l'angle", "Le côté à côté de l'angle"],
             "correct": 0,
             "explanation": "L'hypoténuse est toujours le côté le plus long : c'est le seul qui fait face à l'angle droit, peu importe l'angle de référence."
+          }
+        ]
+      },
+      {
+        "lessonId": "1-2",
+        "title": "Nommer les Côtés",
+        "type": "interactive",
+        "explorerConfig": {
+          "mode": "label_exploration",
+          "showRatios": false,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Les trois côtés d'un triangle rectangle ont des noms spéciaux par rapport à un angle de référence choisi."
+          },
+          {
+            "type": "text",
+            "body": "Hypoténuse (H) : Toujours opposée à l'angle droit, toujours le côté le plus long.\\nOpposé (O) : Le côté directement en face de l'angle de référence.\\nAdjacent (A) : Le côté à côté de l'angle de référence qui n'est pas l'hypoténuse."
+          },
+          {
+            "type": "check",
+            "question": "Pour un angle de référence en bas à gauche, où se trouve le côté Opposé ?",
+            "options": ["À gauche de l'angle", "Au-dessus de l'angle", "En face de l'angle", "À côté de l'angle"],
+            "correct": 2,
+            "explanation": "Le côté Opposé est toujours en face de (faisant face à) l'angle de référence, formant le 'côté éloigné' de l'angle."
+          }
+        ]
+      },
+      {
+        "lessonId": "1-3",
+        "title": "Pratique : Étiqueter les Triangles",
+        "type": "interactive",
+        "explorerConfig": {
+          "mode": "label_exploration",
+          "showRatios": false,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Pratiquons ! Étiquetez chaque côté comme Hypoténuse (H), Opposé (O), ou Adjacent (A) par rapport à l'angle de référence marqué."
+          },
+          {
+            "type": "explorer",
+            "prompt": "Faites glisser les étiquettes H, O et A vers les côtés corrects du triangle. L'angle de référence est marqué en vert."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "title": "SOH-CAH-TOA",
+    "hook": {
+      "question": "Saviez-vous que chaque triangle rectangle avec un angle de 30° a exactement les mêmes proportions—quelle que soit sa taille ? Aujourd'hui nous découvrons les ratios magiques qui rendent cela possible.",
+      "imageUrl": "./scenarios/gps-satellite.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "2-1",
+        "title": "Les Trois Ratios Magiques",
+        "type": "explorer",
+        "explorerConfig": {
+          "mode": "full_explorer",
+          "showRatios": true,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Voici le secret : si vous divisez deux côtés quelconques d'un triangle rectangle, vous obtenez un nombre spécial qui dépend UNIQUEMENT des angles—pas de la taille !"
+          },
+          {
+            "type": "explorer",
+            "prompt": "Faites glisser les sommets pour redimensionner le triangle tout en gardant l'angle de 30° fixe. Observez les ratios sin(30°), cos(30°), tan(30°). Que reste constant ?"
+          },
+          {
+            "type": "check",
+            "question": "Quand vous agrandissez le triangle mais gardez les mêmes angles, que se passe-t-il avec les ratios ?",
+            "options": ["Ils deviennent plus grands", "Ils deviennent plus petits", "Ils restent les mêmes", "Ils changent aléatoirement"],
+            "correct": 2,
+            "explanation": "C'est la magie de la trigonométrie ! Les ratios dépendent seulement des angles, pas de la taille du triangle."
+          }
+        ]
+      },
+      {
+        "lessonId": "2-2",
+        "title": "SOH-CAH-TOA",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Rencontrez votre nouveau meilleur ami : SOH-CAH-TOA. Cette mnémonique vous aide à retenir quel ratio est lequel."
+          },
+          {
+            "type": "text",
+            "body": "SOH : Sinus = Opposé / Hypoténuse\\nCAH : Cosinus = Adjacent / Hypoténuse\\nTOA : Tangente = Opposé / Adjacent"
+          },
+          {
+            "type": "check",
+            "question": "Quel ratio utilise Opposé et Hypoténuse ?",
+            "options": ["Sinus", "Cosinus", "Tangente", "Tous"],
+            "correct": 0,
+            "explanation": "SOH : Sinus = Opposé / Hypoténuse. Souvenez-vous, SOH commence par S pour Sinus !"
+          }
+        ]
+      },
+      {
+        "lessonId": "2-3",
+        "title": "Utiliser les Ratios",
+        "type": "interactive",
+        "explorerConfig": {
+          "mode": "full_explorer",
+          "showRatios": true,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Maintenant utilisons ces ratios pour trouver les côtés manquants. Si vous connaissez un angle (autre que 90°) et un côté, vous pouvez trouver tous les autres !"
+          },
+          {
+            "type": "explorer",
+            "prompt": "Réglez l'angle à 45°. Si l'hypoténuse est 10, utilisez sin(45°) pour trouver le côté opposé. Vérifiez votre réponse en regardant le triangle !"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "title": "Trigonométrie Inverse & Recherche d'Angles",
+    "hook": {
+      "question": "Une échelle s'appuie contre un mur, atteignant 3 mètres de hauteur tandis que sa base est à 4 mètres du mur. Quel angle l'échelle fait-elle avec le sol ?",
+      "imageUrl": "./scenarios/helicopter.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "3-1",
+        "title": "Trouver les Angles à partir des Côtés",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Parfois vous connaissez les côtés mais devez trouver l'angle. C'est là qu'interviennent les fonctions trigonométriques inverses."
+          },
+          {
+            "type": "text",
+            "body": "Si sin(θ) = 0.5, alors θ = sin⁻¹(0.5) = 30°\\n\\nLa fonction inverse 'défait' la fonction originale, nous donnant l'angle à partir du ratio."
+          },
+          {
+            "type": "check",
+            "question": "Si tan(θ) = 1, quelle est la valeur de θ ?",
+            "options": ["30°", "45°", "60°", "90°"],
+            "correct": 1,
+            "explanation": "tan(45°) = 1, donc tan⁻¹(1) = 45°. C'est un angle spécial qu'il vaut la peine de mémoriser !"
+          }
+        ]
+      },
+      {
+        "lessonId": "3-2",
+        "title": "Vérification du Mode Calculatrice",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "Avant d'utiliser la trigonométrie inverse, nous DEVONS vérifier que notre calculatrice est en mode Degrés, pas Radians."
+          },
+          {
+            "type": "text",
+            "body": "Test : Quel est sin(30°) ?\\nSi votre calculatrice montre 0.5, vous êtes en mode Degrés ✓\\nSi elle montre -0.988, vous êtes en mode Radians ✗"
+          }
+        ]
+      },
+      {
+        "lessonId": "3-3",
+        "title": "Pratique : Trouver l'Angle",
+        "type": "interactive",
+        "explorerConfig": {
+          "mode": "full_explorer",
+          "showRatios": true,
+          "highlightAngle": true
+        },
+        "content": [
+          {
+            "type": "text",
+            "body": "Étant donné deux côtés d'un triangle rectangle, trouvez l'angle manquant en utilisant les fonctions trigonométriques inverses."
+          },
+          {
+            "type": "explorer",
+            "prompt": "Créez un triangle où le côté opposé est 3 et le côté adjacent est 4. Calculez l'angle en utilisant tan⁻¹(3/4). Vérification : l'angle doit être environ 37°."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 4,
+    "title": "Problèmes Réels Appliqués",
+    "hook": {
+      "question": "Des ingénieurs conçoivent une rampe pour fauteuil roulant qui s'élève de 1 mètre. Les normes de sécurité exigent que l'angle ne dépasse pas 5°. Quelle doit être la longueur de la rampe ?",
+      "imageUrl": "./scenarios/gps-satellite.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "4-1",
+        "title": "Du Problème Énoncé au Schéma",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Les vrais problèmes ne viennent pas avec des schémas. La première étape est toujours de dessiner la situation et d'identifier le triangle."
+          },
+          {
+            "type": "text",
+            "body": "Étape 1 : Lisez attentivement et soulignez les informations clés\\nÉtape 2 : Dessinez un schéma représentant la situation\\nÉtape 3 : Étiquetez les valeurs connues et l'inconnue\\nÉtape 4 : Choisissez le ratio trigonométrique approprié\\nÉtape 5 : Résolvez et interprétez votre réponse"
+          }
+        ]
+      },
+      {
+        "lessonId": "4-2",
+        "title": "Angles d'Élévation et de Dépression",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Deux angles spéciaux apparaissent souvent dans les problèmes réels :"
+          },
+          {
+            "type": "text",
+            "body": "Angle d'Élévation : Regarder VERS LE HAUT depuis l'horizontal\\nAngle de Dépression : Regarder VERS LE BAS depuis l'horizontal\\n\\nImportant : Ces angles sont toujours mesurés depuis la ligne horizontale, et ils sont égaux quand on regarde le même point !"
+          },
+          {
+            "type": "check",
+            "question": "Un pilote regarde vers le bas à un angle de 15° pour voir un bateau. Quel est l'angle d'élévation du bateau vers l'avion ?",
+            "options": ["75°", "15°", "165°", "Impossible à déterminer"],
+            "correct": 1,
+            "explanation": "L'angle d'élévation et l'angle de dépression vers le même point sont toujours égaux (angles alternes-internes)."
+          }
+        ]
+      },
+      {
+        "lessonId": "4-3",
+        "title": "Pratique : Problèmes Appliqués",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "Résolvons quelques problèmes réels étape par étape."
+          },
+          {
+            "type": "text",
+            "body": "Problème : Un arbre de 12 mètres de haut projette une ombre de 15 mètres. Quel est l'angle d'élévation du soleil ?"
+          },
+          {
+            "type": "check",
+            "question": "Quel ratio trigonométrique devriez-vous utiliser ?",
+            "options": ["Sinus", "Cosinus", "Tangente", "N'importe lequel"],
+            "correct": 2,
+            "explanation": "Vous avez l'opposé (hauteur de l'arbre) et l'adjacent (ombre), donc utilisez la tangente : tan(θ) = 12/15."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 5,
+    "title": "Au-delà des Triangles Rectangles",
+    "hook": {
+      "question": "Que faire si vous devez trouver un côté ou un angle dans un triangle qui N'EST PAS rectangle ? La Loi des Sinus et la Loi des Cosinus fonctionnent pour TOUS les triangles.",
+      "imageUrl": "./scenarios/helicopter.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "5-1",
+        "title": "La Loi des Sinus",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Pour TOUS les triangles (pas seulement les rectangles) :"
+          },
+          {
+            "type": "text",
+            "body": "a/sin(A) = b/sin(B) = c/sin(C)\\n\\nOù le côté a est opposé à l'angle A, le côté b opposé à l'angle B, etc."
+          },
+          {
+            "type": "text",
+            "body": "Utilisez la Loi des Sinus quand vous connaissez :\\n• Deux angles et un côté (AAS ou ASA), OU\\n• Deux côtés et un angle opposé à l'un d'eux (SSA - le cas ambigu)"
+          }
+        ]
+      },
+      {
+        "lessonId": "5-2",
+        "title": "La Loi des Cosinus",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "La Loi des Cosinus est comme le théorème de Pythagore pour n'importe quel triangle :"
+          },
+          {
+            "type": "text",
+            "body": "c² = a² + b² - 2ab·cos(C)\\n\\nQuand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorème de Pythagore) !"
+          },
+          {
+            "type": "text",
+            "body": "Utilisez la Loi des Cosinus quand vous connaissez :\\n• Trois côtés (SSS), OU\\n• Deux côtés et l'angle compris (SAS)"
+          }
+        ]
+      },
+      {
+        "lessonId": "5-3",
+        "title": "Choisir la Bonne Loi",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "Étant donné différentes informations, quelle loi devriez-vous utiliser ?"
+          },
+          {
+            "type": "check",
+            "question": "Vous connaissez deux côtés et l'angle entre eux. Quelle loi ?",
+            "options": ["Loi des Sinus", "Loi des Cosinus", "Théorème de Pythagore", "Impossible à résoudre"],
+            "correct": 1,
+            "explanation": "Deux côtés et l'angle compris (SAS) appelle la Loi des Cosinus."
+          },
+          {
+            "type": "check",
+            "question": "Vous connaissez deux angles et un côté. Quelle loi ?",
+            "options": ["Loi des Sinus", "Loi des Cosinus", "Théorème de Pythagore", "Impossible à résoudre"],
+            "correct": 0,
+            "explanation": "Deux angles et un côté (AAS) signifie que vous pouvez trouver le troisième angle, puis utiliser la Loi des Sinus."
           }
         ]
       }

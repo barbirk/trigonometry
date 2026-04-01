@@ -5,6 +5,8 @@ import App from './App.tsx';
 import ExplorerPage from './pages/ExplorerPage.tsx';
 import DashboardPage from './pages/DashboardPage.tsx';
 import LessonPage from './pages/LessonPage.tsx';
+import ReviewPage from './pages/ReviewPage.tsx';
+import SettingsPage from './pages/SettingsPage.tsx';
 import './index.css';
 import './i18n';
 
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
       {
         path: "/explorer",
         element: <ExplorerPage />
+      },
+      {
+        path: "/review",
+        element: <ReviewPage />
+      },
+      {
+        path: "/settings",
+        element: <SettingsPage />
       }
     ]
   }

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "rc-001",
+    "concept": "hypotenuse-definition",
+    "type": "text",
+    "front": {
+      "en": "What is the hypotenuse?",
+      "fr": "Qu'est-ce que l'hypoténuse ?"
+    },
+    "back": {
+      "en": "The hypotenuse is the longest side of a right triangle, opposite the right angle.",
+      "fr": "L'hypoténuse est le côté le plus long d'un triangle rectangle, opposé à l'angle droit."
+    },
+    "moduleId": 1
+  },
+  {
+    "id": "rc-002",
+    "concept": "opposite-definition",
+    "type": "text",
+    "front": {
+      "en": "What does 'opposite' mean in a right triangle?",
+      "fr": "Que signifie 'opposé' dans un triangle rectangle ?"
+    },
+    "back": {
+      "en": "The opposite side is across from (facing) the reference angle.",
+      "fr": "Le côté opposé est en face de (faisant face à) l'angle de référence."
+    },
+    "moduleId": 1
+  },
+  {
+    "id": "rc-003",
+    "concept": "adjacent-definition",
+    "type": "text",
+    "front": {
+      "en": "What does 'adjacent' mean in a right triangle?",
+      "fr": "Que signifie 'adjacent' dans un triangle rectangle ?"
+    },
+    "back": {
+      "en": "The adjacent side is next to the reference angle, but is NOT the hypotenuse.",
+      "fr": "Le côté adjacent est à côté de l'angle de référence, mais n'est PAS l'hypoténuse."
+    },
+    "moduleId": 1
+  },
+  {
+    "id": "rc-004",
+    "concept": "soh-definition",
+    "type": "text",
+    "front": {
+      "en": "What is SOH?",
+      "fr": "Qu'est-ce que SOH ?"
+    },
+    "back": {
+      "en": "SOH: Sine = Opposite / Hypotenuse",
+      "fr": "SOH : Sinus = Opposé / Hypoténuse"
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-005",
+    "concept": "cah-definition",
+    "type": "text",
+    "front": {
+      "en": "What is CAH?",
+      "fr": "Qu'est-ce que CAH ?"
+    },
+    "back": {
+      "en": "CAH: Cosine = Adjacent / Hypotenuse",
+      "fr": "CAH : Cosinus = Adjacent / Hypoténuse"
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-006",
+    "concept": "toa-definition",
+    "type": "text",
+    "front": {
+      "en": "What is TOA?",
+      "fr": "Qu'est-ce que TOA ?"
+    },
+    "back": {
+      "en": "TOA: Tangent = Opposite / Adjacent",
+      "fr": "TOA : Tangente = Opposé / Adjacent"
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-007",
+    "concept": "when-to-use-sin",
+    "type": "text",
+    "front": {
+      "en": "When should you use sine?",
+      "fr": "Quand devez-vous utiliser le sinus ?"
+    },
+    "back": {
+      "en": "Use sine when you have opposite/hypotenuse or need to find them.",
+      "fr": "Utilisez le sinus quand vous avez opposé/hypoténuse ou devez les trouver."
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-008",
+    "concept": "when-to-use-cos",
+    "type": "text",
+    "front": {
+      "en": "When should you use cosine?",
+      "fr": "Quand devez-vous utiliser le cosinus ?"
+    },
+    "back": {
+      "en": "Use cosine when you have adjacent/hypotenuse or need to find them.",
+      "fr": "Utilisez le cosinus quand vous avez adjacent/hypoténuse ou devez les trouver."
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-009",
+    "concept": "when-to-use-tan",
+    "type": "text",
+    "front": {
+      "en": "When should you use tangent?",
+      "fr": "Quand devez-vous utiliser la tangente ?"
+    },
+    "back": {
+      "en": "Use tangent when you have opposite/adjacent or need to find them (no hypotenuse).",
+      "fr": "Utilisez la tangente quand vous avez opposé/adjacent ou devez les trouver (pas d'hypoténuse)."
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-010",
+    "concept": "sin-30",
+    "type": "text",
+    "front": {
+      "en": "What is sin(30°)?",
+      "fr": "Quelle est la valeur de sin(30°) ?"
+    },
+    "back": {
+      "en": "sin(30°) = 0.5 or 1/2",
+      "fr": "sin(30°) = 0,5 ou 1/2"
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-011",
+    "concept": "cos-45",
+    "type": "text",
+    "front": {
+      "en": "What is cos(45°)?",
+      "fr": "Quelle est la valeur de cos(45°) ?"
+    },
+    "back": {
+      "en": "cos(45°) ≈ 0.707 or √2/2",
+      "fr": "cos(45°) ≈ 0,707 ou √2/2"
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-012",
+    "concept": "tan-45",
+    "type": "text",
+    "front": {
+      "en": "What is tan(45°)?",
+      "fr": "Quelle est la valeur de tan(45°) ?"
+    },
+    "back": {
+      "en": "tan(45°) = 1",
+      "fr": "tan(45°) = 1"
+    },
+    "moduleId": 2
+  },
+  {
+    "id": "rc-013",
+    "concept": "inverse-sin",
+    "type": "text",
+    "front": {
+      "en": "If sin(θ) = 0.5, what is θ?",
+      "fr": "Si sin(θ) = 0,5, quelle est la valeur de θ ?"
+    },
+    "back": {
+      "en": "θ = sin⁻¹(0.5) = 30°",
+      "fr": "θ = sin⁻¹(0,5) = 30°"
+    },
+    "moduleId": 3
+  },
+  {
+    "id": "rc-014",
+    "concept": "inverse-tan",
+    "type": "text",
+    "front": {
+      "en": "If tan(θ) = 1, what is θ?",
+      "fr": "Si tan(θ) = 1, quelle est la valeur de θ ?"
+    },
+    "back": {
+      "en": "θ = tan⁻¹(1) = 45°",
+      "fr": "θ = tan⁻¹(1) = 45°"
+    },
+    "moduleId": 3
+  },
+  {
+    "id": "rc-015",
+    "concept": "calculator-mode",
+    "type": "text",
+    "front": {
+      "en": "How do you know if your calculator is in degree mode?",
+      "fr": "Comment savez-vous si votre calculatrice est en mode degrés ?"
+    },
+    "back": {
+      "en": "sin(30) should give 0.5. If you get -0.988, you're in radians.",
+      "fr": "sin(30) devrait donner 0,5. Si vous obtenez -0,988, vous êtes en radians."
+    },
+    "moduleId": 3
+  },
+  {
+    "id": "rc-016",
+    "concept": "angle-elevation",
+    "type": "text",
+    "front": {
+      "en": "What is an angle of elevation?",
+      "fr": "Qu'est-ce qu'un angle d'élévation ?"
+    },
+    "back": {
+      "en": "The angle measured UP from the horizontal when looking at something above you.",
+      "fr": "L'angle mesuré VERS LE HAUT depuis l'horizontal quand on regarde quelque chose au-dessus de soi."
+    },
+    "moduleId": 4
+  },
+  {
+    "id": "rc-017",
+    "concept": "angle-depression",
+    "type": "text",
+    "front": {
+      "en": "What is an angle of depression?",
+      "fr": "Qu'est-ce qu'un angle de dépression ?"
+    },
+    "back": {
+      "en": "The angle measured DOWN from the horizontal when looking at something below you.",
+      "fr": "L'angle mesuré VERS LE BAS depuis l'horizontal quand on regarde quelque chose en dessous de soi."
+    },
+    "moduleId": 4
+  },
+  {
+    "id": "rc-018",
+    "concept": "elevation-depression-equal",
+    "type": "text",
+    "front": {
+      "en": "How do angle of elevation and depression relate?",
+      "fr": "Comment l'angle d'élévation et de dépression sont-ils liés ?"
+    },
+    "back": {
+      "en": "They are always equal when measured to the same point (alternate interior angles).",
+      "fr": "Ils sont toujours égaux quand mesurés vers le même point (angles alternes-internes)."
+    },
+    "moduleId": 4
+  },
+  {
+    "id": "rc-019",
+    "concept": "law-of-sines",
+    "type": "text",
+    "front": {
+      "en": "What is the Law of Sines?",
+      "fr": "Quelle est la Loi des Sinus ?"
+    },
+    "back": {
+      "en": "a/sin(A) = b/sin(B) = c/sin(C). Works for ANY triangle.",
+      "fr": "a/sin(A) = b/sin(B) = c/sin(C). Fonctionne pour TOUS les triangles."
+    },
+    "moduleId": 5
+  },
+  {
+    "id": "rc-020",
+    "concept": "law-of-cosines",
+    "type": "text",
+    "front": {
+      "en": "What is the Law of Cosines?",
+      "fr": "Quelle est la Loi des Cosinus ?"
+    },
+    "back": {
+      "en": "c² = a² + b² - 2ab·cos(C). Like Pythagorean theorem for any triangle.",
+      "fr": "c² = a² + b² - 2ab·cos(C). Comme le théorème de Pythagore pour n'importe quel triangle."
+    },
+    "moduleId": 5
+  },
+  {
+    "id": "rc-021",
+    "concept": "when-law-of-sines",
+    "type": "text",
+    "front": {
+      "en": "When do you use the Law of Sines?",
+      "fr": "Quand utilisez-vous la Loi des Sinus ?"
+    },
+    "back": {
+      "en": "Use when you know: AAS, ASA, or SSA (ambiguous case).",
+      "fr": "Utilisez quand vous connaissez : AAS, ASA, ou SSA (cas ambigu)."
+    },
+    "moduleId": 5
+  },
+  {
+    "id": "rc-022",
+    "concept": "when-law-of-cosines",
+    "type": "text",
+    "front": {
+      "en": "When do you use the Law of Cosines?",
+      "fr": "Quand utilisez-vous la Loi des Cosinus ?"
+    },
+    "back": {
+      "en": "Use when you know: SSS or SAS.",
+      "fr": "Utilisez quand vous connaissez : SSS ou SAS."
+    },
+    "moduleId": 5
+  },
+  {
+    "id": "rc-023",
+    "concept": "triangle-angle-sum",
+    "type": "text",
+    "front": {
+      "en": "What is the sum of angles in any triangle?",
+      "fr": "Quelle est la somme des angles dans n'importe quel triangle ?"
+    },
+    "back": {
+      "en": "180° (or π radians)",
+      "fr": "180° (ou π radians)"
+    },
+    "moduleId": 1
+  },
+  {
+    "id": "rc-024",
+    "concept": "right-triangle-angles",
+    "type": "text",
+    "front": {
+      "en": "In a right triangle, what do the two non-right angles sum to?",
+      "fr": "Dans un triangle rectangle, à comboi somment les deux angles non droits ?"
+    },
+    "back": {
+      "en": "90° (they are complementary)",
+      "fr": "90° (ils sont complémentaires)"
+    },
+    "moduleId": 1
+  }
+]

@@ -1,0 +1,252 @@
+{
+  "problems": [
+    {
+      "id": "p1-1",
+      "moduleId": 1,
+      "type": "find_side",
+      "difficulty": "easy",
+      "question": {
+        "en": "In a right triangle, the hypotenuse is 10 and one angle is 30°. Find the length of the side opposite to this angle.",
+        "fr": "Dans un triangle rectangle, l'hypoténuse est 10 et un angle est de 30°. Trouvez la longueur du côté opposé à cet angle."
+      },
+      "diagram": {
+        "hasDiagram": true,
+        "angle": 30,
+        "hypotenuse": 10,
+        "knownSide": "hypotenuse"
+      },
+      "solution": {
+        "ratio": "sin",
+        "setup": "sin(30°) = opposite / 10",
+        "answer": 5,
+        "tolerance": 0.1
+      },
+      "hints": [
+        {"en": "Use SOH: sin(30°) = opposite / hypotenuse", "fr": "Utilisez SOH : sin(30°) = opposé / hypoténuse"},
+        {"en": "sin(30°) = 0.5", "fr": "sin(30°) = 0,5"},
+        {"en": "0.5 = opposite / 10, so opposite = 5", "fr": "0,5 = opposé / 10, donc opposé = 5"}
+      ]
+    },
+    {
+      "id": "p1-2",
+      "moduleId": 1,
+      "type": "find_side",
+      "difficulty": "easy",
+      "question": {
+        "en": "In a right triangle, the hypotenuse is 10 and one angle is 30°. Find the length of the adjacent side.",
+        "fr": "Dans un triangle rectangle, l'hypoténuse est 10 et un angle est de 30°. Trouvez la longueur du côté adjacent."
+      },
+      "diagram": {
+        "hasDiagram": true,
+        "angle": 30,
+        "hypotenuse": 10,
+        "knownSide": "hypotenuse"
+      },
+      "solution": {
+        "ratio": "cos",
+        "setup": "cos(30°) = adjacent / 10",
+        "answer": 8.66,
+        "tolerance": 0.1
+      },
+      "hints": [
+        {"en": "Use CAH: cos(30°) = adjacent / hypotenuse", "fr": "Utilisez CAH : cos(30°) = adjacent / hypoténuse"},
+        {"en": "cos(30°) ≈ 0.866", "fr": "cos(30°) ≈ 0,866"},
+        {"en": "0.866 = adjacent / 10, so adjacent ≈ 8.66", "fr": "0,866 = adjacent / 10, donc adjacent ≈ 8,66"}
+      ]
+    },
+    {
+      "id": "p2-1",
+      "moduleId": 2,
+      "type": "find_side",
+      "difficulty": "medium",
+      "question": {
+        "en": "A ladder leans against a wall at a 70° angle. The base of the ladder is 2 meters from the wall. How long is the ladder?",
+        "fr": "Une échelle s'appuie contre un mur à un angle de 70°. La base de l'échelle est à 2 mètres du mur. Quelle est la longueur de l'échelle ?"
+      },
+      "diagram": {
+        "hasDiagram": true,
+        "angle": 70,
+        "adjacent": 2,
+        "knownSide": "adjacent"
+      },
+      "solution": {
+        "ratio": "cos",
+        "setup": "cos(70°) = 2 / hypotenuse",
+        "answer": 5.85,
+        "tolerance": 0.1
+      },
+      "hints": [
+        {"en": "The ladder is the hypotenuse", "fr": "L'échelle est l'hypoténuse"},
+        {"en": "You know the adjacent side (2m) and need the hypotenuse", "fr": "Vous connaissez le côté adjacent (2m) et cherchez l'hypoténuse"},
+        {"en": "Use CAH: cos(70°) = 2 / ladder length", "fr": "Utilisez CAH : cos(70°) = 2 / longueur échelle"}
+      ]
+    },
+    {
+      "id": "p2-2",
+      "moduleId": 2,
+      "type": "find_angle",
+      "difficulty": "medium",
+      "question": {
+        "en": "In a right triangle, the opposite side is 4 and the adjacent side is 3. Find the angle.",
+        "fr": "Dans un triangle rectangle, le côté opposé est 4 et le côté adjacent est 3. Trouvez l'angle."
+      },
+      "diagram": {
+        "hasDiagram": true,
+        "opposite": 4,
+        "adjacent": 3,
+        "knownSides": ["opposite", "adjacent"]
+      },
+      "solution": {
+        "ratio": "tan",
+        "setup": "tan(θ) = 4/3, so θ = tan⁻¹(4/3)",
+        "answer": 53.13,
+        "tolerance": 0.5
+      },
+      "hints": [
+        {"en": "You have opposite and adjacent, so use TOA", "fr": "Vous avez l'opposé et l'adjacent, donc utilisez TOA"},
+        {"en": "tan(θ) = 4/3 = 1.333", "fr": "tan(θ) = 4/3 = 1,333"},
+        {"en": "θ = tan⁻¹(1.333) ≈ 53.1°", "fr": "θ = tan⁻¹(1,333) ≈ 53,1°"}
+      ]
+    },
+    {
+      "id": "p3-1",
+      "moduleId": 3,
+      "type": "find_angle",
+      "difficulty": "medium",
+      "question": {
+        "en": "A ramp rises 1.5 meters over a horizontal distance of 12 meters. What is the angle of inclination?",
+        "fr": "Une rampe s'élève de 1,5 mètres sur une distance horizontale de 12 mètres. Quel est l'angle d'inclinaison ?"
+      },
+      "diagram": {
+        "hasDiagram": true,
+        "opposite": 1.5,
+        "adjacent": 12,
+        "knownSides": ["opposite", "adjacent"]
+      },
+      "solution": {
+        "ratio": "tan",
+        "setup": "tan(θ) = 1.5/12, so θ = tan⁻¹(0.125)",
+        "answer": 7.13,
+        "tolerance": 0.5
+      },
+      "hints": [
+        {"en": "Rise is opposite, run is adjacent", "fr": "La montée est l'opposé, la course est l'adjacent"},
+        {"en": "tan(θ) = 1.5/12 = 0.125", "fr": "tan(θ) = 1,5/12 = 0,125"},
+        {"en": "θ = tan⁻¹(0.125) ≈ 7.1°", "fr": "θ = tan⁻¹(0,125) ≈ 7,1°"}
+      ]
+    },
+    {
+      "id": "p4-1",
+      "moduleId": 4,
+      "type": "real_world",
+      "difficulty": "hard",
+      "question": {
+        "en": "From a point on the ground 50 meters from the base of a building, the angle of elevation to the top is 42°. How tall is the building?",
+        "fr": "Depuis un point au sol à 50 mètres de la base d'un immeuble, l'angle d'élévation vers le sommet est de 42°. Quelle est la hauteur de l'immeuble ?"
+      },
+      "diagram": {
+        "hasDiagram": true,
+        "angle": 42,
+        "adjacent": 50,
+        "knownSide": "adjacent"
+      },
+      "solution": {
+        "ratio": "tan",
+        "setup": "tan(42°) = height / 50",
+        "answer": 45.0,
+        "tolerance": 1.0
+      },
+      "hints": [
+        {"en": "Draw a diagram: you, the building base, and the top form a right triangle", "fr": "Dessinez un schéma : vous, la base de l'immeuble et le sommet forment un triangle rectangle"},
+        {"en": "The distance on ground (50m) is adjacent to the 42° angle", "fr": "La distance au sol (50m) est adjacente à l'angle de 42°"},
+        {"en": "Use TOA: tan(42°) = height / 50", "fr": "Utilisez TOA : tan(42°) = hauteur / 50"}
+      ]
+    },
+    {
+      "id": "p4-2",
+      "moduleId": 4,
+      "type": "real_world",
+      "difficulty": "hard",
+      "question": {
+        "en": "A rescue helicopter is flying at 800 meters. The pilot sees a boat at an angle of depression of 28°. How far is the helicopter from the boat (line of sight)?",
+        "fr": "Un hélicoptère de sauvetage vole à 800 mètres. Le pilote voit un bateau à un angle de dépression de 28°. À quelle distance est l'hélicoptère du bateau (ligne de vue) ?"
+      },
+      "diagram": {
+        "hasDiagram": true,
+        "angle": 28,
+        "opposite": 800,
+        "knownSide": "opposite"
+      },
+      "solution": {
+        "ratio": "sin",
+        "setup": "sin(28°) = 800 / distance",
+        "answer": 1704,
+        "tolerance": 10
+      },
+      "hints": [
+        {"en": "The 800m altitude is opposite the 28° angle", "fr": "L'altitude de 800m est opposée à l'angle de 28°"},
+        {"en": "The line of sight is the hypotenuse", "fr": "La ligne de vue est l'hypoténuse"},
+        {"en": "Use SOH: sin(28°) = 800 / distance", "fr": "Utilisez SOH : sin(28°) = 800 / distance"}
+      ]
+    },
+    {
+      "id": "p5-1",
+      "moduleId": 5,
+      "type": "law_of_sines",
+      "difficulty": "hard",
+      "question": {
+        "en": "In a triangle, angle A = 40°, angle B = 60°, and side a = 8. Find side b.",
+        "fr": "Dans un triangle, l'angle A = 40°, l'angle B = 60°, et le côté a = 8. Trouvez le côté b."
+      },
+      "solution": {
+        "law": "sines",
+        "setup": "8/sin(40°) = b/sin(60°)",
+        "answer": 10.78,
+        "tolerance": 0.5
+      },
+      "hints": [
+        {"en": "Use the Law of Sines: a/sin(A) = b/sin(B)", "fr": "Utilisez la Loi des Sinus : a/sin(A) = b/sin(B)"},
+        {"en": "8/sin(40°) = b/sin(60°)", "fr": "8/sin(40°) = b/sin(60°)"},
+        {"en": "b = 8 × sin(60°) / sin(40°)", "fr": "b = 8 × sin(60°) / sin(40°)"}
+      ]
+    },
+    {
+      "id": "e1-1",
+      "moduleId": 2,
+      "type": "error_analysis",
+      "difficulty": "medium",
+      "question": {
+        "en": "Spot the mistake: A student is solving for the opposite side when the hypotenuse is 10 and the angle is 30°. They write: cos(30°) = opposite/10. What did they do wrong?",
+        "fr": "Trouvez l'erreur : Un étudiant cherche le côté opposé quand l'hypoténuse est 10 et l'angle est 30°. Il écrit : cos(30°) = opposé/10. Qu'a-t-il fait de mal ?"
+      },
+      "error": {
+        "step": 1,
+        "mistake": "Used cosine instead of sine",
+        "correct": "Should use sin(30°) = opposite/10"
+      },
+      "explanation": {
+        "en": "The student confused CAH with SOH. To find the opposite side, you need sine (SOH), not cosine (CAH).",
+        "fr": "L'étudiant a confondu CAH avec SOH. Pour trouver le côté opposé, il faut le sinus (SOH), pas le cosinus (CAH)."
+      }
+    },
+    {
+      "id": "e2-1",
+      "moduleId": 3,
+      "type": "error_analysis",
+      "difficulty": "medium",
+      "question": {
+        "en": "Spot the mistake: Finding an angle when opposite = 3, adjacent = 4. Student writes: angle = tan(3/4) = 36.87°. What's wrong?",
+        "fr": "Trouvez l'erreur : En cherchant un angle quand opposé = 3, adjacent = 4. L'étudiant écrit : angle = tan(3/4) = 36,87°. Qu'est-ce qui ne va pas ?"
+      },
+      "error": {
+        "step": 1,
+        "mistake": "Used tan instead of tan⁻¹",
+        "correct": "Should use angle = tan⁻¹(3/4)"
+      },
+      "explanation": {
+        "en": "tan(0.75) gives the tangent of 0.75 radians, not the angle whose tangent is 0.75. Use inverse tangent tan⁻¹.",
+        "fr": "tan(0,75) donne la tangente de 0,75 radians, pas l'angle dont la tangente est 0,75. Utilisez la tangente inverse tan⁻¹."
+      }
+    }
+  ]
+}
