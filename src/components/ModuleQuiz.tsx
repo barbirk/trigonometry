@@ -1,10 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, XCircle, Trophy, ArrowRight, RotateCcw, Lock } from 'lucide-react';
 import { useProgressStore } from '../store/progressStore';
-import problemsJson from '../data/problems/index.json';
-const problemsArray = (problemsJson as any).problems || problemsJson || [];
 
 interface ModuleQuizProps {
   moduleId: number;
@@ -21,14 +19,31 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const [answers, setAnswers] = useState<boolean[]>([]);
+  const [problemsData, setProblemsData] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const lang = i18n.language as 'en' | 'fr';
   const QUIZ_SIZE = 10;
 
+  // Load problems
+  useEffect(() => {
+    fetch('/trigonometry/data/problems.json')
+      .then(res => res.json())
+      .then(data => {
+        const problems = data?.problems || data || [];
+        setProblemsData(problems);
+        setIsLoading(false);
+      })
+      .catch(() => {
+        setProblemsData([]);
+        setIsLoading(false);
+      });
+  }, []);
+
   // Get problems for this module
-  const moduleProblems = Array.isArray(problemsArray)
-    ? problemsArray.filter((p: any) => p?.moduleId === moduleId).slice(0, QUIZ_SIZE)
-    : [];
+  const moduleProblems = problemsData
+    .filter((p: any) => p?.moduleId === moduleId)
+    .slice(0, QUIZ_SIZE);
 
   const currentProblem = moduleProblems[currentQuestion];
 
@@ -42,6 +57,17 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
         <p className="text-text-secondary">
           {t('quiz.completeTeachBack')}
         </p>
+      </div>
+    );
+  }
+
+  if (isLoading) {
+    return (
+      <div className="bg-surface-container border border-border-subtle rounded-2xl p-8 text-center">
+        <div className="animate-pulse">
+          <div className="h-4 bg-surface rounded w-3/4 mx-auto mb-4"></div>
+          <div className="h-4 bg-surface rounded w-1/2 mx-auto"></div>
+        </div>
       </div>
     );
   }
@@ -76,7 +102,7 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
     } else {
       setIsFinished(true);
       const finalScore = Math.round(((correctAnswers + (selectedAnswer && Math.abs(parseFloat(selectedAnswer) - currentProblem.solution.answer) <= currentProblem.solution.tolerance ? 1 : 0)) / moduleProblems.length) * 100);
-      completeModule(moduleId, finalScore, 2); // Assuming teach-back score of 2 for now
+      completeModule(moduleId, finalScore, 2);
       if (onComplete) {
         onComplete(finalScore);
       }
@@ -115,18 +141,9 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
           {/* Score Circle */}
           <div className="w-32 h-32 mx-auto mb-6 relative">
             <svg className="w-full h-full transform -rotate-90">
+              <circle cx="64" cy="64" r="56" fill="none" stroke="#1C1F2E" strokeWidth="12" />
               <circle
-                cx="64"
-                cy="64"
-                r="56"
-                fill="none"
-                stroke="#1C1F2E"
-                strokeWidth="12"
-              />
-              <circle
-                cx="64"
-                cy="64"
-                r="56"
+                cx="64" cy="64" r="56"
                 fill="none"
                 stroke={passed ? '#4DFFA4' : '#FFD166'}
                 strokeWidth="12"
@@ -207,7 +224,6 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
           <div className="bg-surface p-6 rounded-xl border border-border-subtle">
             <p className="text-text-primary text-lg mb-4">{currentProblem.question[lang]}</p>
             
-            {/* Simple diagram placeholder */}
             {currentProblem.diagram?.hasDiagram && (
               <div className="mt-4 p-4 bg-surface-container rounded-lg">
                 <MiniDiagram problem={currentProblem} />
@@ -262,7 +278,7 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
                 )}
               </div>
               
-              {!Math.abs(parseFloat(selectedAnswer || '0') - currentProblem.solution.answer) <= currentProblem.solution.tolerance && (
+              {Math.abs(parseFloat(selectedAnswer || '0') - currentProblem.solution.answer) > currentProblem.solution.tolerance && (
                 <div className="mb-3">
                   <p className="text-text-secondary text-sm">{t('quiz.correctAnswer')}</p>
                   <p className="font-math text-primary text-lg">{currentProblem.solution.answer}</p>
@@ -293,12 +309,7 @@ function MiniDiagram({ problem }: { problem: any }) {
   const d = problem.diagram;
   return (
     <svg viewBox="0 0 200 120" className="w-full max-w-xs mx-auto">
-      <polygon
-        points="30,100 170,100 30,20"
-        fill="none"
-        stroke="#4DFFA4"
-        strokeWidth="2"
-      />
+      <polygon points="30,100 170,100 30,20" fill="none" stroke="#4DFFA4" strokeWidth="2" />
       <rect x="30" y="85" width="15" height="15" fill="none" stroke="#4DFFA4" strokeWidth="1" />
       {d.angle && (
         <>

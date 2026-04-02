@@ -1,0 +1,1094 @@
+[
+  {
+    "id": "p1-1",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "easy",
+    "question": {
+      "en": "In a right triangle, label each side relative to the marked reference angle. Which side is the Hypotenuse?",
+      "fr": "Dans un triangle rectangle, identifiez chaque côté par rapport à l'angle de référence marqué. Quel côté est l'Hypoténuse ?"
+    },
+    "solution": {
+      "ratio": "hypotenuse",
+      "setup": "The hypotenuse is always opposite the right angle and is the longest side.",
+      "answer": "hypotenuse",
+      "tolerance": 0
+    },
+    "hints": [
+      {
+        "en": "The hypotenuse is always opposite the 90° angle.",
+        "fr": "L'hypoténuse est toujours opposée à l'angle de 90°."
+      },
+      {
+        "en": "Look for the longest side of the triangle.",
+        "fr": "Cherchez le côté le plus long du triangle."
+      }
+    ]
+  },
+  {
+    "id": "p1-2",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "easy",
+    "question": {
+      "en": "For the marked reference angle, identify which side is the Opposite side.",
+      "fr": "Pour l'angle de référence marqué, identifiez quel côté est le côté Opposé."
+    },
+    "solution": {
+      "ratio": "opposite",
+      "setup": "The opposite side is across from (facing) the reference angle.",
+      "answer": "opposite",
+      "tolerance": 0
+    },
+    "hints": [
+      {
+        "en": "The opposite side does not touch the reference angle.",
+        "fr": "Le côté opposé ne touche pas l'angle de référence."
+      },
+      {
+        "en": "Imagine standing at the reference angle and looking straight across.",
+        "fr": "Imaginez-vous debout à l'angle de référence et regardant tout droit en face."
+      }
+    ]
+  },
+  {
+    "id": "p1-3",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "easy",
+    "question": {
+      "en": "For the marked reference angle, identify which side is the Adjacent side.",
+      "fr": "Pour l'angle de référence marqué, identifiez quel côté est le côté Adjacent."
+    },
+    "solution": {
+      "ratio": "adjacent",
+      "setup": "The adjacent side is next to the reference angle (but not the hypotenuse).",
+      "answer": "adjacent",
+      "tolerance": 0
+    },
+    "hints": [
+      {
+        "en": "The adjacent side touches the reference angle along with the hypotenuse.",
+        "fr": "Le côté adjacent touche l'angle de référence ainsi que l'hypoténuse."
+      },
+      {
+        "en": "It's one of the sides that forms the reference angle.",
+        "fr": "C'est l'un des côtés qui forme l'angle de référence."
+      }
+    ]
+  },
+  {
+    "id": "p1-4",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "medium",
+    "question": {
+      "en": "A right triangle has sides of length 3, 4, and 5. If the reference angle is at the vertex where the sides of length 3 and 5 meet, label the side of length 4.",
+      "fr": "Un triangle rectangle a des côtés de longueur 3, 4 et 5. Si l'angle de référence est au sommet où se rencontrent les côtés de longueur 3 et 5, identifiez le côté de longueur 4."
+    },
+    "solution": {
+      "ratio": "opposite",
+      "setup": "The side of length 5 is the hypotenuse (longest). The side of length 4 is across from the angle where sides 3 and 5 meet.",
+      "answer": "opposite",
+      "tolerance": 0
+    },
+    "hints": [
+      {
+        "en": "First identify which side is the hypotenuse (the longest side).",
+        "fr": "Identifiez d'abord quel côté est l'hypoténuse (le côté le plus long)."
+      },
+      {
+        "en": "The side of length 5 must be the hypotenuse.",
+        "fr": "Le côté de longueur 5 doit être l'hypoténuse."
+      }
+    ]
+  },
+  {
+    "id": "p1-5",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle with reference angle θ, the side labeled 'a' is next to θ and the hypotenuse is labeled 'c'. What is side 'a' called?",
+      "fr": "Dans un triangle rectangle avec l'angle de référence θ, le côté marqué 'a' est à côté de θ et l'hypoténuse est marquée 'c'. Comment s'appelle le côté 'a' ?"
+    },
+    "solution": {
+      "ratio": "adjacent",
+      "setup": "Since side 'a' is next to the reference angle and is not the hypotenuse, it is the adjacent side.",
+      "answer": "adjacent",
+      "tolerance": 0
+    },
+    "hints": [
+      {
+        "en": "The side next to the reference angle (that isn't the hypotenuse) is called adjacent.",
+        "fr": "Le côté à côté de l'angle de référence (qui n'est pas l'hypoténuse) s'appelle adjacent."
+      }
+    ]
+  },
+  {
+    "id": "p1-6",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "hard",
+    "question": {
+      "en": "If you move the reference angle to the OTHER acute angle in the same right triangle, what happens to the labels of the two legs (non-hypotenuse sides)?",
+      "fr": "Si vous déplacez l'angle de référence vers l'AUTRE angle aigu dans le même triangle rectangle, que se passe-t-il avec les étiquettes des deux cathètes (côtés non-hypoténuse) ?"
+    },
+    "solution": {
+      "ratio": "swap",
+      "setup": "The opposite and adjacent sides swap labels when you change the reference angle to the other acute angle.",
+      "answer": "swap",
+      "tolerance": 0
+    },
+    "hints": [
+      {
+        "en": "Try drawing a right triangle and labeling from each acute angle.",
+        "fr": "Essayez de dessiner un triangle rectangle et d'étiqueter depuis chaque angle aigu."
+      },
+      {
+        "en": "The side that was opposite becomes adjacent, and vice versa.",
+        "fr": "Le côté qui était opposé devient adjacent, et vice versa."
+      }
+    ]
+  },
+  {
+    "id": "p1-7",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "medium",
+    "question": {
+      "en": "A right triangle has legs of 6 cm and 8 cm, and hypotenuse of 10 cm. For an angle where the adjacent side is 6 cm, what is the opposite side?",
+      "fr": "Un triangle rectangle a des cathètes de 6 cm et 8 cm, et une hypoténuse de 10 cm. Pour un angle où le côté adjacent est de 6 cm, quel est le côté opposé ?"
+    },
+    "solution": {
+      "ratio": "8",
+      "setup": "The opposite side must be the other leg, which is 8 cm.",
+      "answer": "8",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "The two legs are the sides that are not the hypotenuse.",
+        "fr": "Les deux cathètes sont les côtés qui ne sont pas l'hypoténuse."
+      },
+      {
+        "en": "If one leg is adjacent, the other leg must be opposite.",
+        "fr": "Si une cathète est adjacente, l'autre cathète doit être opposée."
+      }
+    ]
+  },
+  {
+    "id": "p1-8",
+    "moduleId": 1,
+    "type": "label",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a 30-60-90 triangle, if the side opposite the 30° angle is 5 units, what is the hypotenuse? (Recall: hypotenuse is twice the shorter leg)",
+      "fr": "Dans un triangle 30-60-90, si le côté opposé à l'angle de 30° est de 5 unités, quelle est l'hypoténuse ? (Rappel : l'hypoténuse est le double de la plus petite cathète)"
+    },
+    "solution": {
+      "ratio": "10",
+      "setup": "In a 30-60-90 triangle, hypotenuse = 2 × (side opposite 30°) = 2 × 5 = 10",
+      "answer": "10",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "The side opposite 30° is always the shortest side.",
+        "fr": "Le côté opposé à 30° est toujours le plus petit côté."
+      },
+      {
+        "en": "In a 30-60-90 triangle, the hypotenuse is exactly twice the shortest side.",
+        "fr": "Dans un triangle 30-60-90, l'hypoténuse est exactement le double du plus petit côté."
+      }
+    ]
+  },
+  {
+    "id": "p2-1",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "easy",
+    "question": {
+      "en": "In a right triangle, the angle is 30° and the hypotenuse is 10. Find the length of the opposite side. (sin(30°) = 0.5)",
+      "fr": "Dans un triangle rectangle, l'angle est de 30° et l'hypoténuse est de 10. Trouvez la longueur du côté opposé. (sin(30°) = 0,5)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(30°) = opposite/hypotenuse → opposite = hypotenuse × sin(30°) = 10 × 0.5",
+      "answer": "5",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use SOH: sin(θ) = opposite/hypotenuse",
+        "fr": "Utilisez SOH : sin(θ) = opposé/hypoténuse"
+      },
+      {
+        "en": "Rearrange: opposite = hypotenuse × sin(θ)",
+        "fr": "Réarrangez : opposé = hypoténuse × sin(θ)"
+      }
+    ]
+  },
+  {
+    "id": "p2-2",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "easy",
+    "question": {
+      "en": "In a right triangle, the angle is 45° and the hypotenuse is 8√2. Find the adjacent side. (cos(45°) = √2/2 ≈ 0.707)",
+      "fr": "Dans un triangle rectangle, l'angle est de 45° et l'hypoténuse est de 8√2. Trouvez le côté adjacent. (cos(45°) = √2/2 ≈ 0,707)"
+    },
+    "solution": {
+      "ratio": "cos",
+      "setup": "cos(45°) = adjacent/hypotenuse → adjacent = 8√2 × √2/2 = 8 × 2/2 = 8",
+      "answer": "8",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use CAH: cos(θ) = adjacent/hypotenuse",
+        "fr": "Utilisez CAH : cos(θ) = adjacent/hypoténuse"
+      },
+      {
+        "en": "cos(45°) = √2/2. Multiply: 8√2 × √2/2 = 8 × 2/2",
+        "fr": "cos(45°) = √2/2. Multipliez : 8√2 × √2/2 = 8 × 2/2"
+      }
+    ]
+  },
+  {
+    "id": "p2-3",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "easy",
+    "question": {
+      "en": "In a right triangle, the angle is 60° and the adjacent side is 6. Find the opposite side. (tan(60°) = √3 ≈ 1.732)",
+      "fr": "Dans un triangle rectangle, l'angle est de 60° et le côté adjacent est de 6. Trouvez le côté opposé. (tan(60°) = √3 ≈ 1,732)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(60°) = opposite/adjacent → opposite = 6 × √3 = 6√3 ≈ 10.392",
+      "answer": "10.392",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use TOA: tan(θ) = opposite/adjacent",
+        "fr": "Utilisez TOA : tan(θ) = opposé/adjacent"
+      },
+      {
+        "en": "tan(60°) = √3. Multiply: opposite = 6 × 1.732",
+        "fr": "tan(60°) = √3. Multipliez : opposé = 6 × 1,732"
+      }
+    ]
+  },
+  {
+    "id": "p2-4",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the angle is 30° and the opposite side is 7. Find the hypotenuse. (sin(30°) = 0.5)",
+      "fr": "Dans un triangle rectangle, l'angle est de 30° et le côté opposé est de 7. Trouvez l'hypoténuse. (sin(30°) = 0,5)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(30°) = opposite/hypotenuse → hypotenuse = opposite/sin(30°) = 7/0.5 = 14",
+      "answer": "14",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "sin(30°) = opposite/hypotenuse",
+        "fr": "sin(30°) = opposé/hypoténuse"
+      },
+      {
+        "en": "Rearrange: hypotenuse = opposite/sin(30°)",
+        "fr": "Réarrangez : hypoténuse = opposé/sin(30°)"
+      },
+      {
+        "en": "Since sin(30°) = 0.5, you're dividing by 0.5 (same as multiplying by 2).",
+        "fr": "Comme sin(30°) = 0,5, vous divisez par 0,5 (comme multiplier par 2)."
+      }
+    ]
+  },
+  {
+    "id": "p2-5",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the angle is 45° and the hypotenuse is 10. Find the opposite side. (sin(45°) = √2/2 ≈ 0.707)",
+      "fr": "Dans un triangle rectangle, l'angle est de 45° et l'hypoténuse est de 10. Trouvez le côté opposé. (sin(45°) = √2/2 ≈ 0,707)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(45°) = opposite/hypotenuse → opposite = 10 × 0.707 ≈ 7.07",
+      "answer": "7.07",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use SOH: sin(θ) = opposite/hypotenuse",
+        "fr": "Utilisez SOH : sin(θ) = opposé/hypoténuse"
+      },
+      {
+        "en": "sin(45°) ≈ 0.707. Multiply: opposite = 10 × 0.707",
+        "fr": "sin(45°) ≈ 0,707. Multipliez : opposé = 10 × 0,707"
+      }
+    ]
+  },
+  {
+    "id": "p2-6",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the angle is 60° and the hypotenuse is 12. Find the adjacent side. (cos(60°) = 0.5)",
+      "fr": "Dans un triangle rectangle, l'angle est de 60° et l'hypoténuse est de 12. Trouvez le côté adjacent. (cos(60°) = 0,5)"
+    },
+    "solution": {
+      "ratio": "cos",
+      "setup": "cos(60°) = adjacent/hypotenuse → adjacent = 12 × 0.5 = 6",
+      "answer": "6",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use CAH: cos(θ) = adjacent/hypotenuse",
+        "fr": "Utilisez CAH : cos(θ) = adjacent/hypoténuse"
+      },
+      {
+        "en": "cos(60°) = 0.5. Multiply: adjacent = 12 × 0.5",
+        "fr": "cos(60°) = 0,5. Multipliez : adjacent = 12 × 0,5"
+      }
+    ]
+  },
+  {
+    "id": "p2-7",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the angle is 30° and the adjacent side is 15. Find the opposite side. (tan(30°) = 1/√3 ≈ 0.577)",
+      "fr": "Dans un triangle rectangle, l'angle est de 30° et le côté adjacent est de 15. Trouvez le côté opposé. (tan(30°) = 1/√3 ≈ 0,577)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(30°) = opposite/adjacent → opposite = 15 × 0.577 ≈ 8.66",
+      "answer": "8.66",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use TOA: tan(θ) = opposite/adjacent",
+        "fr": "Utilisez TOA : tan(θ) = opposé/adjacent"
+      },
+      {
+        "en": "tan(30°) ≈ 0.577. Multiply: opposite = 15 × 0.577",
+        "fr": "tan(30°) ≈ 0,577. Multipliez : opposé = 15 × 0,577"
+      }
+    ]
+  },
+  {
+    "id": "p2-8",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a right triangle, the angle is 45° and the opposite side is 5. Find the hypotenuse. (sin(45°) = √2/2 ≈ 0.707)",
+      "fr": "Dans un triangle rectangle, l'angle est de 45° et le côté opposé est de 5. Trouvez l'hypoténuse. (sin(45°) = √2/2 ≈ 0,707)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(45°) = opposite/hypotenuse → hypotenuse = 5/0.707 ≈ 7.07",
+      "answer": "7.07",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "sin(45°) = opposite/hypotenuse",
+        "fr": "sin(45°) = opposé/hypoténuse"
+      },
+      {
+        "en": "Rearrange: hypotenuse = opposite/sin(45°)",
+        "fr": "Réarrangez : hypoténuse = opposé/sin(45°)"
+      },
+      {
+        "en": "sin(45°) ≈ 0.707. Divide: hypotenuse = 5/0.707",
+        "fr": "sin(45°) ≈ 0,707. Divisez : hypoténuse = 5/0,707"
+      }
+    ]
+  },
+  {
+    "id": "p2-9",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a right triangle, the angle is 60° and the opposite side is 12. Find the adjacent side. (tan(60°) = √3 ≈ 1.732)",
+      "fr": "Dans un triangle rectangle, l'angle est de 60° et le côté opposé est de 12. Trouvez le côté adjacent. (tan(60°) = √3 ≈ 1,732)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(60°) = opposite/adjacent → adjacent = opposite/tan(60°) = 12/1.732 ≈ 6.93",
+      "answer": "6.93",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use TOA: tan(θ) = opposite/adjacent",
+        "fr": "Utilisez TOA : tan(θ) = opposé/adjacent"
+      },
+      {
+        "en": "Rearrange: adjacent = opposite/tan(θ)",
+        "fr": "Réarrangez : adjacent = opposé/tan(θ)"
+      },
+      {
+        "en": "tan(60°) ≈ 1.732. Divide: adjacent = 12/1.732",
+        "fr": "tan(60°) ≈ 1,732. Divisez : adjacent = 12/1,732"
+      }
+    ]
+  },
+  {
+    "id": "p2-10",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the angle is 30° and the hypotenuse is 20. Find the adjacent side. (cos(30°) = √3/2 ≈ 0.866)",
+      "fr": "Dans un triangle rectangle, l'angle est de 30° et l'hypoténuse est de 20. Trouvez le côté adjacent. (cos(30°) = √3/2 ≈ 0,866)"
+    },
+    "solution": {
+      "ratio": "cos",
+      "setup": "cos(30°) = adjacent/hypotenuse → adjacent = 20 × 0.866 ≈ 17.32",
+      "answer": "17.32",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Use CAH: cos(θ) = adjacent/hypotenuse",
+        "fr": "Utilisez CAH : cos(θ) = adjacent/hypoténuse"
+      },
+      {
+        "en": "cos(30°) ≈ 0.866. Multiply: adjacent = 20 × 0.866",
+        "fr": "cos(30°) ≈ 0,866. Multipliez : adjacent = 20 × 0,866"
+      }
+    ]
+  },
+  {
+    "id": "p2-11",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a right triangle, the angle is 45° and the adjacent side is 8. Find the hypotenuse. (cos(45°) = √2/2 ≈ 0.707)",
+      "fr": "Dans un triangle rectangle, l'angle est de 45° et le côté adjacent est de 8. Trouvez l'hypoténuse. (cos(45°) = √2/2 ≈ 0,707)"
+    },
+    "solution": {
+      "ratio": "cos",
+      "setup": "cos(45°) = adjacent/hypotenuse → hypotenuse = 8/0.707 ≈ 11.31",
+      "answer": "11.31",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "cos(45°) = adjacent/hypotenuse",
+        "fr": "cos(45°) = adjacent/hypoténuse"
+      },
+      {
+        "en": "Rearrange: hypotenuse = adjacent/cos(45°)",
+        "fr": "Réarrangez : hypoténuse = adjacent/cos(45°)"
+      },
+      {
+        "en": "cos(45°) ≈ 0.707. Divide: hypotenuse = 8/0.707",
+        "fr": "cos(45°) ≈ 0,707. Divisez : hypoténuse = 8/0,707"
+      }
+    ]
+  },
+  {
+    "id": "p2-12",
+    "moduleId": 2,
+    "type": "find_side",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a right triangle, the angle is 60° and the adjacent side is 4. Find the hypotenuse. (cos(60°) = 0.5)",
+      "fr": "Dans un triangle rectangle, l'angle est de 60° et le côté adjacent est de 4. Trouvez l'hypoténuse. (cos(60°) = 0,5)"
+    },
+    "solution": {
+      "ratio": "cos",
+      "setup": "cos(60°) = adjacent/hypotenuse → hypotenuse = 4/0.5 = 8",
+      "answer": "8",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "cos(60°) = adjacent/hypotenuse",
+        "fr": "cos(60°) = adjacent/hypoténuse"
+      },
+      {
+        "en": "Rearrange: hypotenuse = adjacent/cos(60°)",
+        "fr": "Réarrangez : hypoténuse = adjacent/cos(60°)"
+      },
+      {
+        "en": "Since cos(60°) = 0.5, you're dividing by 0.5 (same as multiplying by 2).",
+        "fr": "Comme cos(60°) = 0,5, vous divisez par 0,5 (comme multiplier par 2)."
+      }
+    ]
+  },
+  {
+    "id": "p3-1",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "easy",
+    "question": {
+      "en": "In a right triangle, the opposite side is 5 and the hypotenuse is 10. Find the angle θ. (sin⁻¹(0.5) = 30°)",
+      "fr": "Dans un triangle rectangle, le côté opposé est de 5 et l'hypoténuse est de 10. Trouvez l'angle θ. (sin⁻¹(0,5) = 30°)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(θ) = opposite/hypotenuse = 5/10 = 0.5 → θ = sin⁻¹(0.5) = 30°",
+      "answer": "30",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "Use SOH: sin(θ) = opposite/hypotenuse = 5/10 = 0.5",
+        "fr": "Utilisez SOH : sin(θ) = opposé/hypoténuse = 5/10 = 0,5"
+      },
+      {
+        "en": "Use inverse sine: θ = sin⁻¹(0.5)",
+        "fr": "Utilisez le sinus inverse : θ = sin⁻¹(0,5)"
+      }
+    ]
+  },
+  {
+    "id": "p3-2",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "easy",
+    "question": {
+      "en": "In a right triangle, the adjacent side is 6 and the hypotenuse is 12. Find the angle θ. (cos⁻¹(0.5) = 60°)",
+      "fr": "Dans un triangle rectangle, le côté adjacent est de 6 et l'hypoténuse est de 12. Trouvez l'angle θ. (cos⁻¹(0,5) = 60°)"
+    },
+    "solution": {
+      "ratio": "cos",
+      "setup": "cos(θ) = adjacent/hypotenuse = 6/12 = 0.5 → θ = cos⁻¹(0.5) = 60°",
+      "answer": "60",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "Use CAH: cos(θ) = adjacent/hypotenuse = 6/12 = 0.5",
+        "fr": "Utilisez CAH : cos(θ) = adjacent/hypoténuse = 6/12 = 0,5"
+      },
+      {
+        "en": "Use inverse cosine: θ = cos⁻¹(0.5)",
+        "fr": "Utilisez le cosinus inverse : θ = cos⁻¹(0,5)"
+      }
+    ]
+  },
+  {
+    "id": "p3-3",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "easy",
+    "question": {
+      "en": "In a right triangle, the opposite side is 5 and the adjacent side is 5. Find the angle θ. (tan⁻¹(1) = 45°)",
+      "fr": "Dans un triangle rectangle, le côté opposé est de 5 et le côté adjacent est de 5. Trouvez l'angle θ. (tan⁻¹(1) = 45°)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(θ) = opposite/adjacent = 5/5 = 1 → θ = tan⁻¹(1) = 45°",
+      "answer": "45",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "Use TOA: tan(θ) = opposite/adjacent = 5/5 = 1",
+        "fr": "Utilisez TOA : tan(θ) = opposé/adjacent = 5/5 = 1"
+      },
+      {
+        "en": "Use inverse tangent: θ = tan⁻¹(1)",
+        "fr": "Utilisez la tangente inverse : θ = tan⁻¹(1)"
+      }
+    ]
+  },
+  {
+    "id": "p3-4",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the opposite side is 3 and the hypotenuse is 6. Find the angle θ.",
+      "fr": "Dans un triangle rectangle, le côté opposé est de 3 et l'hypoténuse est de 6. Trouvez l'angle θ."
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(θ) = opposite/hypotenuse = 3/6 = 0.5 → θ = sin⁻¹(0.5) = 30°",
+      "answer": "30",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "sin(θ) = opposite/hypotenuse = 3/6",
+        "fr": "sin(θ) = opposé/hypoténuse = 3/6"
+      },
+      {
+        "en": "Calculate the ratio, then use sin⁻¹.",
+        "fr": "Calculez le rapport, puis utilisez sin⁻¹."
+      }
+    ]
+  },
+  {
+    "id": "p3-5",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the adjacent side is 8 and the hypotenuse is 16. Find the angle θ.",
+      "fr": "Dans un triangle rectangle, le côté adjacent est de 8 et l'hypoténuse est de 16. Trouvez l'angle θ."
+    },
+    "solution": {
+      "ratio": "cos",
+      "setup": "cos(θ) = adjacent/hypotenuse = 8/16 = 0.5 → θ = cos⁻¹(0.5) = 60°",
+      "answer": "60",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "cos(θ) = adjacent/hypotenuse = 8/16",
+        "fr": "cos(θ) = adjacent/hypoténuse = 8/16"
+      },
+      {
+        "en": "Calculate the ratio, then use cos⁻¹.",
+        "fr": "Calculez le rapport, puis utilisez cos⁻¹."
+      }
+    ]
+  },
+  {
+    "id": "p3-6",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a right triangle, the opposite side is 7 and the adjacent side is 7. Find the angle θ.",
+      "fr": "Dans un triangle rectangle, le côté opposé est de 7 et le côté adjacent est de 7. Trouvez l'angle θ."
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(θ) = opposite/adjacent = 7/7 = 1 → θ = tan⁻¹(1) = 45°",
+      "answer": "45",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "tan(θ) = opposite/adjacent = 7/7",
+        "fr": "tan(θ) = opposé/adjacent = 7/7"
+      },
+      {
+        "en": "When opposite equals adjacent, what special angle do you have?",
+        "fr": "Quand l'opposé égale l'adjacent, quel angle spécial avez-vous ?"
+      }
+    ]
+  },
+  {
+    "id": "p3-7",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a right triangle, the opposite side is 5 and the adjacent side is 8. Find the angle θ (to the nearest degree).",
+      "fr": "Dans un triangle rectangle, le côté opposé est de 5 et le côté adjacent est de 8. Trouvez l'angle θ (au degré près)."
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(θ) = opposite/adjacent = 5/8 = 0.625 → θ = tan⁻¹(0.625) ≈ 32°",
+      "answer": "32",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "tan(θ) = opposite/adjacent = 5/8 = 0.625",
+        "fr": "tan(θ) = opposé/adjacent = 5/8 = 0,625"
+      },
+      {
+        "en": "Use tan⁻¹(0.625) on your calculator in degree mode.",
+        "fr": "Utilisez tan⁻¹(0,625) sur votre calculatrice en mode degrés."
+      }
+    ]
+  },
+  {
+    "id": "p3-8",
+    "moduleId": 3,
+    "type": "find_angle",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a right triangle, the opposite side is 12 and the hypotenuse is 13. Find the angle θ (to the nearest degree).",
+      "fr": "Dans un triangle rectangle, le côté opposé est de 12 et l'hypoténuse est de 13. Trouvez l'angle θ (au degré près)."
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(θ) = opposite/hypotenuse = 12/13 ≈ 0.923 → θ = sin⁻¹(0.923) ≈ 67°",
+      "answer": "67",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "sin(θ) = opposite/hypotenuse = 12/13",
+        "fr": "sin(θ) = opposé/hypoténuse = 12/13"
+      },
+      {
+        "en": "Calculate 12/13, then use sin⁻¹ on your calculator.",
+        "fr": "Calculez 12/13, puis utilisez sin⁻¹ sur votre calculatrice."
+      },
+      {
+        "en": "This is close to a 5-12-13 Pythagorean triple!",
+        "fr": "C'est proche du triplet pythagoricien 5-12-13 !"
+      }
+    ]
+  },
+  {
+    "id": "p4-1",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "easy",
+    "question": {
+      "en": "A 10-meter ladder leans against a wall at a 60° angle to the ground. How high up the wall does the ladder reach? (sin(60°) = √3/2 ≈ 0.866)",
+      "fr": "Une échelle de 10 mètres est appuyée contre un mur à un angle de 60° par rapport au sol. À quelle hauteur sur le mur l'échelle atteint-elle ? (sin(60°) = √3/2 ≈ 0,866)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(60°) = height/ladder → height = 10 × sin(60°) = 10 × 0.866 ≈ 8.66 meters",
+      "answer": "8.66",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "The ladder is the hypotenuse. The height on the wall is opposite the angle.",
+        "fr": "L'échelle est l'hypoténuse. La hauteur sur le mur est opposée à l'angle."
+      },
+      {
+        "en": "Use SOH: sin(60°) = opposite/hypotenuse = height/10",
+        "fr": "Utilisez SOH : sin(60°) = opposé/hypoténuse = hauteur/10"
+      }
+    ]
+  },
+  {
+    "id": "p4-2",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "easy",
+    "question": {
+      "en": "A tree casts a 15-meter shadow when the sun's angle of elevation is 30°. How tall is the tree? (tan(30°) = 1/√3 ≈ 0.577)",
+      "fr": "Un arbre projette une ombre de 15 mètres quand l'angle d'élévation du soleil est de 30°. Quelle est la hauteur de l'arbre ? (tan(30°) = 1/√3 ≈ 0,577)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(30°) = tree/shadow → tree = 15 × tan(30°) = 15 × 0.577 ≈ 8.66 meters",
+      "answer": "8.66",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "The tree height is opposite the angle. The shadow is adjacent.",
+        "fr": "La hauteur de l'arbre est opposée à l'angle. L'ombre est adjacente."
+      },
+      {
+        "en": "Use TOA: tan(30°) = opposite/adjacent = tree/15",
+        "fr": "Utilisez TOA : tan(30°) = opposé/adjacent = arbre/15"
+      }
+    ]
+  },
+  {
+    "id": "p4-3",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "medium",
+    "question": {
+      "en": "From a point on the ground 30 meters from the base of a building, the angle of elevation to the top is 45°. How tall is the building? (tan(45°) = 1)",
+      "fr": "Depuis un point au sol à 30 mètres de la base d'un bâtiment, l'angle d'élévation vers le sommet est de 45°. Quelle est la hauteur du bâtiment ? (tan(45°) = 1)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(45°) = building/distance → building = 30 × tan(45°) = 30 × 1 = 30 meters",
+      "answer": "30",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "The building height is opposite the angle. The distance is adjacent.",
+        "fr": "La hauteur du bâtiment est opposée à l'angle. La distance est adjacente."
+      },
+      {
+        "en": "tan(45°) = 1, so the height equals the distance!",
+        "fr": "tan(45°) = 1, donc la hauteur égale la distance !"
+      }
+    ]
+  },
+  {
+    "id": "p4-4",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "medium",
+    "question": {
+      "en": "A ramp rises 2 meters over a horizontal distance of 12 meters. What is the angle of inclination? (to the nearest degree)",
+      "fr": "Une rampe s'élève de 2 mètres sur une distance horizontale de 12 mètres. Quel est l'angle d'inclinaison ? (au degré près)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(θ) = rise/run = 2/12 ≈ 0.167 → θ = tan⁻¹(0.167) ≈ 9.5° ≈ 10°",
+      "answer": "10",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "The rise is opposite the angle. The run is adjacent.",
+        "fr": "La montée est opposée à l'angle. La course est adjacente."
+      },
+      {
+        "en": "Use TOA: tan(θ) = 2/12",
+        "fr": "Utilisez TOA : tan(θ) = 2/12"
+      },
+      {
+        "en": "Calculate 2/12, then use tan⁻¹.",
+        "fr": "Calculez 2/12, puis utilisez tan⁻¹."
+      }
+    ]
+  },
+  {
+    "id": "p4-5",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "medium",
+    "question": {
+      "en": "A kite is flying at the end of a 50-meter string. If the string makes a 60° angle with the ground, how high is the kite? (sin(60°) = √3/2 ≈ 0.866)",
+      "fr": "Un cerf-volant vole au bout d'une ficelle de 50 mètres. Si la ficelle fait un angle de 60° avec le sol, à quelle hauteur est le cerf-volant ? (sin(60°) = √3/2 ≈ 0,866)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(60°) = height/string → height = 50 × sin(60°) = 50 × 0.866 ≈ 43.3 meters",
+      "answer": "43.3",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "The string is the hypotenuse. The height is opposite the angle.",
+        "fr": "La ficelle est l'hypoténuse. La hauteur est opposée à l'angle."
+      },
+      {
+        "en": "Use SOH: sin(60°) = height/50",
+        "fr": "Utilisez SOH : sin(60°) = hauteur/50"
+      }
+    ]
+  },
+  {
+    "id": "p4-6",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "hard",
+    "question": {
+      "en": "From the top of a 30-meter lighthouse, the angle of depression to a boat is 15°. How far is the boat from the base of the lighthouse? (tan(15°) ≈ 0.268)",
+      "fr": "Du sommet d'un phare de 30 mètres, l'angle de dépression vers un bateau est de 15°. À quelle distance se trouve le bateau de la base du phare ? (tan(15°) ≈ 0,268)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(15°) = lighthouse/distance → distance = 30/tan(15°) = 30/0.268 ≈ 111.9 meters",
+      "answer": "111.9",
+      "tolerance": 1
+    },
+    "hints": [
+      {
+        "en": "The angle of depression equals the angle of elevation from the boat (alternate interior angles).",
+        "fr": "L'angle de dépression égale l'angle d'élévation depuis le bateau (angles alternes-internes)."
+      },
+      {
+        "en": "The lighthouse height is opposite. The distance is adjacent.",
+        "fr": "La hauteur du phare est opposée. La distance est adjacente."
+      },
+      {
+        "en": "Use TOA: tan(15°) = 30/distance",
+        "fr": "Utilisez TOA : tan(15°) = 30/distance"
+      }
+    ]
+  },
+  {
+    "id": "p4-7",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "hard",
+    "question": {
+      "en": "A wheelchair ramp must have a maximum slope of 1:12 (rise:run). What is the maximum angle of inclination allowed? (to the nearest tenth of a degree)",
+      "fr": "Une rampe pour fauteuil roulant doit avoir une pente maximale de 1:12 (montée:course). Quel est l'angle d'inclinaison maximum autorisé ? (au dixième de degré près)"
+    },
+    "solution": {
+      "ratio": "tan",
+      "setup": "tan(θ) = 1/12 ≈ 0.0833 → θ = tan⁻¹(0.0833) ≈ 4.76° ≈ 4.8°",
+      "answer": "4.8",
+      "tolerance": 0.2
+    },
+    "hints": [
+      {
+        "en": "A 1:12 slope means for every 1 unit up, you go 12 units horizontally.",
+        "fr": "Une pente de 1:12 signifie que pour 1 unité en hauteur, vous parcourez 12 unités horizontalement."
+      },
+      {
+        "en": "tan(θ) = rise/run = 1/12",
+        "fr": "tan(θ) = montée/course = 1/12"
+      },
+      {
+        "en": "Calculate 1/12, then use tan⁻¹.",
+        "fr": "Calculez 1/12, puis utilisez tan⁻¹."
+      }
+    ]
+  },
+  {
+    "id": "p4-8",
+    "moduleId": 4,
+    "type": "real_world",
+    "difficulty": "hard",
+    "question": {
+      "en": "A plane is flying at an altitude of 5000 meters. If the pilot looks down at a 20° angle of depression to see an airport, how far is the plane from the airport (slant distance)? (sin(20°) ≈ 0.342)",
+      "fr": "Un avion vole à une altitude de 5000 mètres. Si le pilote regarde vers le bas avec un angle de dépression de 20° pour voir un aéroport, à quelle distance se trouve l'avion de l'aéroport (distance en biais) ? (sin(20°) ≈ 0,342)"
+    },
+    "solution": {
+      "ratio": "sin",
+      "setup": "sin(20°) = altitude/distance → distance = 5000/sin(20°) = 5000/0.342 ≈ 14620 meters ≈ 14.6 km",
+      "answer": "14620",
+      "tolerance": 50
+    },
+    "hints": [
+      {
+        "en": "The altitude is opposite the angle of depression. The slant distance is the hypotenuse.",
+        "fr": "L'altitude est opposée à l'angle de dépression. La distance en biais est l'hypoténuse."
+      },
+      {
+        "en": "Use SOH: sin(20°) = 5000/distance",
+        "fr": "Utilisez SOH : sin(20°) = 5000/distance"
+      },
+      {
+        "en": "Rearrange: distance = 5000/sin(20°)",
+        "fr": "Réarrangez : distance = 5000/sin(20°)"
+      }
+    ]
+  },
+  {
+    "id": "p5-1",
+    "moduleId": 5,
+    "type": "law_of_sines",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a triangle, angle A = 30°, angle B = 45°, and side a (opposite angle A) = 10. Find side b (opposite angle B).",
+      "fr": "Dans un triangle, l'angle A = 30°, l'angle B = 45°, et le côté a (opposé à l'angle A) = 10. Trouvez le côté b (opposé à l'angle B)."
+    },
+    "solution": {
+      "ratio": "law_of_sines",
+      "setup": "a/sin(A) = b/sin(B) → 10/sin(30°) = b/sin(45°) → b = 10 × sin(45°)/sin(30°) = 10 × 0.707/0.5 ≈ 14.14",
+      "answer": "14.14",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Law of Sines: a/sin(A) = b/sin(B) = c/sin(C)",
+        "fr": "Loi des sinus : a/sin(A) = b/sin(B) = c/sin(C)"
+      },
+      {
+        "en": "Rearrange: b = a × sin(B)/sin(A)",
+        "fr": "Réarrangez : b = a × sin(B)/sin(A)"
+      },
+      {
+        "en": "sin(30°) = 0.5 and sin(45°) ≈ 0.707",
+        "fr": "sin(30°) = 0,5 et sin(45°) ≈ 0,707"
+      }
+    ]
+  },
+  {
+    "id": "p5-2",
+    "moduleId": 5,
+    "type": "law_of_sines",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a triangle, angle A = 60°, side a = 12, and side b = 8. Find angle B.",
+      "fr": "Dans un triangle, l'angle A = 60°, le côté a = 12, et le côté b = 8. Trouvez l'angle B."
+    },
+    "solution": {
+      "ratio": "law_of_sines",
+      "setup": "a/sin(A) = b/sin(B) → 12/sin(60°) = 8/sin(B) → sin(B) = 8 × sin(60°)/12 = 8 × 0.866/12 ≈ 0.577 → B ≈ 35.3°",
+      "answer": "35.3",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "Law of Sines: a/sin(A) = b/sin(B)",
+        "fr": "Loi des sinus : a/sin(A) = b/sin(B)"
+      },
+      {
+        "en": "Rearrange to solve for sin(B): sin(B) = b × sin(A)/a",
+        "fr": "Réarrangez pour sin(B) : sin(B) = b × sin(A)/a"
+      },
+      {
+        "en": "Then use sin⁻¹ to find angle B.",
+        "fr": "Puis utilisez sin⁻¹ pour trouver l'angle B."
+      }
+    ]
+  },
+  {
+    "id": "p5-3",
+    "moduleId": 5,
+    "type": "law_of_cosines",
+    "difficulty": "medium",
+    "question": {
+      "en": "In a triangle, side a = 5, side b = 7, and angle C (between them) = 60°. Find side c.",
+      "fr": "Dans un triangle, le côté a = 5, le côté b = 7, et l'angle C (entre eux) = 60°. Trouvez le côté c."
+    },
+    "solution": {
+      "ratio": "law_of_cosines",
+      "setup": "c² = a² + b² - 2ab·cos(C) = 25 + 49 - 2(5)(7)(0.5) = 74 - 35 = 39 → c = √39 ≈ 6.24",
+      "answer": "6.24",
+      "tolerance": 0.1
+    },
+    "hints": [
+      {
+        "en": "Law of Cosines: c² = a² + b² - 2ab·cos(C)",
+        "fr": "Loi des cosinus : c² = a² + b² - 2ab·cos(C)"
+      },
+      {
+        "en": "Plug in: c² = 5² + 7² - 2(5)(7)cos(60°)",
+        "fr": "Substituez : c² = 5² + 7² - 2(5)(7)cos(60°)"
+      },
+      {
+        "en": "cos(60°) = 0.5. Simplify and take the square root.",
+        "fr": "cos(60°) = 0,5. Simplifiez et prenez la racine carrée."
+      }
+    ]
+  },
+  {
+    "id": "p5-4",
+    "moduleId": 5,
+    "type": "law_of_cosines",
+    "difficulty": "hard",
+    "question": {
+      "en": "In a triangle, side a = 8, side b = 10, and side c = 12. Find angle C (to the nearest degree).",
+      "fr": "Dans un triangle, le côté a = 8, le côté b = 10, et le côté c = 12. Trouvez l'angle C (au degré près)."
+    },
+    "solution": {
+      "ratio": "law_of_cosines",
+      "setup": "c² = a² + b² - 2ab·cos(C) → 144 = 64 + 100 - 160·cos(C) → 144 = 164 - 160·cos(C) → cos(C) = 20/160 = 0.125 → C ≈ 82.8° ≈ 83°",
+      "answer": "83",
+      "tolerance": 0.5
+    },
+    "hints": [
+      {
+        "en": "Law of Cosines: c² = a² + b² - 2ab·cos(C)",
+        "fr": "Loi des cosinus : c² = a² + b² - 2ab·cos(C)"
+      },
+      {
+        "en": "Rearrange to solve for cos(C): cos(C) = (a² + b² - c²)/(2ab)",
+        "fr": "Réarrangez pour cos(C) : cos(C) = (a² + b² - c²)/(2ab)"
+      },
+      {
+        "en": "cos(C) = (64 + 100 - 144)/(160) = 20/160 = 0.125",
+        "fr": "cos(C) = (64 + 100 - 144)/(160) = 20/160 = 0,125"
+      }
+    ]
+  }
+]
