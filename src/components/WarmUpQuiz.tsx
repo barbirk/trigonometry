@@ -3,8 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BrainCircuit, CheckCircle2, XCircle, ArrowRight, Trophy } from 'lucide-react';
 import { useProgressStore } from '../store/progressStore';
-import reviewCardsJson from '../data/reviewCards.json';
-const reviewCardsData = (reviewCardsJson as any).reviewCards || reviewCardsJson;
 
 interface WarmUpQuizProps {
   onComplete?: (result: { correct: number; total: number }) => void;
@@ -20,24 +18,40 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
   const [correctCount, setCorrectCount] = useState(0);
   const [quizCards, setQuizCards] = useState<string[]>([]);
   const [isFinished, setIsFinished] = useState(false);
+  const [reviewCardsData, setReviewCardsData] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const lang = i18n.language as 'en' | 'fr';
   const QUIZ_SIZE = 3;
 
-  // Get quiz cards on mount
+  // Load cards and setup quiz
   useEffect(() => {
+    fetch('/trigonometry/data/reviewCards.json')
+      .then(res => res.json())
+      .then(data => {
+        const cards = data?.reviewCards || data || [];
+        setReviewCardsData(cards);
+        setIsLoading(false);
+      })
+      .catch(() => {
+        setReviewCardsData([]);
+        setIsLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    if (isLoading || reviewCardsData.length === 0) return;
+    
     const today = new Date().toISOString().split('T')[0];
     
-    // Prioritize due cards
     const dueCards = Object.entries(sm2Deck)
-      .filter(([_, card]) => !card.nextReviewDate || card.nextReviewDate <= today)
+      .filter(([_, card]: [string, any]) => !card.nextReviewDate || card.nextReviewDate <= today)
       .map(([id]) => id);
 
-    // Fill with random cards if needed
     let selected = dueCards.slice(0, QUIZ_SIZE);
     if (selected.length < QUIZ_SIZE) {
       const remaining = reviewCardsData
-        .filter((c: any) => !selected.includes(c.id))
+        .filter((c: any) => c?.id && !selected.includes(c.id))
         .map((c: any) => c.id)
         .sort(() => Math.random() - 0.5)
         .slice(0, QUIZ_SIZE - selected.length);
@@ -45,10 +59,10 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
     }
     
     setQuizCards(selected);
-  }, [sm2Deck]);
+  }, [sm2Deck, reviewCardsData, isLoading]);
 
   const currentCardId = quizCards[currentIndex];
-  const currentCard = reviewCardsData.find((c: any) => c.id === currentCardId);
+  const currentCard = reviewCardsData.find((c: any) => c?.id === currentCardId);
 
   const handleAnswer = (answer: string) => {
     if (showResult) return;
@@ -60,7 +74,6 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
       setCorrectCount(c => c + 1);
     }
 
-    // Update SM-2
     if (currentCardId) {
       updateCardReview(currentCardId, isCorrect ? 4 : 2);
     }
@@ -73,17 +86,32 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
       setShowResult(false);
     } else {
       setIsFinished(true);
+      const finalCorrect = correctCount + (selectedAnswer === 'correct' ? 1 : 0);
       if (onComplete) {
-        onComplete({ correct: correctCount + (selectedAnswer === 'correct' ? 1 : 0), total: QUIZ_SIZE });
+        onComplete({ correct: finalCorrect, total: QUIZ_SIZE });
       }
     }
   };
 
-  if (quizCards.length === 0 || !currentCard) {
+  if (isLoading) {
     return (
       <div className="bg-surface-container border border-border-subtle rounded-2xl p-8 text-center">
-        <BrainCircuit className="w-12 h-12 text-primary mx-auto mb-4" />
+        <BrainCircuit className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
         <p className="text-text-secondary">{t('warmUp.loading')}</p>
+      </div>
+    );
+  }
+
+  if (quizCards.length === 0 || reviewCardsData.length === 0) {
+    return (
+      <div className="bg-surface-container border border-border-subtle rounded-2xl p-8 text-center">
+        <Trophy className="w-12 h-12 text-primary mx-auto mb-4" />
+        <p className="text-text-secondary">{t('reviewDeck.allCaughtUp')}</p>
+        {onSkip && (
+          <button onClick={onSkip} className="mt-4 bg-primary text-surface px-6 py-2 rounded-lg">
+            {t('common.continue')}
+          </button>
+        )}
       </div>
     );
   }
@@ -114,6 +142,8 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
       </motion.div>
     );
   }
+
+  if (!currentCard) return null;
 
   const progress = ((currentIndex + (showResult ? 1 : 0)) / QUIZ_SIZE) * 100;
 
@@ -149,44 +179,26 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
           className="space-y-6"
         >
           <div className="bg-surface p-6 rounded-xl border border-border-subtle min-h-[120px] flex items-center">
-            <p className="text-text-primary text-lg">{currentCard.front[lang]}</p>
+            <p className="text-text-primary text-lg">{currentCard.front?.[lang] || currentCard.front?.en}</p>
           </div>
 
           {/* Answer Options */}
           {!showResult ? (
             <div className="grid grid-cols-1 gap-3">
-              {currentCard.type === 'multiple_choice' && 'options' in currentCard ? (
-                (currentCard as any).options.map((option: string, idx: number) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleAnswer(idx === (currentCard as any).correct ? 'correct' : 'wrong')}
-                    className="p-4 bg-surface border border-border-subtle rounded-xl text-left hover:border-primary transition-colors"
-                  >
-                    {option}
-                  </button>
-                ))
-              ) : (
-                <>
-                  <button
-                    onClick={() => handleAnswer('correct')}
-                    className="p-4 bg-surface border border-border-subtle rounded-xl text-left hover:border-primary transition-colors flex items-center gap-3"
-                  >
-                    <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
-                      ✓
-                    </div>
-                    <span>{t('warmUp.iKnowThis')}</span>
-                  </button>
-                  <button
-                    onClick={() => handleAnswer('wrong')}
-                    className="p-4 bg-surface border border-border-subtle rounded-xl text-left hover:border-hint transition-colors flex items-center gap-3"
-                  >
-                    <div className="w-8 h-8 rounded-full bg-hint/20 flex items-center justify-center text-hint font-bold">
-                      ?
-                    </div>
-                    <span>{t('warmUp.needPractice')}</span>
-                  </button>
-                </>
-              )}
+              <button
+                onClick={() => handleAnswer('correct')}
+                className="p-4 bg-surface border border-border-subtle rounded-xl text-left hover:border-primary transition-colors flex items-center gap-3"
+              >
+                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">✓</div>
+                <span>{t('warmUp.iKnowThis')}</span>
+              </button>
+              <button
+                onClick={() => handleAnswer('wrong')}
+                className="p-4 bg-surface border border-border-subtle rounded-xl text-left hover:border-hint transition-colors flex items-center gap-3"
+              >
+                <div className="w-8 h-8 rounded-full bg-hint/20 flex items-center justify-center text-hint font-bold">?</div>
+                <span>{t('warmUp.needPractice')}</span>
+              </button>
             </div>
           ) : (
             <motion.div
@@ -211,7 +223,7 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
                   </>
                 )}
               </div>
-              <p className="text-text-primary">{currentCard.back[lang]}</p>
+              <p className="text-text-primary">{currentCard.back?.[lang] || currentCard.back?.en}</p>
               <button
                 onClick={handleNext}
                 className="mt-4 w-full bg-primary text-surface font-display font-bold py-3 rounded-xl hover:bg-primary-container transition-colors flex items-center justify-center gap-2"
@@ -224,12 +236,8 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
         </motion.div>
       </AnimatePresence>
 
-      {/* Skip */}
       {!showResult && (
-        <button
-          onClick={onSkip}
-          className="mt-4 text-text-secondary text-sm hover:text-primary transition-colors"
-        >
+        <button onClick={onSkip} className="mt-4 text-text-secondary text-sm hover:text-primary transition-colors">
           {t('warmUp.skip')}
         </button>
       )}
