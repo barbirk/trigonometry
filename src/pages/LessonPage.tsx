@@ -28,6 +28,7 @@ export default function LessonPage() {
   const { t, i18n } = useTranslation();
   
   const completeLesson = useProgressStore(state => state.completeLesson);
+  const completeModule = useProgressStore(state => state.completeModule);
   const completedLessons = useProgressStore(state => state.completedLessons);
   const teachBackScores = useProgressStore(state => state.teachBackScores);
 
