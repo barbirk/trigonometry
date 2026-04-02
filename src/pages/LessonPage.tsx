@@ -95,7 +95,13 @@ export default function LessonPage() {
     setTeachBackCompleted(true);
     if (result.passed) {
       setShowTeachBack(false);
-      setShowQuiz(true);
+      // Module 0 doesn't have a quiz, so skip to completion
+      if (parentModule?.moduleId === 0) {
+        completeModule(0, 100, result.score);
+        navigate('/');
+      } else {
+        setShowQuiz(true);
+      }
     }
   };
 

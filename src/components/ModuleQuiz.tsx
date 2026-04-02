@@ -30,14 +30,11 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
     fetch('/trigonometry/data/problems.json')
       .then(res => res.json())
       .then(data => {
-        console.log('Problems loaded:', data);
         const problems = Array.isArray(data) ? data : (data?.problems || []);
-        console.log('Parsed problems:', problems.length, 'for module', moduleId);
         setProblemsData(problems);
         setIsLoading(false);
       })
-      .catch((err) => {
-        console.error('Failed to load problems:', err);
+      .catch(() => {
         setProblemsData([]);
         setIsLoading(false);
       });
@@ -47,11 +44,6 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
   const moduleProblems = problemsData
     .filter((p: any) => p?.moduleId === moduleId)
     .slice(0, QUIZ_SIZE);
-
-  // Debug logging
-  useEffect(() => {
-    console.log('Module problems for module', moduleId, ':', moduleProblems.length);
-  }, [moduleProblems, moduleId]);
 
   const currentProblem = moduleProblems[currentQuestion];
 
