@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, XCircle, Trophy, ArrowRight, RotateCcw, Lock } from 'lucide-react';
 import { useProgressStore } from '../store/progressStore';
 import problemsJson from '../data/problems/index.json';
-const problemsData = (problemsJson as any).problems || problemsJson;
+const problemsArray = (problemsJson as any).problems || problemsJson || [];
 
 interface ModuleQuizProps {
   moduleId: number;
@@ -26,9 +26,9 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
   const QUIZ_SIZE = 10;
 
   // Get problems for this module
-  const moduleProblems = problemsData.problems
-    .filter((p: any) => p.moduleId === moduleId)
-    .slice(0, QUIZ_SIZE);
+  const moduleProblems = Array.isArray(problemsArray)
+    ? problemsArray.filter((p: any) => p?.moduleId === moduleId).slice(0, QUIZ_SIZE)
+    : [];
 
   const currentProblem = moduleProblems[currentQuestion];
 
