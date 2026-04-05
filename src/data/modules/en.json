@@ -429,5 +429,409 @@
         ]
       }
     ]
+  },
+  {
+    "moduleId": 6,
+    "title": "Isometric (Congruent) Triangles",
+    "hook": {
+      "question": "How can we prove two triangles are identical without measuring every side and angle? Discover the minimal conditions that guarantee congruence.",
+      "imageUrl": "./scenarios/triangles-congruents.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "6-1",
+        "title": "What Are Isometric Triangles?",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Two triangles are isometric (congruent) when their corresponding sides are equal in length and their corresponding angles are equal in measure. They are essentially the same triangle, just possibly rotated or flipped."
+          },
+          {
+            "type": "text",
+            "body": "If triangle ABC is congruent to triangle EFG, we write: ΔABC ≅ ΔEFG. This means:\\n• AB = EF, BC = FG, AC = EG\\n• ∠A = ∠E, ∠B = ∠F, ∠C = ∠G"
+          },
+          {
+            "type": "check",
+            "question": "If ΔABC ≅ ΔDEF and AB = 5 cm, what is DE?",
+            "options": ["3 cm", "5 cm", "10 cm", "Cannot be determined"],
+            "correct": 1,
+            "explanation": "In congruent triangles, corresponding sides are equal. Since AB corresponds to DE, DE must also be 5 cm."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-2",
+        "title": "Side-Side-Side (SSS) Congruence",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "The SSS criterion states: If three sides of one triangle are equal to three sides of another triangle, the triangles are congruent. This is also called the CCC case (Côté-Côté-Côté) in French notation."
+          },
+          {
+            "type": "text",
+            "body": "Example: If AB = DE = 5, BC = EF = 7, and AC = DF = 9, then ΔABC ≅ ΔDEF by SSS. We don't need to check the angles—they must be equal!"
+          },
+          {
+            "type": "check",
+            "question": "Triangle PQR has sides 3, 4, 5. Triangle XYZ has sides 4, 5, 3. Are they congruent?",
+            "options": ["No, the order is different", "Yes, by SSS", "Only if the angles match", "Cannot be determined"],
+            "correct": 1,
+            "explanation": "Yes! The sides are the same lengths (just listed in different order), so the triangles are congruent by SSS."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-3",
+        "title": "Side-Angle-Side (SAS) Congruence",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "The SAS criterion (CAC in French) states: If two sides and the included angle of one triangle equal those of another triangle, the triangles are congruent."
+          },
+          {
+            "type": "text",
+            "body": "Important: The angle must be BETWEEN the two sides! If you have side-angle-side where the angle is included, congruence is guaranteed."
+          },
+          {
+            "type": "text",
+            "body": "Example: If AB = DE = 5, ∠B = ∠E = 60°, and BC = EF = 7, then ΔABC ≅ ΔDEF by SAS."
+          },
+          {
+            "type": "check",
+            "question": "You know two sides of each triangle and a non-included angle. Can you prove congruence?",
+            "options": ["Yes, always", "Yes, by SAS", "No, this is the ambiguous case (SSA)", "Only for right triangles"],
+            "correct": 2,
+            "explanation": "SSA (Side-Side-Angle with non-included angle) is the ambiguous case—it doesn't guarantee congruence because two different triangles might satisfy the conditions."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-4",
+        "title": "Angle-Side-Angle (ASA) Congruence",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "The ASA criterion (ACA in French) states: If two angles and the included side of one triangle equal those of another triangle, the triangles are congruent."
+          },
+          {
+            "type": "text",
+            "body": "Since the sum of angles in a triangle is always 180°, knowing two angles automatically gives you the third. So with ASA, you effectively know all three angles plus one side."
+          },
+          {
+            "type": "text",
+            "body": "Example: If ∠A = ∠D = 45°, AB = DE = 6, and ∠B = ∠E = 75°, then ΔABC ≅ ΔDEF by ASA."
+          },
+          {
+            "type": "check",
+            "question": "In ΔABC: ∠A = 40°, ∠B = 70°, side AB = 8. In ΔPQR: ∠P = 40°, ∠Q = 70°, side PQ = 8. Are they congruent?",
+            "options": ["Yes, by ASA", "Yes, by AAA", "No, we need side lengths", "Cannot be determined"],
+            "correct": 0,
+            "explanation": "Yes! Two angles and the included side are equal (ASA). The third angles must also be equal (70°), confirming congruence."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-5",
+        "title": "Deductive Proof with Congruent Triangles",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "In geometry, we prove statements through logical deduction. Each step must be justified using properties, theorems, or given information."
+          },
+          {
+            "type": "text",
+            "body": "Example: In an isosceles right triangle ABC with right angle at C, let CD be the median from C to hypotenuse AB. Prove ΔACD ≅ ΔBCD."
+          },
+          {
+            "type": "text",
+            "body": "Proof:\\n1. CA = CB (isosceles triangle property)\\n2. AD = DB (median divides hypotenuse equally)\\n3. CD = CD (common side)\\n4. Therefore, ΔACD ≅ ΔBCD by SSS"
+          },
+          {
+            "type": "check",
+            "question": "What justifies step 2 (AD = DB) in the proof above?",
+            "options": ["Definition of median", "Isosceles triangle property", "Reflexive property", "SSS congruence"],
+            "correct": 0,
+            "explanation": "A median connects a vertex to the midpoint of the opposite side, so by definition it divides that side into two equal segments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "title": "Similar Triangles",
+    "hook": {
+      "question": "Why do shadows cast by different objects at the same time of day form similar triangles? The answer reveals how proportions unlock the secrets of indirect measurement.",
+      "imageUrl": "./scenarios/similar-triangles.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "7-1",
+        "title": "Understanding Similarity",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Two triangles are similar when their corresponding angles are equal and their corresponding sides are proportional. Similar triangles have the same shape but not necessarily the same size."
+          },
+          {
+            "type": "text",
+            "body": "We write ΔABC ~ ΔDEF to indicate similarity. This means:\\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\\n• AB/DE = BC/EF = AC/DF = k (the scale factor)"
+          },
+          {
+            "type": "text",
+            "body": "If k = 1, the triangles are congruent. Congruence is a special case of similarity!"
+          },
+          {
+            "type": "check",
+            "question": "Triangle ABC has sides 3, 4, 5. Triangle DEF has sides 6, 8, 10. What is the scale factor?",
+            "options": ["2", "3", "5", "The triangles are not similar"],
+            "correct": 0,
+            "explanation": "The scale factor is 2 (or 6/3 = 8/4 = 10/5 = 2). Each side of DEF is twice the corresponding side of ABC."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-2",
+        "title": "SSS Similarity (CCC)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "The SSS similarity criterion states: If the three sides of one triangle are proportional to the three sides of another triangle, the triangles are similar."
+          },
+          {
+            "type": "text",
+            "body": "Example: Triangle ABC has sides 4.4, 6.4, 7.2. Triangle DEF has sides 6.6, 9.6, 10.8.\\n\\nCheck the ratios:\\n10.8/7.2 = 9.6/6.4 = 6.6/4.4 = 1.5\\n\\nSince all ratios equal 1.5, the triangles are similar with scale factor 1.5."
+          },
+          {
+            "type": "check",
+            "question": "Triangle P has sides 2, 3, 4. Triangle Q has sides 8, 12, 16. Are they similar?",
+            "options": ["Yes, scale factor 4", "Yes, scale factor 6", "No, side lengths differ", "Cannot be determined"],
+            "correct": 0,
+            "explanation": "Yes! 8/2 = 12/3 = 16/4 = 4. All ratios are equal, so the triangles are similar with scale factor 4."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-3",
+        "title": "SAS Similarity (CAC)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "The SAS similarity criterion states: If two sides of one triangle are proportional to two sides of another triangle, and the included angles are equal, the triangles are similar."
+          },
+          {
+            "type": "text",
+            "body": "Example: In ΔABC, AB = 5, BC = 3.7, ∠B = 57°. In ΔDEF, DE = 15, EF = 11.1, ∠E = 57°.\\n\\nCheck: 15/5 = 11.1/3.7 = 3, and ∠B = ∠E = 57°.\\n\\nTherefore, ΔABC ~ ΔDEF by SAS similarity."
+          },
+          {
+            "type": "check",
+            "question": "Two triangles have proportional sides but the equal angles are NOT included. Can we prove similarity?",
+            "options": ["Yes, always", "Yes, by SAS", "No, not necessarily", "Only if they're right triangles"],
+            "correct": 2,
+            "explanation": "SSA (proportional sides with non-included equal angle) does not guarantee similarity, just as it doesn't guarantee congruence."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-4",
+        "title": "AA Similarity (Angle-Angle)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "The AA similarity criterion states: If two angles of one triangle equal two angles of another triangle, the triangles are similar."
+          },
+          {
+            "type": "text",
+            "body": "This is powerful because you only need two angles! Since the sum of angles in a triangle is always 180°, the third angles must also be equal."
+          },
+          {
+            "type": "text",
+            "body": "Example: If ∠A = ∠D = 35° and ∠B = ∠E = 70°, then automatically ∠C = ∠F = 75°, and ΔABC ~ ΔDEF by AA."
+          },
+          {
+            "type": "check",
+            "question": "ΔABC has angles 40°, 60°, 80°. ΔDEF has angles 60°, 80°, 40°. Are they similar?",
+            "options": ["Yes, by AA (or AAA)", "No, angles are in different order", "Only if sides are proportional", "Cannot be determined"],
+            "correct": 0,
+            "explanation": "Yes! Both triangles have angles 40°, 60°, 80°. The order doesn't matter—what matters is that corresponding angles are equal."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-5",
+        "title": "Finding Missing Measures",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "To find a missing measure using similar triangles:\\n1. Prove similarity (if not given)\\n2. Set up proportions with corresponding sides\\n3. Solve for the unknown"
+          },
+          {
+            "type": "text",
+            "body": "Example: Segments DE and CB are parallel. DC = 5 cm, CB = 20 cm, DE = 12 cm. Find AD."
+          },
+          {
+            "type": "text",
+            "body": "Solution:\\n• ΔADE ~ ΔACB (AA similarity: common angle at A, corresponding angles from parallel lines)\\n• AD/AC = DE/CB\\n• AD/(AD + 5) = 12/20\\n• 20·AD = 12·(AD + 5)\\n• 20AD = 12AD + 60\\n• 8AD = 60\\n• AD = 7.5 cm"
+          },
+          {
+            "type": "check",
+            "question": "Why are ΔADE and ΔACB similar in the example above?",
+            "options": ["SSS similarity", "SAS similarity", "AA similarity (parallel lines create equal corresponding angles)", "They're congruent"],
+            "correct": 2,
+            "explanation": "Parallel lines cut by a transversal create equal corresponding angles. Combined with the common angle at A, we have AA similarity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 8,
+    "title": "Metric Relations in Right Triangles",
+    "hook": {
+      "question": "When you draw the altitude to the hypotenuse of a right triangle, something magical happens. Three similar triangles emerge, revealing powerful relationships that let you find any missing length!",
+      "imageUrl": "./scenarios/metric-relations.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "8-1",
+        "title": "The Three Similar Triangles",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "In a right triangle ABC with right angle at C, draw the altitude CH to the hypotenuse AB. This creates three similar triangles:\\n\\nΔABC ~ ΔACH ~ ΔCBH"
+          },
+          {
+            "type": "text",
+            "body": "Why are they similar? Each triangle has:\\n• A right angle (90°)\\n• An angle in common with the original triangle\\n• Therefore, by AA similarity, all three are similar"
+          },
+          {
+            "type": "text",
+            "body": "Notation:\\n• c = hypotenuse AB\\n• a, b = legs BC and AC\\n• h = altitude CH to hypotenuse\\n• pa, pb = projections of legs a and b on hypotenuse"
+          },
+          {
+            "type": "check",
+            "question": "How many similar triangles are created when you draw the altitude to the hypotenuse of a right triangle?",
+            "options": ["1", "2", "3", "4"],
+            "correct": 2,
+            "explanation": "Three! The original triangle plus the two smaller triangles formed by the altitude are all similar to each other."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-2",
+        "title": "Leg Rule (Theorem of the Cathetus)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "From the similarity ΔABC ~ ΔACH, we derive the Leg Rule:\\n\\nb² = pb · c\\n\\nSimilarly, from ΔABC ~ ΔCBH:\\n\\na² = pa · c"
+          },
+          {
+            "type": "text",
+            "body": "In words: The square of each leg equals the product of its projection on the hypotenuse and the entire hypotenuse."
+          },
+          {
+            "type": "text",
+            "body": "Example: In right triangle ABC with hypotenuse AB = 65 cm, the projection of leg AC on the hypotenuse is 56 cm. Find AC.\\n\\nAC² = 56 × 65 = 3640\\nAC = √3640 ≈ 60.33 cm"
+          },
+          {
+            "type": "check",
+            "question": "A right triangle has hypotenuse 10. One leg's projection on the hypotenuse is 4. What is that leg's length?",
+            "options": ["√40 or about 6.32", "6", "8", "√14"],
+            "correct": 0,
+            "explanation": "Using the leg rule: leg² = projection × hypotenuse = 4 × 10 = 40. So leg = √40 ≈ 6.32."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-3",
+        "title": "Altitude Rule",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "From the similarity ΔACH ~ ΔCBH, we derive the Altitude Rule:\\n\\nh² = pa · pb"
+          },
+          {
+            "type": "text",
+            "body": "In words: The altitude to the hypotenuse is the geometric mean of the two segments it creates on the hypotenuse. This is also called the 'geometric mean theorem.'"
+          },
+          {
+            "type": "text",
+            "body": "Example: The altitude to the hypotenuse divides it into segments of 27 cm and 12 cm. Find the altitude.\\n\\nh² = 27 × 12 = 324\\nh = √324 = 18 cm"
+          },
+          {
+            "type": "check",
+            "question": "An altitude divides the hypotenuse into segments of 9 and 4. What is the altitude?",
+            "options": ["6", "√13", "√36 = 6", "36"],
+            "correct": 2,
+            "explanation": "Using the altitude rule: h² = 9 × 4 = 36, so h = √36 = 6."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-4",
+        "title": "Product of Legs Rule",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "From the similarity relationships, we also derive:\\n\\na · b = c · h"
+          },
+          {
+            "type": "text",
+            "body": "In words: The product of the two legs equals the product of the hypotenuse and the altitude to the hypotenuse."
+          },
+          {
+            "type": "text",
+            "body": "This is essentially the area formula in disguise! Both sides equal twice the area of the triangle."
+          },
+          {
+            "type": "text",
+            "body": "Example: In a right triangle, the legs are 5 cm and 12 cm. The hypotenuse is 13 cm. Find the altitude to the hypotenuse.\\n\\n5 × 12 = 13 × h\\n60 = 13h\\nh = 60/13 ≈ 4.62 cm"
+          },
+          {
+            "type": "check",
+            "question": "A right triangle has legs 6 and 8, hypotenuse 10. What is the altitude to the hypotenuse?",
+            "options": ["4.8", "5", "6", "4"],
+            "correct": 0,
+            "explanation": "Using a·b = c·h: 6 × 8 = 10 × h, so 48 = 10h, and h = 4.8."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-5",
+        "title": "Summary of Metric Relations",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "Here's a summary of all three metric relations in a right triangle with altitude h to hypotenuse c:\\n\\n1. Leg Rule: a² = pa · c and b² = pb · c\\n2. Altitude Rule: h² = pa · pb\\n3. Product Rule: a · b = c · h"
+          },
+          {
+            "type": "text",
+            "body": "These relationships allow you to find any missing length in a right triangle if you know just a few measurements!"
+          },
+          {
+            "type": "check",
+            "question": "Given: hypotenuse = 25, one projection = 9. Find the altitude to the hypotenuse.",
+            "options": ["12", "15", "16", "20"],
+            "correct": 0,
+            "explanation": "Other projection = 25 - 9 = 16. Using altitude rule: h² = 9 × 16 = 144, so h = 12."
+          }
+        ]
+      }
+    ]
   }
 ]

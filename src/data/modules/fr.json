@@ -429,5 +429,409 @@
         ]
       }
     ]
+  },
+  {
+    "moduleId": 6,
+    "title": "Triangles Isométriques (Congruents)",
+    "hook": {
+      "question": "Comment prouver que deux triangles sont identiques sans mesurer tous les côtés et tous les angles ? Découvrez les conditions minimales qui garantissent l'isométrie.",
+      "imageUrl": "./scenarios/triangles-congruents.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "6-1",
+        "title": "Qu'est-ce qu'un Triangle Isométrique ?",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Deux triangles sont isométriques (congruents) lorsque leurs côtés homologues sont isométriques (égaux) et leurs angles homologues sont isométriques (égaux). Ce sont essentiellement le même triangle, simplement peut-être tourné ou retourné."
+          },
+          {
+            "type": "text",
+            "body": "Si le triangle ABC est isométrique au triangle EFG, on écrit : ΔABC ≅ ΔEFG. Cela signifie :\\n• AB = EF, BC = FG, AC = EG\\n• ∠A = ∠E, ∠B = ∠F, ∠C = ∠G"
+          },
+          {
+            "type": "check",
+            "question": "Si ΔABC ≅ ΔDEF et AB = 5 cm, quelle est la longueur de DE ?",
+            "options": ["3 cm", "5 cm", "10 cm", "Impossible à déterminer"],
+            "correct": 1,
+            "explanation": "Dans des triangles isométriques, les côtés homologues sont égaux. Comme AB correspond à DE, DE doit aussi mesurer 5 cm."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-2",
+        "title": "1er Cas d'Isométrie : CCC (Côté-Côté-Côté)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Le cas CCC stipule : Si trois côtés d'un triangle sont isométriques aux trois côtés d'un autre triangle, les triangles sont isométriques."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Si AB = DE = 5, BC = EF = 7, et AC = DF = 9, alors ΔABC ≅ ΔDEF par CCC. Nous n'avons pas besoin de vérifier les angles — ils doivent être égaux !"
+          },
+          {
+            "type": "check",
+            "question": "Le triangle PQR a des côtés 3, 4, 5. Le triangle XYZ a des côtés 4, 5, 3. Sont-ils isométriques ?",
+            "options": ["Non, l'ordre est différent", "Oui, par CCC", "Seulement si les angles correspondent", "Impossible à déterminer"],
+            "correct": 1,
+            "explanation": "Oui ! Les côtés ont les mêmes longueurs (simplement listés dans un ordre différent), donc les triangles sont isométriques par CCC."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-3",
+        "title": "2e Cas d'Isométrie : CAC (Côté-Angle-Côté)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Le cas CAC stipule : Si deux côtés et l'angle compris entre eux d'un triangle sont isométriques à ceux d'un autre triangle, les triangles sont isométriques."
+          },
+          {
+            "type": "text",
+            "body": "Important : L'angle doit être ENTRE les deux côtés ! Si vous avez côté-angle-côté où l'angle est compris, l'isométrie est garantie."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Si AB = DE = 5, ∠B = ∠E = 60°, et BC = EF = 7, alors ΔABC ≅ ΔDEF par CAC."
+          },
+          {
+            "type": "check",
+            "question": "Vous connaissez deux côtés de chaque triangle et un angle non compris. Pouvez-vous prouver l'isométrie ?",
+            "options": ["Oui, toujours", "Oui, par CAC", "Non, c'est le cas ambigu (ACA)", "Seulement pour les triangles rectangles"],
+            "correct": 2,
+            "explanation": "ACA (Angle-Côté-Angle avec angle non compris) est le cas ambigu — il ne garantit pas l'isométrie car deux triangles différents pourraient satisfaire aux conditions."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-4",
+        "title": "3e Cas d'Isométrie : ACA (Angle-Côté-Angle)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Le cas ACA stipule : Si deux angles et le côté compris entre eux d'un triangle sont isométriques à ceux d'un autre triangle, les triangles sont isométriques."
+          },
+          {
+            "type": "text",
+            "body": "Comme la somme des angles d'un triangle est toujours 180°, connaître deux angles donne automatiquement le troisième. Avec ACA, vous connaissez donc effectivement tous les angles plus un côté."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Si ∠A = ∠D = 45°, AB = DE = 6, et ∠B = ∠E = 75°, alors ΔABC ≅ ΔDEF par ACA."
+          },
+          {
+            "type": "check",
+            "question": "Dans ΔABC : ∠A = 40°, ∠B = 70°, côté AB = 8. Dans ΔPQR : ∠P = 40°, ∠Q = 70°, côté PQ = 8. Sont-ils isométriques ?",
+            "options": ["Oui, par ACA", "Oui, par AAA", "Non, nous avons besoin des longueurs des côtés", "Impossible à déterminer"],
+            "correct": 0,
+            "explanation": "Oui ! Deux angles et le côté compris sont égaux (ACA). Le troisième angle doit aussi être égal (70°), confirmant l'isométrie."
+          }
+        ]
+      },
+      {
+        "lessonId": "6-5",
+        "title": "Démonstration par Déduction",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "En géométrie, nous prouvons les énoncés par déduction logique. Chaque étape doit être justifiée par des propriétés, des théorèmes ou des informations données."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Dans un triangle rectangle isocèle ABC avec angle droit en C, soit CD la médiane issue de C vers l'hypoténuse AB. Démontrer que ΔACD ≅ ΔBCD."
+          },
+          {
+            "type": "text",
+            "body": "Preuve :\\n1. CA = CB (propriété du triangle isocèle)\\n2. AD = DB (la médiane divise l'hypoténuse en deux segments isométriques)\\n3. CD = CD (côté commun)\\n4. Donc, ΔACD ≅ ΔBCD par CCC"
+          },
+          {
+            "type": "check",
+            "question": "Que justifie l'étape 2 (AD = DB) dans la preuve ci-dessus ?",
+            "options": ["Définition de la médiane", "Propriété du triangle isocèle", "Propriété réflexive", "Isométrie CCC"],
+            "correct": 0,
+            "explanation": "Une médiane relie un sommet au milieu du côté opposé, donc par définition elle divise ce côté en deux segments isométriques."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "title": "Triangles Semblables",
+    "hook": {
+      "question": "Pourquoi les ombres projetées par différents objets à la même heure de la journée forment-elles des triangles semblables ? La réponse révèle comment les proportions révèlent les secrets de la mesure indirecte.",
+      "imageUrl": "./scenarios/similar-triangles.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "7-1",
+        "title": "Comprendre la Similitude",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Deux triangles sont semblables lorsque leurs angles homologues sont isométriques et leurs côtés homologues ont des longueurs proportionnelles. Les triangles semblables ont la même forme mais pas nécessairement la même taille."
+          },
+          {
+            "type": "text",
+            "body": "On écrit ΔABC ~ ΔDEF pour indiquer la similitude. Cela signifie :\\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\\n• AB/DE = BC/EF = AC/DF = k (le facteur d'échelle)"
+          },
+          {
+            "type": "text",
+            "body": "Si k = 1, les triangles sont isométriques. L'isométrie est un cas particulier de similitude !"
+          },
+          {
+            "type": "check",
+            "question": "Le triangle ABC a des côtés 3, 4, 5. Le triangle DEF a des côtés 6, 8, 10. Quel est le facteur d'échelle ?",
+            "options": ["2", "3", "5", "Les triangles ne sont pas semblables"],
+            "correct": 0,
+            "explanation": "Le facteur d'échelle est 2 (car 6/3 = 8/4 = 10/5 = 2). Chaque côté de DEF est le double du côté correspondant de ABC."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-2",
+        "title": "1er Cas de Similitude : CCC",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Le cas de similitude CCC stipule : Si les trois côtés d'un triangle sont proportionnels aux trois côtés d'un autre triangle, les triangles sont semblables."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Le triangle ABC a des côtés 4,4, 6,4, 7,2. Le triangle DEF a des côtés 6,6, 9,6, 10,8.\\n\\nVérifions les rapports :\\n10,8/7,2 = 9,6/6,4 = 6,6/4,4 = 1,5\\n\\nComme tous les rapports valent 1,5, les triangles sont semblables avec facteur d'échelle 1,5."
+          },
+          {
+            "type": "check",
+            "question": "Le triangle P a des côtés 2, 3, 4. Le triangle Q a des côtés 8, 12, 16. Sont-ils semblables ?",
+            "options": ["Oui, facteur 4", "Oui, facteur 6", "Non, les longueurs diffèrent", "Impossible à déterminer"],
+            "correct": 0,
+            "explanation": "Oui ! 8/2 = 12/3 = 16/4 = 4. Tous les rapports sont égaux, donc les triangles sont semblables avec facteur d'échelle 4."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-3",
+        "title": "2e Cas de Similitude : CAC",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Le cas de similitude CAC stipule : Si deux côtés d'un triangle sont proportionnels à deux côtés d'un autre triangle, et que les angles compris sont isométriques, les triangles sont semblables."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Dans ΔABC, AB = 5, BC = 3,7, ∠B = 57°. Dans ΔDEF, DE = 15, EF = 11,1, ∠E = 57°.\\n\\nVérification : 15/5 = 11,1/3,7 = 3, et ∠B = ∠E = 57°.\\n\\nDonc, ΔABC ~ ΔDEF par similitude CAC."
+          },
+          {
+            "type": "check",
+            "question": "Deux triangles ont des côtés proportionnels mais les angles isométriques ne sont PAS compris. Peut-on prouver la similitude ?",
+            "options": ["Oui, toujours", "Oui, par CAC", "Non, pas nécessairement", "Seulement s'ils sont rectangles"],
+            "correct": 2,
+            "explanation": "ACA (côtés proportionnels avec angle non compris isométrique) ne garantit pas la similitude, tout comme il ne garantit pas l'isométrie."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-4",
+        "title": "3e Cas de Similitude : AA (Angle-Angle)",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Le cas de similitude AA stipule : Si deux angles d'un triangle sont isométriques à deux angles d'un autre triangle, les triangles sont semblables."
+          },
+          {
+            "type": "text",
+            "body": "C'est puissant car vous n'avez besoin que de deux angles ! Comme la somme des angles d'un triangle est toujours 180°, le troisième angle doit aussi être égal."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Si ∠A = ∠D = 35° et ∠B = ∠E = 70°, alors automatiquement ∠C = ∠F = 75°, et ΔABC ~ ΔDEF par AA."
+          },
+          {
+            "type": "check",
+            "question": "ΔABC a des angles 40°, 60°, 80°. ΔDEF a des angles 60°, 80°, 40°. Sont-ils semblables ?",
+            "options": ["Oui, par AA (ou AAA)", "Non, les angles sont dans un ordre différent", "Seulement si les côtés sont proportionnels", "Impossible à déterminer"],
+            "correct": 0,
+            "explanation": "Oui ! Les deux triangles ont des angles 40°, 60°, 80°. L'ordre n'a pas d'importance — ce qui compte c'est que les angles homologues soient isométriques."
+          }
+        ]
+      },
+      {
+        "lessonId": "7-5",
+        "title": "Recherche de Mesures Manquantes",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "Pour trouver une mesure manquante à l'aide de triangles semblables :\\n1. Démontrer la similitude (si non donnée)\\n2. Établir des proportions avec les rapports des côtés homologues\\n3. Isoler la mesure manquante"
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Les segments DE et CB sont parallèles. DC = 5 cm, CB = 20 cm, DE = 12 cm. Trouver AD."
+          },
+          {
+            "type": "text",
+            "body": "Solution :\\n• ΔADE ~ ΔACB (similitude AA : angle commun en A, angles correspondants des parallèles)\\n• AD/AC = DE/CB\\n• AD/(AD + 5) = 12/20\\n• 20·AD = 12·(AD + 5)\\n• 20AD = 12AD + 60\\n• 8AD = 60\\n• AD = 7,5 cm"
+          },
+          {
+            "type": "check",
+            "question": "Pourquoi ΔADE et ΔACB sont-ils semblables dans l'exemple ci-dessus ?",
+            "options": ["Similitude CCC", "Similitude CAC", "Similitude AA (des parallèles créent des angles correspondants isométriques)", "Ils sont isométriques"],
+            "correct": 2,
+            "explanation": "Des droites parallèles coupées par une sécante créent des angles correspondants isométriques. Combiné avec l'angle commun en A, nous avons la similitude AA."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 8,
+    "title": "Relations Métriques dans le Triangle Rectangle",
+    "hook": {
+      "question": "Lorsque vous tracez la hauteur relative à l'hypoténuse d'un triangle rectangle, quelque chose de magique se produit. Trois triangles semblables émergent, révélant des relations puissantes qui permettent de trouver n'importe quelle longueur manquante !",
+      "imageUrl": "./scenarios/metric-relations.svg"
+    },
+    "lessons": [
+      {
+        "lessonId": "8-1",
+        "title": "Les Trois Triangles Semblables",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Dans un triangle rectangle ABC avec angle droit en C, traçons la hauteur CH relative à l'hypoténuse AB. Cela crée trois triangles semblables :\\n\\nΔABC ~ ΔACH ~ ΔCBH"
+          },
+          {
+            "type": "text",
+            "body": "Pourquoi sont-ils semblables ? Chaque triangle a :\\n• Un angle droit (90°)\\n• Un angle commun avec le triangle original\\n• Donc, par similitude AA, les trois sont semblables"
+          },
+          {
+            "type": "text",
+            "body": "Notation :\\n• c = hypoténuse AB\\n• a, b = cathètes BC et AC\\n• h = hauteur CH relative à l'hypoténuse\\n• pa, pb = projections des cathètes a et b sur l'hypoténuse"
+          },
+          {
+            "type": "check",
+            "question": "Combien de triangles semblables sont créés lorsqu'on trace la hauteur relative à l'hypoténuse d'un triangle rectangle ?",
+            "options": ["1", "2", "3", "4"],
+            "correct": 2,
+            "explanation": "Trois ! Le triangle original plus les deux plus petits triangles formés par la hauteur sont tous semblables entre eux."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-2",
+        "title": "Relation 1 : Théorème de la Cathète",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "De la similitude ΔABC ~ ΔACH, on déduit le théorème de la cathète :\\n\\nb² = pb · c\\n\\nDe même, de ΔABC ~ ΔCBH :\\n\\na² = pa · c"
+          },
+          {
+            "type": "text",
+            "body": "En mots : Le carré de chaque cathète est moyenne proportionnelle entre sa projection sur l'hypoténuse et la mesure de l'hypoténuse."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Dans le triangle rectangle ABC avec hypoténuse AB = 65 cm, la projection de la cathète AC sur l'hypoténuse est 56 cm. Trouver AC.\\n\\nAC² = 56 × 65 = 3640\\nAC = √3640 ≈ 60,33 cm"
+          },
+          {
+            "type": "check",
+            "question": "Un triangle rectangle a une hypoténuse de 10. La projection d'une cathète sur l'hypoténuse est 4. Quelle est la longueur de cette cathète ?",
+            "options": ["√40 ou environ 6,32", "6", "8", "√14"],
+            "correct": 0,
+            "explanation": "Par le théorème de la cathète : cathète² = projection × hypoténuse = 4 × 10 = 40. Donc cathète = √40 ≈ 6,32."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-3",
+        "title": "Relation 2 : Théorème de la Hauteur",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "De la similitude ΔACH ~ ΔCBH, on déduit le théorème de la hauteur :\\n\\nh² = pa · pb"
+          },
+          {
+            "type": "text",
+            "body": "En mots : La mesure de la hauteur relative à l'hypoténuse est moyenne proportionnelle entre les mesures des deux segments qu'elle détermine sur l'hypoténuse. On l'appelle aussi le 'théorème de la moyenne géométrique.'"
+          },
+          {
+            "type": "text",
+            "body": "Exemple : La hauteur relative à l'hypoténuse la divise en segments de 27 cm et 12 cm. Trouver la hauteur.\\n\\nh² = 27 × 12 = 324\\nh = √324 = 18 cm"
+          },
+          {
+            "type": "check",
+            "question": "Une hauteur divise l'hypoténuse en segments de 9 et 4. Quelle est la hauteur ?",
+            "options": ["6", "√13", "√36 = 6", "36"],
+            "correct": 2,
+            "explanation": "Par le théorème de la hauteur : h² = 9 × 4 = 36, donc h = √36 = 6."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-4",
+        "title": "Relation 3 : Théorème du Produit des Cathètes",
+        "type": "text",
+        "content": [
+          {
+            "type": "text",
+            "body": "Des relations de similitude, on déduit également :\\n\\na · b = c · h"
+          },
+          {
+            "type": "text",
+            "body": "En mots : Le produit des mesures des cathètes est égal au produit des mesures de l'hypoténuse et de la hauteur correspondante."
+          },
+          {
+            "type": "text",
+            "body": "C'est essentiellement la formule de l'aire déguisée ! Les deux côtés égaux au double de l'aire du triangle."
+          },
+          {
+            "type": "text",
+            "body": "Exemple : Dans un triangle rectangle, les cathètes mesurent 5 cm et 12 cm. L'hypoténuse est 13 cm. Trouver la hauteur relative à l'hypoténuse.\\n\\n5 × 12 = 13 × h\\n60 = 13h\\nh = 60/13 ≈ 4,62 cm"
+          },
+          {
+            "type": "check",
+            "question": "Un triangle rectangle a des cathètes 6 et 8, hypoténuse 10. Quelle est la hauteur relative à l'hypoténuse ?",
+            "options": ["4,8", "5", "6", "4"],
+            "correct": 0,
+            "explanation": "Par a·b = c·h : 6 × 8 = 10 × h, donc 48 = 10h, et h = 4,8."
+          }
+        ]
+      },
+      {
+        "lessonId": "8-5",
+        "title": "Résumé des Relations Métriques",
+        "type": "interactive",
+        "content": [
+          {
+            "type": "text",
+            "body": "Voici un résumé des trois relations métriques dans un triangle rectangle avec hauteur h relative à l'hypoténuse c :\\n\\n1. Théorème de la cathète : a² = pa · c et b² = pb · c\\n2. Théorème de la hauteur : h² = pa · pb\\n3. Théorème du produit : a · b = c · h"
+          },
+          {
+            "type": "text",
+            "body": "Ces relations permettent de trouver n'importe quelle longueur manquante dans un triangle rectangle si vous connaissez seulement quelques mesures !"
+          },
+          {
+            "type": "check",
+            "question": "Donnés : hypoténuse = 25, une projection = 9. Trouver la hauteur relative à l'hypoténuse.",
+            "options": ["12", "15", "16", "20"],
+            "correct": 0,
+            "explanation": "L'autre projection = 25 - 9 = 16. Par le théorème de la hauteur : h² = 9 × 16 = 144, donc h = 12."
+          }
+        ]
+      }
+    ]
   }
 ]

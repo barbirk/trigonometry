@@ -136,7 +136,7 @@ const DiagramLabeler = () => {
                 ${isSlotWrong ? '!border-[#FF6B6B] !text-[#FF6B6B]' : ''}
                 ${selectedLabel && !placedLabel ? 'border-primary/50 bg-primary/10 animate-pulse' : ''}
               `}>
-                {placedLabel ? t(`explorer.${placedLabel}`) : '?'}
+                {placedLabel ? t(`triangle.${placedLabel}`) : '?'}
               </div>
             </div>
           );
@@ -161,7 +161,7 @@ const DiagramLabeler = () => {
                `}
                disabled={isPlaced && !isSelected}
              >
-               {t(`explorer.${l}`)}
+               {t(`triangle.${l}`)}
              </button>
            );
          })}
@@ -192,7 +192,7 @@ const DiagramLabeler = () => {
               : 'bg-surface border border-border-subtle text-text-secondary cursor-not-allowed'}
           `}
         >
-          {hasValidated && !allCorrect ? 'Réessayer' : t('game.validate')}
+          {hasValidated && !allCorrect ? t('common.check') : t('lesson.validate')}
         </button>
       </div>
 
