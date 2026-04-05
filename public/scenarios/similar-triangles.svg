@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <!-- Large Triangle -->
+  <polygon points="20,100 140,100 20,20" fill="none" stroke="#4DFFA4" stroke-width="2"/>
+  <text x="15" y="115" fill="#F0F4FF" font-size="10" font-family="JetBrains Mono">A</text>
+  <text x="145" y="115" fill="#F0F4FF" font-size="10" font-family="JetBrains Mono">B</text>
+  <text x="10" y="15" fill="#F0F4FF" font-size="10" font-family="JetBrains Mono">C</text>
+  
+  <!-- Similar symbol -->
+  <text x="160" y="65" fill="#FFD166" font-size="16" font-family="JetBrains Mono">~</text>
+  
+  <!-- Small Triangle -->
+  <polygon points="170,100 190,100 170,70" fill="none" stroke="#4DFFA4" stroke-width="2"/>
+  <text x="175" y="115" fill="#F0F4FF" font-size="8" font-family="JetBrains Mono">D</text>
+  <text x="195" y="115" fill="#F0F4FF" font-size="8" font-family="JetBrains Mono">E</text>
+  <text x="165" y="65" fill="#F0F4FF" font-size="8" font-family="JetBrains Mono">F</text>
+</svg>

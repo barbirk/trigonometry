@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+  <!-- Right Triangle with altitude to hypotenuse -->
+  <polygon points="20,100 180,100 20,20" fill="none" stroke="#4DFFA4" stroke-width="2"/>
+  
+  <!-- Altitude to hypotenuse -->
+  <line x1="92" y1="56" x2="92" y2="100" stroke="#FFD166" stroke-width="2" stroke-dasharray="4"/>
+  
+  <!-- Right angle marks -->
+  <rect x="20" y="85" width="15" height="15" fill="none" stroke="#4DFFA4" stroke-width="1"/>
+  
+  <!-- Labels -->
+  <text x="10" y="115" fill="#F0F4FF" font-size="10" font-family="JetBrains Mono">C</text>
+  <text x="185" y="115" fill="#F0F4FF" font-size="10" font-family="JetBrains Mono">B</text>
+  <text x="10" y="15" fill="#F0F4FF" font-size="10" font-family="JetBrains Mono">A</text>
+  <text x="95" y="55" fill="#FFD166" font-size="10" font-family="JetBrains Mono">H</text>
+  
+  <!-- Side labels -->
+  <text x="100" y="60" fill="#F0F4FF" font-size="8" font-family="JetBrains Mono">h</text>
+  <text x="55" y="115" fill="#F0F4FF" font-size="8" font-family="JetBrains Mono">pa</text>
+  <text x="135" y="115" fill="#F0F4FF" font-size="8" font-family="JetBrains Mono">pb</text>
+</svg>

@@ -2,152 +2,160 @@
   {
     "id": "p1-1",
     "moduleId": 1,
-    "type": "label",
+    "type": "pythagorean",
     "difficulty": "easy",
     "question": {
-      "en": "In a right triangle, label each side relative to the marked reference angle. Which side is the Hypotenuse?",
-      "fr": "Dans un triangle rectangle, identifiez chaque côté par rapport à l'angle de référence marqué. Quel côté est l'Hypoténuse ?"
+      "en": "A right triangle has legs of length 3 and 4. What is the length of the hypotenuse? (Use Pythagorean theorem: c² = a² + b²)",
+      "fr": "Un triangle rectangle a des cathètes de longueur 3 et 4. Quelle est la longueur de l'hypoténuse ? (Utilisez le théorème de Pythagore : c² = a² + b²)"
     },
     "solution": {
-      "ratio": "hypotenuse",
-      "setup": "The hypotenuse is always opposite the right angle and is the longest side.",
-      "answer": "hypotenuse",
-      "tolerance": 0
+      "ratio": "pythagorean",
+      "setup": "c² = 3² + 4² = 9 + 16 = 25 → c = √25 = 5",
+      "answer": "5",
+      "tolerance": 0.1
     },
     "hints": [
       {
-        "en": "The hypotenuse is always opposite the 90° angle.",
-        "fr": "L'hypoténuse est toujours opposée à l'angle de 90°."
+        "en": "Square both legs: 3² = 9 and 4² = 16",
+        "fr": "Mettez les deux cathètes au carré : 3² = 9 et 4² = 16"
       },
       {
-        "en": "Look for the longest side of the triangle.",
-        "fr": "Cherchez le côté le plus long du triangle."
+        "en": "Add them: 9 + 16 = 25",
+        "fr": "Additionnez-les : 9 + 16 = 25"
+      },
+      {
+        "en": "Take the square root: √25 = 5",
+        "fr": "Prenez la racine carrée : √25 = 5"
       }
     ]
   },
   {
     "id": "p1-2",
     "moduleId": 1,
-    "type": "label",
+    "type": "pythagorean",
     "difficulty": "easy",
     "question": {
-      "en": "For the marked reference angle, identify which side is the Opposite side.",
-      "fr": "Pour l'angle de référence marqué, identifiez quel côté est le côté Opposé."
+      "en": "A right triangle has one leg of length 6 and hypotenuse of length 10. What is the length of the other leg?",
+      "fr": "Un triangle rectangle a une cathète de longueur 6 et une hypoténuse de longueur 10. Quelle est la longueur de l'autre cathète ?"
     },
     "solution": {
-      "ratio": "opposite",
-      "setup": "The opposite side is across from (facing) the reference angle.",
-      "answer": "opposite",
-      "tolerance": 0
+      "ratio": "pythagorean",
+      "setup": "a² + 6² = 10² → a² + 36 = 100 → a² = 64 → a = 8",
+      "answer": "8",
+      "tolerance": 0.1
     },
     "hints": [
       {
-        "en": "The opposite side does not touch the reference angle.",
-        "fr": "Le côté opposé ne touche pas l'angle de référence."
+        "en": "Use c² = a² + b² where c = 10 and b = 6",
+        "fr": "Utilisez c² = a² + b² où c = 10 et b = 6"
       },
       {
-        "en": "Imagine standing at the reference angle and looking straight across.",
-        "fr": "Imaginez-vous debout à l'angle de référence et regardant tout droit en face."
+        "en": "100 = a² + 36",
+        "fr": "100 = a² + 36"
+      },
+      {
+        "en": "Subtract: a² = 64, so a = 8",
+        "fr": "Soustrayez : a² = 64, donc a = 8"
       }
     ]
   },
   {
     "id": "p1-3",
     "moduleId": 1,
-    "type": "label",
+    "type": "pythagorean",
     "difficulty": "easy",
     "question": {
-      "en": "For the marked reference angle, identify which side is the Adjacent side.",
-      "fr": "Pour l'angle de référence marqué, identifiez quel côté est le côté Adjacent."
+      "en": "A right triangle has legs of length 5 and 12. What is the length of the hypotenuse?",
+      "fr": "Un triangle rectangle a des cathètes de longueur 5 et 12. Quelle est la longueur de l'hypoténuse ?"
     },
     "solution": {
-      "ratio": "adjacent",
-      "setup": "The adjacent side is next to the reference angle (but not the hypotenuse).",
-      "answer": "adjacent",
-      "tolerance": 0
+      "ratio": "pythagorean",
+      "setup": "c² = 5² + 12² = 25 + 144 = 169 → c = √169 = 13",
+      "answer": "13",
+      "tolerance": 0.1
     },
     "hints": [
       {
-        "en": "The adjacent side touches the reference angle along with the hypotenuse.",
-        "fr": "Le côté adjacent touche l'angle de référence ainsi que l'hypoténuse."
+        "en": "This is the famous 5-12-13 Pythagorean triple!",
+        "fr": "C'est le célèbre triplet pythagoricien 5-12-13 !"
       },
       {
-        "en": "It's one of the sides that forms the reference angle.",
-        "fr": "C'est l'un des côtés qui forme l'angle de référence."
+        "en": "Calculate: 25 + 144 = 169",
+        "fr": "Calculez : 25 + 144 = 169"
       }
     ]
   },
   {
     "id": "p1-4",
     "moduleId": 1,
-    "type": "label",
+    "type": "pythagorean",
     "difficulty": "medium",
     "question": {
-      "en": "A right triangle has sides of length 3, 4, and 5. If the reference angle is at the vertex where the sides of length 3 and 5 meet, label the side of length 4.",
-      "fr": "Un triangle rectangle a des côtés de longueur 3, 4 et 5. Si l'angle de référence est au sommet où se rencontrent les côtés de longueur 3 et 5, identifiez le côté de longueur 4."
+      "en": "A right triangle has one leg of length 8 and hypotenuse of length 17. What is the length of the other leg?",
+      "fr": "Un triangle rectangle a une cathète de longueur 8 et une hypoténuse de longueur 17. Quelle est la longueur de l'autre cathète ?"
     },
     "solution": {
-      "ratio": "opposite",
-      "setup": "The side of length 5 is the hypotenuse (longest). The side of length 4 is across from the angle where sides 3 and 5 meet.",
-      "answer": "opposite",
-      "tolerance": 0
+      "ratio": "pythagorean",
+      "setup": "a² + 8² = 17² → a² + 64 = 289 → a² = 225 → a = 15",
+      "answer": "15",
+      "tolerance": 0.1
     },
     "hints": [
       {
-        "en": "First identify which side is the hypotenuse (the longest side).",
-        "fr": "Identifiez d'abord quel côté est l'hypoténuse (le côté le plus long)."
+        "en": "This is the 8-15-17 Pythagorean triple!",
+        "fr": "C'est le triplet pythagoricien 8-15-17 !"
       },
       {
-        "en": "The side of length 5 must be the hypotenuse.",
-        "fr": "Le côté de longueur 5 doit être l'hypoténuse."
+        "en": "289 - 64 = 225",
+        "fr": "289 - 64 = 225"
       }
     ]
   },
   {
     "id": "p1-5",
     "moduleId": 1,
-    "type": "label",
-    "difficulty": "medium",
+    "type": "angle_sum",
+    "difficulty": "easy",
     "question": {
-      "en": "In a right triangle with reference angle θ, the side labeled 'a' is next to θ and the hypotenuse is labeled 'c'. What is side 'a' called?",
-      "fr": "Dans un triangle rectangle avec l'angle de référence θ, le côté marqué 'a' est à côté de θ et l'hypoténuse est marquée 'c'. Comment s'appelle le côté 'a' ?"
+      "en": "In a right triangle, one of the acute angles is 35°. What is the other acute angle?",
+      "fr": "Dans un triangle rectangle, un des angles aigus est de 35°. Quel est l'autre angle aigu ?"
     },
     "solution": {
-      "ratio": "adjacent",
-      "setup": "Since side 'a' is next to the reference angle and is not the hypotenuse, it is the adjacent side.",
-      "answer": "adjacent",
-      "tolerance": 0
+      "ratio": "angle_sum",
+      "setup": "The two acute angles in a right triangle sum to 90°. So: 90° - 35° = 55°",
+      "answer": "55",
+      "tolerance": 0.1
     },
     "hints": [
       {
-        "en": "The side next to the reference angle (that isn't the hypotenuse) is called adjacent.",
-        "fr": "Le côté à côté de l'angle de référence (qui n'est pas l'hypoténuse) s'appelle adjacent."
+        "en": "The three angles in a triangle sum to 180°",
+        "fr": "Les trois angles d'un triangle somment à 180°"
+      },
+      {
+        "en": "One angle is 90° (right angle), so the other two must sum to 90°",
+        "fr": "Un angle est de 90° (angle droit), donc les deux autres doivent sommer à 90°"
       }
     ]
   },
   {
     "id": "p1-6",
     "moduleId": 1,
-    "type": "label",
-    "difficulty": "hard",
+    "type": "angle_sum",
+    "difficulty": "easy",
     "question": {
-      "en": "If you move the reference angle to the OTHER acute angle in the same right triangle, what happens to the labels of the two legs (non-hypotenuse sides)?",
-      "fr": "Si vous déplacez l'angle de référence vers l'AUTRE angle aigu dans le même triangle rectangle, que se passe-t-il avec les étiquettes des deux cathètes (côtés non-hypoténuse) ?"
+      "en": "In a right triangle, one of the acute angles is 28°. What is the other acute angle?",
+      "fr": "Dans un triangle rectangle, un des angles aigus est de 28°. Quel est l'autre angle aigu ?"
     },
     "solution": {
-      "ratio": "swap",
-      "setup": "The opposite and adjacent sides swap labels when you change the reference angle to the other acute angle.",
-      "answer": "swap",
-      "tolerance": 0
+      "ratio": "angle_sum",
+      "setup": "90° - 28° = 62°",
+      "answer": "62",
+      "tolerance": 0.1
     },
     "hints": [
       {
-        "en": "Try drawing a right triangle and labeling from each acute angle.",
-        "fr": "Essayez de dessiner un triangle rectangle et d'étiqueter depuis chaque angle aigu."
-      },
-      {
-        "en": "The side that was opposite becomes adjacent, and vice versa.",
-        "fr": "Le côté qui était opposé devient adjacent, et vice versa."
+        "en": "The two acute angles in a right triangle add up to 90°",
+        "fr": "Les deux angles aigus d'un triangle rectangle additionnent à 90°"
       }
     ]
   },

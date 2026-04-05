@@ -153,7 +153,7 @@ export default function LessonPage() {
         </button>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <div className="mb-6">
-            <h1 className="text-3xl font-display font-bold text-white mb-2">{t('quiz.moduleQuiz')}</h1>
+            <h1 className="text-3xl font-display font-bold text-white mb-2">{t('quiz.title')}</h1>
             <p className="text-text-secondary">{t('quiz.testKnowledge')}</p>
           </div>
           <ModuleQuiz 
