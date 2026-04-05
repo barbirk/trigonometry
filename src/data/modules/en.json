@@ -109,7 +109,9 @@
           },
           {
             "type": "text",
-            "body": "Hypotenuse (H): Always opposite the right angle, always the longest side.\\nOpposite (O): The side directly across from the reference angle.\\nAdjacent (A): The side next to the reference angle that isn't the hypotenuse."
+            "body": "Hypotenuse (H): Always opposite the right angle, always the longest side.\
+Opposite (O): The side directly across from the reference angle.\
+Adjacent (A): The side next to the reference angle that isn't the hypotenuse."
           },
           {
             "type": "check",
@@ -188,7 +190,9 @@
           },
           {
             "type": "text",
-            "body": "SOH: Sine = Opposite / Hypotenuse\\nCAH: Cosine = Adjacent / Hypotenuse\\nTOA: Tangent = Opposite / Adjacent"
+            "body": "SOH: Sine = Opposite / Hypotenuse\
+CAH: Cosine = Adjacent / Hypotenuse\
+TOA: Tangent = Opposite / Adjacent"
           },
           {
             "type": "check",
@@ -240,7 +244,9 @@
           },
           {
             "type": "text",
-            "body": "If sin(θ) = 0.5, then θ = sin⁻¹(0.5) = 30°\\n\\nThe inverse function 'undoes' the original function, giving us the angle from the ratio."
+            "body": "If sin(θ) = 0.5, then θ = sin⁻¹(0.5) = 30°\
+\
+The inverse function 'undoes' the original function, giving us the angle from the ratio."
           },
           {
             "type": "check",
@@ -262,7 +268,9 @@
           },
           {
             "type": "text",
-            "body": "Test: What is sin(30°)?\\nIf your calculator shows 0.5, you're in Degree mode ✓\\nIf it shows -0.988, you're in Radian mode ✗"
+            "body": "Test: What is sin(30°)?\
+If your calculator shows 0.5, you're in Degree mode ✓\
+If it shows -0.988, you're in Radian mode ✗"
           }
         ]
       },
@@ -307,7 +315,11 @@
           },
           {
             "type": "text",
-            "body": "Step 1: Read carefully and underline key information\\nStep 2: Draw a diagram representing the situation\\nStep 3: Label known values and the unknown\\nStep 4: Choose the appropriate trig ratio\\nStep 5: Solve and interpret your answer"
+            "body": "Step 1: Read carefully and underline key information\
+Step 2: Draw a diagram representing the situation\
+Step 3: Label known values and the unknown\
+Step 4: Choose the appropriate trig ratio\
+Step 5: Solve and interpret your answer"
           }
         ]
       },
@@ -322,7 +334,10 @@
           },
           {
             "type": "text",
-            "body": "Angle of Elevation: Looking UP from horizontal\\nAngle of Depression: Looking DOWN from horizontal\\n\\nImportant: These angles are always measured from the horizontal line, and they're equal when looking at the same point!"
+            "body": "Angle of Elevation: Looking UP from horizontal\
+Angle of Depression: Looking DOWN from horizontal\
+\
+Important: These angles are always measured from the horizontal line, and they're equal when looking at the same point!"
           },
           {
             "type": "check",
@@ -376,11 +391,15 @@
           },
           {
             "type": "text",
-            "body": "a/sin(A) = b/sin(B) = c/sin(C)\\n\\nWhere side a is opposite angle A, side b opposite angle B, etc."
+            "body": "a/sin(A) = b/sin(B) = c/sin(C)\
+\
+Where side a is opposite angle A, side b opposite angle B, etc."
           },
           {
             "type": "text",
-            "body": "Use the Law of Sines when you know:\\n• Two angles and one side (AAS or ASA), OR\\n• Two sides and an angle opposite one of them (SSA - the ambiguous case)"
+            "body": "Use the Law of Sines when you know:\
+• Two angles and one side (AAS or ASA), OR\
+• Two sides and an angle opposite one of them (SSA - the ambiguous case)"
           }
         ]
       },
@@ -395,11 +414,15 @@
           },
           {
             "type": "text",
-            "body": "c² = a² + b² - 2ab·cos(C)\\n\\nWhen angle C = 90°, cos(90°) = 0, and this becomes c² = a² + b² (Pythagorean theorem)!"
+            "body": "c² = a² + b² - 2ab·cos(C)\
+\
+When angle C = 90°, cos(90°) = 0, and this becomes c² = a² + b² (Pythagorean theorem)!"
           },
           {
             "type": "text",
-            "body": "Use the Law of Cosines when you know:\\n• Three sides (SSS), OR\\n• Two sides and the included angle (SAS)"
+            "body": "Use the Law of Cosines when you know:\
+• Three sides (SSS), OR\
+• Two sides and the included angle (SAS)"
           }
         ]
       },
@@ -449,7 +472,9 @@
           },
           {
             "type": "text",
-            "body": "If triangle ABC is congruent to triangle EFG, we write: ΔABC ≅ ΔEFG. This means:\\n• AB = EF, BC = FG, AC = EG\\n• ∠A = ∠E, ∠B = ∠F, ∠C = ∠G"
+            "body": "If triangle ABC is congruent to triangle EFG, we write: ΔABC ≅ ΔEFG. This means:\
+• AB = EF, BC = FG, AC = EG\
+• ∠A = ∠E, ∠B = ∠F, ∠C = ∠G"
           },
           {
             "type": "check",
@@ -549,7 +574,11 @@
           },
           {
             "type": "text",
-            "body": "Proof:\\n1. CA = CB (isosceles triangle property)\\n2. AD = DB (median divides hypotenuse equally)\\n3. CD = CD (common side)\\n4. Therefore, ΔACD ≅ ΔBCD by SSS"
+            "body": "Proof:\
+1. CA = CB (isosceles triangle property)\
+2. AD = DB (median divides hypotenuse equally)\
+3. CD = CD (common side)\
+4. Therefore, ΔACD ≅ ΔBCD by SSS"
           },
           {
             "type": "check",
@@ -581,7 +610,9 @@
           },
           {
             "type": "text",
-            "body": "We write ΔABC ~ ΔDEF to indicate similarity. This means:\\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\\n• AB/DE = BC/EF = AC/DF = k (the scale factor)"
+            "body": "We write ΔABC ~ ΔDEF to indicate similarity. This means:\
+• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\
+• AB/DE = BC/EF = AC/DF = k (the scale factor)"
           },
           {
             "type": "text",
@@ -607,7 +638,12 @@
           },
           {
             "type": "text",
-            "body": "Example: Triangle ABC has sides 4.4, 6.4, 7.2. Triangle DEF has sides 6.6, 9.6, 10.8.\\n\\nCheck the ratios:\\n10.8/7.2 = 9.6/6.4 = 6.6/4.4 = 1.5\\n\\nSince all ratios equal 1.5, the triangles are similar with scale factor 1.5."
+            "body": "Example: Triangle ABC has sides 4.4, 6.4, 7.2. Triangle DEF has sides 6.6, 9.6, 10.8.\
+\
+Check the ratios:\
+10.8/7.2 = 9.6/6.4 = 6.6/4.4 = 1.5\
+\
+Since all ratios equal 1.5, the triangles are similar with scale factor 1.5."
           },
           {
             "type": "check",
@@ -629,7 +665,11 @@
           },
           {
             "type": "text",
-            "body": "Example: In ΔABC, AB = 5, BC = 3.7, ∠B = 57°. In ΔDEF, DE = 15, EF = 11.1, ∠E = 57°.\\n\\nCheck: 15/5 = 11.1/3.7 = 3, and ∠B = ∠E = 57°.\\n\\nTherefore, ΔABC ~ ΔDEF by SAS similarity."
+            "body": "Example: In ΔABC, AB = 5, BC = 3.7, ∠B = 57°. In ΔDEF, DE = 15, EF = 11.1, ∠E = 57°.\
+\
+Check: 15/5 = 11.1/3.7 = 3, and ∠B = ∠E = 57°.\
+\
+Therefore, ΔABC ~ ΔDEF by SAS similarity."
           },
           {
             "type": "check",
@@ -673,7 +713,10 @@
         "content": [
           {
             "type": "text",
-            "body": "To find a missing measure using similar triangles:\\n1. Prove similarity (if not given)\\n2. Set up proportions with corresponding sides\\n3. Solve for the unknown"
+            "body": "To find a missing measure using similar triangles:\
+1. Prove similarity (if not given)\
+2. Set up proportions with corresponding sides\
+3. Solve for the unknown"
           },
           {
             "type": "text",
@@ -681,7 +724,14 @@
           },
           {
             "type": "text",
-            "body": "Solution:\\n• ΔADE ~ ΔACB (AA similarity: common angle at A, corresponding angles from parallel lines)\\n• AD/AC = DE/CB\\n• AD/(AD + 5) = 12/20\\n• 20·AD = 12·(AD + 5)\\n• 20AD = 12AD + 60\\n• 8AD = 60\\n• AD = 7.5 cm"
+            "body": "Solution:\
+• ΔADE ~ ΔACB (AA similarity: common angle at A, corresponding angles from parallel lines)\
+• AD/AC = DE/CB\
+• AD/(AD + 5) = 12/20\
+• 20·AD = 12·(AD + 5)\
+• 20AD = 12AD + 60\
+• 8AD = 60\
+• AD = 7.5 cm"
           },
           {
             "type": "check",
@@ -709,15 +759,24 @@
         "content": [
           {
             "type": "text",
-            "body": "In a right triangle ABC with right angle at C, draw the altitude CH to the hypotenuse AB. This creates three similar triangles:\\n\\nΔABC ~ ΔACH ~ ΔCBH"
+            "body": "In a right triangle ABC with right angle at C, draw the altitude CH to the hypotenuse AB. This creates three similar triangles:\
+\
+ΔABC ~ ΔACH ~ ΔCBH"
           },
           {
             "type": "text",
-            "body": "Why are they similar? Each triangle has:\\n• A right angle (90°)\\n• An angle in common with the original triangle\\n• Therefore, by AA similarity, all three are similar"
+            "body": "Why are they similar? Each triangle has:\
+• A right angle (90°)\
+• An angle in common with the original triangle\
+• Therefore, by AA similarity, all three are similar"
           },
           {
             "type": "text",
-            "body": "Notation:\\n• c = hypotenuse AB\\n• a, b = legs BC and AC\\n• h = altitude CH to hypotenuse\\n• pa, pb = projections of legs a and b on hypotenuse"
+            "body": "Notation:\
+• c = hypotenuse AB\
+• a, b = legs BC and AC\
+• h = altitude CH to hypotenuse\
+• pa, pb = projections of legs a and b on hypotenuse"
           },
           {
             "type": "check",
@@ -735,7 +794,13 @@
         "content": [
           {
             "type": "text",
-            "body": "From the similarity ΔABC ~ ΔACH, we derive the Leg Rule:\\n\\nb² = pb · c\\n\\nSimilarly, from ΔABC ~ ΔCBH:\\n\\na² = pa · c"
+            "body": "From the similarity ΔABC ~ ΔACH, we derive the Leg Rule:\
+\
+b² = pb · c\
+\
+Similarly, from ΔABC ~ ΔCBH:\
+\
+a² = pa · c"
           },
           {
             "type": "text",
@@ -743,7 +808,10 @@
           },
           {
             "type": "text",
-            "body": "Example: In right triangle ABC with hypotenuse AB = 65 cm, the projection of leg AC on the hypotenuse is 56 cm. Find AC.\\n\\nAC² = 56 × 65 = 3640\\nAC = √3640 ≈ 60.33 cm"
+            "body": "Example: In right triangle ABC with hypotenuse AB = 65 cm, the projection of leg AC on the hypotenuse is 56 cm. Find AC.\
+\
+AC² = 56 × 65 = 3640\
+AC = √3640 ≈ 60.33 cm"
           },
           {
             "type": "check",
@@ -761,7 +829,9 @@
         "content": [
           {
             "type": "text",
-            "body": "From the similarity ΔACH ~ ΔCBH, we derive the Altitude Rule:\\n\\nh² = pa · pb"
+            "body": "From the similarity ΔACH ~ ΔCBH, we derive the Altitude Rule:\
+\
+h² = pa · pb"
           },
           {
             "type": "text",
@@ -769,7 +839,10 @@
           },
           {
             "type": "text",
-            "body": "Example: The altitude to the hypotenuse divides it into segments of 27 cm and 12 cm. Find the altitude.\\n\\nh² = 27 × 12 = 324\\nh = √324 = 18 cm"
+            "body": "Example: The altitude to the hypotenuse divides it into segments of 27 cm and 12 cm. Find the altitude.\
+\
+h² = 27 × 12 = 324\
+h = √324 = 18 cm"
           },
           {
             "type": "check",
@@ -787,7 +860,9 @@
         "content": [
           {
             "type": "text",
-            "body": "From the similarity relationships, we also derive:\\n\\na · b = c · h"
+            "body": "From the similarity relationships, we also derive:\
+\
+a · b = c · h"
           },
           {
             "type": "text",
@@ -799,7 +874,11 @@
           },
           {
             "type": "text",
-            "body": "Example: In a right triangle, the legs are 5 cm and 12 cm. The hypotenuse is 13 cm. Find the altitude to the hypotenuse.\\n\\n5 × 12 = 13 × h\\n60 = 13h\\nh = 60/13 ≈ 4.62 cm"
+            "body": "Example: In a right triangle, the legs are 5 cm and 12 cm. The hypotenuse is 13 cm. Find the altitude to the hypotenuse.\
+\
+5 × 12 = 13 × h\
+60 = 13h\
+h = 60/13 ≈ 4.62 cm"
           },
           {
             "type": "check",
@@ -817,7 +896,11 @@
         "content": [
           {
             "type": "text",
-            "body": "Here's a summary of all three metric relations in a right triangle with altitude h to hypotenuse c:\\n\\n1. Leg Rule: a² = pa · c and b² = pb · c\\n2. Altitude Rule: h² = pa · pb\\n3. Product Rule: a · b = c · h"
+            "body": "Here's a summary of all three metric relations in a right triangle with altitude h to hypotenuse c:\
+\
+1. Leg Rule: a² = pa · c and b² = pb · c\
+2. Altitude Rule: h² = pa · pb\
+3. Product Rule: a · b = c · h"
           },
           {
             "type": "text",
