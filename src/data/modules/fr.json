@@ -109,9 +109,7 @@
           },
           {
             "type": "text",
-            "body": "Hypoténuse (H) : Toujours opposée à l'angle droit, toujours le côté le plus long.\
-Opposé (O) : Le côté directement en face de l'angle de référence.\
-Adjacent (A) : Le côté à côté de l'angle de référence qui n'est pas l'hypoténuse."
+            "body": "Hypoténuse (H) : Toujours opposée à l'angle droit, toujours le côté le plus long.\\nOpposé (O) : Le côté directement en face de l'angle de référence.\\nAdjacent (A) : Le côté à côté de l'angle de référence qui n'est pas l'hypoténuse."
           },
           {
             "type": "check",
@@ -190,9 +188,7 @@ Adjacent (A) : Le côté à côté de l'angle de référence qui n'est pas l'hyp
           },
           {
             "type": "text",
-            "body": "SOH : Sinus = Opposé / Hypoténuse\
-CAH : Cosinus = Adjacent / Hypoténuse\
-TOA : Tangente = Opposé / Adjacent"
+            "body": "SOH : Sinus = Opposé / Hypoténuse\nCAH : Cosinus = Adjacent / Hypoténuse\nTOA : Tangente = Opposé / Adjacent"
           },
           {
             "type": "check",
@@ -244,9 +240,7 @@ TOA : Tangente = Opposé / Adjacent"
           },
           {
             "type": "text",
-            "body": "Si sin(θ) = 0.5, alors θ = sin⁻¹(0.5) = 30°\
-\
-La fonction inverse 'défait' la fonction originale, nous donnant l'angle à partir du ratio."
+            "body": "Si sin(θ) = 0.5, alors θ = sin⁻¹(0.5) = 30°\\n\\nLa fonction inverse 'défait' la fonction originale, nous donnant l'angle à partir du ratio."
           },
           {
             "type": "check",
@@ -268,9 +262,7 @@ La fonction inverse 'défait' la fonction originale, nous donnant l'angle à par
           },
           {
             "type": "text",
-            "body": "Test : Quel est sin(30°) ?\
-Si votre calculatrice montre 0.5, vous êtes en mode Degrés ✓\
-Si elle montre -0.988, vous êtes en mode Radians ✗"
+            "body": "Test : Quel est sin(30°) ?\\nSi votre calculatrice montre 0.5, vous êtes en mode Degrés ✓\\nSi elle montre -0.988, vous êtes en mode Radians ✗"
           }
         ]
       },
@@ -315,11 +307,7 @@ Si elle montre -0.988, vous êtes en mode Radians ✗"
           },
           {
             "type": "text",
-            "body": "Étape 1 : Lisez attentivement et soulignez les informations clés\
-Étape 2 : Dessinez un schéma représentant la situation\
-Étape 3 : Étiquetez les valeurs connues et l'inconnue\
-Étape 4 : Choisissez le ratio trigonométrique approprié\
-Étape 5 : Résolvez et interprétez votre réponse"
+            "body": "Étape 1 : Lisez attentivement et soulignez les informations clés\\nÉtape 2 : Dessinez un schéma représentant la situation\\nÉtape 3 : Étiquetez les valeurs connues et l'inconnue\\nÉtape 4 : Choisissez le ratio trigonométrique approprié\\nÉtape 5 : Résolvez et interprétez votre réponse"
           }
         ]
       },
@@ -334,10 +322,7 @@ Si elle montre -0.988, vous êtes en mode Radians ✗"
           },
           {
             "type": "text",
-            "body": "Angle d'Élévation : Regarder VERS LE HAUT depuis l'horizontal\
-Angle de Dépression : Regarder VERS LE BAS depuis l'horizontal\
-\
-Important : Ces angles sont toujours mesurés depuis la ligne horizontale, et ils sont égaux quand on regarde le même point !"
+            "body": "Angle d'Élévation : Regarder VERS LE HAUT depuis l'horizontal\\nAngle de Dépression : Regarder VERS LE BAS depuis l'horizontal\\n\\nImportant : Ces angles sont toujours mesurés depuis la ligne horizontale, et ils sont égaux quand on regarde le même point !"
           },
           {
             "type": "check",
@@ -391,15 +376,11 @@ Important : Ces angles sont toujours mesurés depuis la ligne horizontale, et il
           },
           {
             "type": "text",
-            "body": "a/sin(A) = b/sin(B) = c/sin(C)\
-\
-Où le côté a est opposé à l'angle A, le côté b opposé à l'angle B, etc."
+            "body": "a/sin(A) = b/sin(B) = c/sin(C)\\n\\nOù le côté a est opposé à l'angle A, le côté b opposé à l'angle B, etc."
           },
           {
             "type": "text",
-            "body": "Utilisez la Loi des Sinus quand vous connaissez :\
-• Deux angles et un côté (AAS ou ASA), OU\
-• Deux côtés et un angle opposé à l'un d'eux (SSA - le cas ambigu)"
+            "body": "Utilisez la Loi des Sinus quand vous connaissez :\\n• Deux angles et un côté (AAS ou ASA), OU\\n• Deux côtés et un angle opposé à l'un d'eux (SSA - le cas ambigu)"
           }
         ]
       },
@@ -414,15 +395,11 @@ Où le côté a est opposé à l'angle A, le côté b opposé à l'angle B, etc.
           },
           {
             "type": "text",
-            "body": "c² = a² + b² - 2ab·cos(C)\
-\
-Quand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorème de Pythagore) !"
+            "body": "c² = a² + b² - 2ab·cos(C)\\n\\nQuand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorème de Pythagore) !"
           },
           {
             "type": "text",
-            "body": "Utilisez la Loi des Cosinus quand vous connaissez :\
-• Trois côtés (SSS), OU\
-• Deux côtés et l'angle compris (SAS)"
+            "body": "Utilisez la Loi des Cosinus quand vous connaissez :\\n• Trois côtés (SSS), OU\\n• Deux côtés et l'angle compris (SAS)"
           }
         ]
       },
@@ -472,9 +449,7 @@ Quand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorè
           },
           {
             "type": "text",
-            "body": "Si le triangle ABC est isométrique au triangle EFG, on écrit : ΔABC ≅ ΔEFG. Cela signifie :\
-• AB = EF, BC = FG, AC = EG\
-• ∠A = ∠E, ∠B = ∠F, ∠C = ∠G"
+            "body": "Si le triangle ABC est isométrique au triangle EFG, on écrit : ΔABC ≅ ΔEFG. Cela signifie :\\n• AB = EF, BC = FG, AC = EG\\n• ∠A = ∠E, ∠B = ∠F, ∠C = ∠G"
           },
           {
             "type": "check",
@@ -574,11 +549,7 @@ Quand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorè
           },
           {
             "type": "text",
-            "body": "Preuve :\
-1. CA = CB (propriété du triangle isocèle)\
-2. AD = DB (la médiane divise l'hypoténuse en deux segments isométriques)\
-3. CD = CD (côté commun)\
-4. Donc, ΔACD ≅ ΔBCD par CCC"
+            "body": "Preuve :\\n1. CA = CB (propriété du triangle isocèle)\\n2. AD = DB (la médiane divise l'hypoténuse en deux segments isométriques)\\n3. CD = CD (côté commun)\\n4. Donc, ΔACD ≅ ΔBCD par CCC"
           },
           {
             "type": "check",
@@ -610,9 +581,7 @@ Quand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorè
           },
           {
             "type": "text",
-            "body": "On écrit ΔABC ~ ΔDEF pour indiquer la similitude. Cela signifie :\
-• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\
-• AB/DE = BC/EF = AC/DF = k (le facteur d'échelle)"
+            "body": "On écrit ΔABC ~ ΔDEF pour indiquer la similitude. Cela signifie :\\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\\n• AB/DE = BC/EF = AC/DF = k (le facteur d'échelle)"
           },
           {
             "type": "text",
@@ -638,12 +607,7 @@ Quand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorè
           },
           {
             "type": "text",
-            "body": "Exemple : Le triangle ABC a des côtés 4,4, 6,4, 7,2. Le triangle DEF a des côtés 6,6, 9,6, 10,8.\
-\
-Vérifions les rapports :\
-10,8/7,2 = 9,6/6,4 = 6,6/4,4 = 1,5\
-\
-Comme tous les rapports valent 1,5, les triangles sont semblables avec facteur d'échelle 1,5."
+            "body": "Exemple : Le triangle ABC a des côtés 4,4, 6,4, 7,2. Le triangle DEF a des côtés 6,6, 9,6, 10,8.\\n\\nVérifions les rapports :\\n10,8/7,2 = 9,6/6,4 = 6,6/4,4 = 1,5\\n\\nComme tous les rapports valent 1,5, les triangles sont semblables avec facteur d'échelle 1,5."
           },
           {
             "type": "check",
@@ -665,11 +629,7 @@ Comme tous les rapports valent 1,5, les triangles sont semblables avec facteur d
           },
           {
             "type": "text",
-            "body": "Exemple : Dans ΔABC, AB = 5, BC = 3,7, ∠B = 57°. Dans ΔDEF, DE = 15, EF = 11,1, ∠E = 57°.\
-\
-Vérification : 15/5 = 11,1/3,7 = 3, et ∠B = ∠E = 57°.\
-\
-Donc, ΔABC ~ ΔDEF par similitude CAC."
+            "body": "Exemple : Dans ΔABC, AB = 5, BC = 3,7, ∠B = 57°. Dans ΔDEF, DE = 15, EF = 11,1, ∠E = 57°.\\n\\nVérification : 15/5 = 11,1/3,7 = 3, et ∠B = ∠E = 57°.\\n\\nDonc, ΔABC ~ ΔDEF par similitude CAC."
           },
           {
             "type": "check",
@@ -713,10 +673,7 @@ Donc, ΔABC ~ ΔDEF par similitude CAC."
         "content": [
           {
             "type": "text",
-            "body": "Pour trouver une mesure manquante à l'aide de triangles semblables :\
-1. Démontrer la similitude (si non donnée)\
-2. Établir des proportions avec les rapports des côtés homologues\
-3. Isoler la mesure manquante"
+            "body": "Pour trouver une mesure manquante à l'aide de triangles semblables :\\n1. Démontrer la similitude (si non donnée)\\n2. Établir des proportions avec les rapports des côtés homologues\\n3. Isoler la mesure manquante"
           },
           {
             "type": "text",
@@ -724,14 +681,7 @@ Donc, ΔABC ~ ΔDEF par similitude CAC."
           },
           {
             "type": "text",
-            "body": "Solution :\
-• ΔADE ~ ΔACB (similitude AA : angle commun en A, angles correspondants des parallèles)\
-• AD/AC = DE/CB\
-• AD/(AD + 5) = 12/20\
-• 20·AD = 12·(AD + 5)\
-• 20AD = 12AD + 60\
-• 8AD = 60\
-• AD = 7,5 cm"
+            "body": "Solution :\\n• ΔADE ~ ΔACB (similitude AA : angle commun en A, angles correspondants des parallèles)\\n• AD/AC = DE/CB\\n• AD/(AD + 5) = 12/20\\n• 20·AD = 12·(AD + 5)\\n• 20AD = 12AD + 60\\n• 8AD = 60\\n• AD = 7,5 cm"
           },
           {
             "type": "check",
@@ -759,24 +709,15 @@ Donc, ΔABC ~ ΔDEF par similitude CAC."
         "content": [
           {
             "type": "text",
-            "body": "Dans un triangle rectangle ABC avec angle droit en C, traçons la hauteur CH relative à l'hypoténuse AB. Cela crée trois triangles semblables :\
-\
-ΔABC ~ ΔACH ~ ΔCBH"
+            "body": "Dans un triangle rectangle ABC avec angle droit en C, traçons la hauteur CH relative à l'hypoténuse AB. Cela crée trois triangles semblables :\\n\\nΔABC ~ ΔACH ~ ΔCBH"
           },
           {
             "type": "text",
-            "body": "Pourquoi sont-ils semblables ? Chaque triangle a :\
-• Un angle droit (90°)\
-• Un angle commun avec le triangle original\
-• Donc, par similitude AA, les trois sont semblables"
+            "body": "Pourquoi sont-ils semblables ? Chaque triangle a :\\n• Un angle droit (90°)\\n• Un angle commun avec le triangle original\\n• Donc, par similitude AA, les trois sont semblables"
           },
           {
             "type": "text",
-            "body": "Notation :\
-• c = hypoténuse AB\
-• a, b = cathètes BC et AC\
-• h = hauteur CH relative à l'hypoténuse\
-• pa, pb = projections des cathètes a et b sur l'hypoténuse"
+            "body": "Notation :\\n• c = hypoténuse AB\\n• a, b = cathètes BC et AC\\n• h = hauteur CH relative à l'hypoténuse\\n• pa, pb = projections des cathètes a et b sur l'hypoténuse"
           },
           {
             "type": "check",
@@ -794,13 +735,7 @@ Donc, ΔABC ~ ΔDEF par similitude CAC."
         "content": [
           {
             "type": "text",
-            "body": "De la similitude ΔABC ~ ΔACH, on déduit le théorème de la cathète :\
-\
-b² = pb · c\
-\
-De même, de ΔABC ~ ΔCBH :\
-\
-a² = pa · c"
+            "body": "De la similitude ΔABC ~ ΔACH, on déduit le théorème de la cathète :\\n\\nb² = pb · c\\n\\nDe même, de ΔABC ~ ΔCBH :\\n\\na² = pa · c"
           },
           {
             "type": "text",
@@ -808,10 +743,7 @@ a² = pa · c"
           },
           {
             "type": "text",
-            "body": "Exemple : Dans le triangle rectangle ABC avec hypoténuse AB = 65 cm, la projection de la cathète AC sur l'hypoténuse est 56 cm. Trouver AC.\
-\
-AC² = 56 × 65 = 3640\
-AC = √3640 ≈ 60,33 cm"
+            "body": "Exemple : Dans le triangle rectangle ABC avec hypoténuse AB = 65 cm, la projection de la cathète AC sur l'hypoténuse est 56 cm. Trouver AC.\\n\\nAC² = 56 × 65 = 3640\\nAC = √3640 ≈ 60,33 cm"
           },
           {
             "type": "check",
@@ -829,9 +761,7 @@ AC = √3640 ≈ 60,33 cm"
         "content": [
           {
             "type": "text",
-            "body": "De la similitude ΔACH ~ ΔCBH, on déduit le théorème de la hauteur :\
-\
-h² = pa · pb"
+            "body": "De la similitude ΔACH ~ ΔCBH, on déduit le théorème de la hauteur :\\n\\nh² = pa · pb"
           },
           {
             "type": "text",
@@ -839,10 +769,7 @@ h² = pa · pb"
           },
           {
             "type": "text",
-            "body": "Exemple : La hauteur relative à l'hypoténuse la divise en segments de 27 cm et 12 cm. Trouver la hauteur.\
-\
-h² = 27 × 12 = 324\
-h = √324 = 18 cm"
+            "body": "Exemple : La hauteur relative à l'hypoténuse la divise en segments de 27 cm et 12 cm. Trouver la hauteur.\\n\\nh² = 27 × 12 = 324\\nh = √324 = 18 cm"
           },
           {
             "type": "check",
@@ -860,9 +787,7 @@ h = √324 = 18 cm"
         "content": [
           {
             "type": "text",
-            "body": "Des relations de similitude, on déduit également :\
-\
-a · b = c · h"
+            "body": "Des relations de similitude, on déduit également :\\n\\na · b = c · h"
           },
           {
             "type": "text",
@@ -874,11 +799,7 @@ a · b = c · h"
           },
           {
             "type": "text",
-            "body": "Exemple : Dans un triangle rectangle, les cathètes mesurent 5 cm et 12 cm. L'hypoténuse est 13 cm. Trouver la hauteur relative à l'hypoténuse.\
-\
-5 × 12 = 13 × h\
-60 = 13h\
-h = 60/13 ≈ 4,62 cm"
+            "body": "Exemple : Dans un triangle rectangle, les cathètes mesurent 5 cm et 12 cm. L'hypoténuse est 13 cm. Trouver la hauteur relative à l'hypoténuse.\\n\\n5 × 12 = 13 × h\\n60 = 13h\\nh = 60/13 ≈ 4,62 cm"
           },
           {
             "type": "check",
@@ -896,11 +817,7 @@ h = 60/13 ≈ 4,62 cm"
         "content": [
           {
             "type": "text",
-            "body": "Voici un résumé des trois relations métriques dans un triangle rectangle avec hauteur h relative à l'hypoténuse c :\
-\
-1. Théorème de la cathète : a² = pa · c et b² = pb · c\
-2. Théorème de la hauteur : h² = pa · pb\
-3. Théorème du produit : a · b = c · h"
+            "body": "Voici un résumé des trois relations métriques dans un triangle rectangle avec hauteur h relative à l'hypoténuse c :\\n\\n1. Théorème de la cathète : a² = pa · c et b² = pb · c\\n2. Théorème de la hauteur : h² = pa · pb\\n3. Théorème du produit : a · b = c · h"
           },
           {
             "type": "text",
