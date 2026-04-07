@@ -6,22 +6,37 @@ export default function LessonDiagram({ type }: LessonDiagramProps) {
   switch (type) {
     case 'tree-shadow':
       return (
-        <svg viewBox="0 0 200 150" className="w-full max-w-xs">
-          {/* Ground */}
-          <line x1="10" y1="130" x2="190" y2="130" stroke="#4DFFA4" strokeWidth="2" />
-          {/* Tree */}
-          <line x1="40" y1="130" x2="40" y2="30" stroke="#4DFFA4" strokeWidth="3" />
-          {/* Sun rays */}
-          <line x1="160" y1="20" x2="40" y2="30" stroke="#FFD166" strokeWidth="2" strokeDasharray="4" />
-          {/* Shadow */}
-          <line x1="40" y1="130" x2="140" y2="130" stroke="#F0F4FF" strokeWidth="4" />
-          {/* Angle arc */}
-          <path d="M 40 110 A 20 20 0 0 1 52 102" fill="none" stroke="#FFD166" strokeWidth="2" />
+        <svg viewBox="0 0 220 140" className="w-full max-w-xs">
+          {/* Ground line */}
+          <line x1="10" y1="120" x2="210" y2="120" stroke="#4DFFA4" strokeWidth="2" />
+          
+          {/* Tree (vertical line on the left) */}
+          <line x1="50" y1="120" x2="50" y2="20" stroke="#4DFFA4" strokeWidth="3" />
+          
+          {/* Shadow (horizontal line from tree base) */}
+          <line x1="50" y1="120" x2="170" y2="120" stroke="#F0F4FF" strokeWidth="4" />
+          
+          {/* Sun ray (dotted line from sun to top of tree, extending to end of shadow) */}
+          <line x1="20" y1="20" x2="170" y2="120" stroke="#FFD166" strokeWidth="2" strokeDasharray="5,3" />
+          
+          {/* Sun */}
+          <circle cx="20" cy="20" r="8" fill="#FFD166" />
+          <text x="15" y="24" fill="#0F1117" fontSize="10">☀</text>
+          
+          {/* Tree top dot */}
+          <circle cx="50" cy="20" r="3" fill="#4DFFA4" />
+          
+          {/* Angle arc at the ground (between sun ray and shadow) */}
+          <path d="M 50 105 A 15 15 0 0 0 62 113" fill="none" stroke="#FFD166" strokeWidth="2" />
+          <text x="58" y="100" fill="#FFD166" fontSize="12" fontFamily="JetBrains Mono">θ</text>
+          
           {/* Labels */}
-          <text x="25" y="80" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono">12m</text>
-          <text x="85" y="145" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono">15m</text>
-          <text x="55" y="95" fill="#FFD166" fontSize="10" fontFamily="JetBrains Mono">θ</text>
-          <text x="165" y="15" fill="#FFD166" fontSize="10" fontFamily="JetBrains Mono">☀</text>
+          <text x="25" y="75" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono" textAnchor="middle">12m</text>
+          <text x="110" y="138" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono" textAnchor="middle">15m</text>
+          
+          {/* Labels for sides */}
+          <text x="35" y="65" fill="#4DFFA4" fontSize="10" fontFamily="JetBrains Mono">opposé</text>
+          <text x="110" y="108" fill="#F0F4FF" fontSize="10" fontFamily="JetBrains Mono">adjacent</text>
         </svg>
       );
 
