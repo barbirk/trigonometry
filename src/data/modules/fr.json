@@ -340,18 +340,19 @@
         "content": [
           {
             "type": "text",
-            "body": "Résolvons quelques problèmes réels étape par étape."
+            "body": "Résolvons quelques problèmes réels étape par étape.",
+            "diagram": "tree-shadow"
           },
           {
             "type": "text",
-            "body": "Problème : Un arbre de 12 mètres de haut projette une ombre de 15 mètres. Quel est l'angle d'élévation du soleil ?"
+            "body": "Problème : Un arbre de 12 mètres de haut projette une ombre de 15 mètres. Quel est l'angle d'élévation du soleil ?\n\nUtilisez tan(θ) = opposé/adjacent = 12/15\nPuis calculez θ = tan⁻¹(12/15)"
           },
           {
             "type": "check",
-            "question": "Quel ratio trigonométrique devriez-vous utiliser ?",
-            "options": ["Sinus", "Cosinus", "Tangente", "N'importe lequel"],
-            "correct": 2,
-            "explanation": "Vous avez l'opposé (hauteur de l'arbre) et l'adjacent (ombre), donc utilisez la tangente : tan(θ) = 12/15."
+            "question": "Quel est l'angle d'élévation du soleil (au degré près) ?",
+            "options": ["32°", "39°", "45°", "53°"],
+            "correct": 1,
+            "explanation": "tan(θ) = 12/15 = 0.8 → θ = tan⁻¹(0.8) ≈ 38.66° ≈ 39°"
           }
         ]
       }
@@ -372,7 +373,8 @@
         "content": [
           {
             "type": "text",
-            "body": "Pour TOUS les triangles (pas seulement les rectangles) :"
+            "body": "Pour TOUS les triangles (pas seulement les rectangles) :",
+            "diagram": "law-of-sines"
           },
           {
             "type": "text",
@@ -380,7 +382,8 @@
           },
           {
             "type": "text",
-            "body": "Utilisez la Loi des Sinus quand vous connaissez :\n• Deux angles et un côté (AAS ou ASA), OU\n• Deux côtés et un angle opposé à l'un d'eux (SSA - le cas ambigu)"
+            "body": "Utilisez la Loi des Sinus quand vous connaissez :\n• Deux angles et un côté (AAS ou ASA), OU\n• Deux côtés et un angle opposé à l'un d'eux (SSA - le cas ambigu)",
+            "diagram": "aas-asa-cases"
           }
         ]
       },

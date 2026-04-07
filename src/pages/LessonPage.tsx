@@ -9,6 +9,7 @@ import modulesFR from '../data/modules/fr.json';
 import modulesEN from '../data/modules/en.json';
 import TriangleExplorer from '../components/TriangleExplorer';
 import DiagramLabeler from '../components/DiagramLabeler';
+import LessonDiagram from '../components/LessonDiagram';
 
 import StepSolver from '../components/StepSolver';
 import ErrorAnalysis from '../components/ErrorAnalysis';
@@ -198,7 +199,12 @@ export default function LessonPage() {
              exit={{ opacity: 0, x: -20 }}
            >
              {item.type === 'text' && (
-               <div className="prose prose-invert max-w-none">
+               <div className="prose prose-invert max-w-none space-y-6">
+                  {item.diagram && (
+                    <div className="bg-surface-container border border-border-subtle rounded-xl p-6 flex justify-center">
+                      <LessonDiagram type={item.diagram} />
+                    </div>
+                  )}
                   <p className="text-text-primary whitespace-pre-line">{item.body}</p>
                </div>
              )}
