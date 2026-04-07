@@ -345,14 +345,16 @@
           },
           {
             "type": "text",
-            "body": "Problème : Un arbre de 12 mètres de haut projette une ombre de 15 mètres. Quel est l'angle d'élévation du soleil ?\n\nUtilisez tan(θ) = opposé/adjacent = 12/15\nPuis calculez θ = tan⁻¹(12/15)"
+            "body": "Problème : Un arbre de 12 mètres de haut projette une ombre de 15 mètres. Quel est l'angle d'élévation du soleil ?\n\nUtilisez tan(θ) = opposé/adjacent = 12/15\nPuis calculez θ = tan⁻¹(12/15)",
+            "diagram": "tree-shadow"
           },
           {
             "type": "check",
             "question": "Quel est l'angle d'élévation du soleil (au degré près) ?",
             "options": ["32°", "39°", "45°", "53°"],
             "correct": 1,
-            "explanation": "tan(θ) = 12/15 = 0.8 → θ = tan⁻¹(0.8) ≈ 38.66° ≈ 39°"
+            "explanation": "tan(θ) = 12/15 = 0.8 → θ = tan⁻¹(0.8) ≈ 38.66° ≈ 39°",
+            "diagram": "tree-shadow"
           }
         ]
       }

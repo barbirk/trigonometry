@@ -220,6 +220,11 @@ export default function LessonPage() {
 
              {item.type === 'check' && (
                <div className="bg-surface-container border border-border-subtle p-6 rounded-2xl space-y-6">
+                 {item.diagram && (
+                   <div className="bg-surface border border-border-subtle rounded-xl p-4 flex justify-center">
+                     <LessonDiagram type={item.diagram} />
+                   </div>
+                 )}
                  <h3 className="font-display font-bold text-xl text-white">{item.question}</h3>
                  
                  <div className="space-y-3">
