@@ -101,7 +101,7 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
       setShowResult(false);
     } else {
       setIsFinished(true);
-      const finalScore = Math.round(((correctAnswers + (selectedAnswer && Math.abs(parseFloat(selectedAnswer) - currentProblem.solution.answer) <= currentProblem.solution.tolerance ? 1 : 0)) / moduleProblems.length) * 100);
+      const finalScore = Math.round((correctAnswers / moduleProblems.length) * 100);
       completeModule(moduleId, finalScore, 2);
       if (onComplete) {
         onComplete(finalScore);
@@ -119,8 +119,7 @@ export default function ModuleQuiz({ moduleId, onComplete, isLocked }: ModuleQui
   };
 
   if (isFinished) {
-    const finalCorrect = correctAnswers + (selectedAnswer && currentProblem && Math.abs(parseFloat(selectedAnswer) - currentProblem.solution.answer) <= currentProblem.solution.tolerance ? 1 : 0);
-    const score = Math.round((finalCorrect / moduleProblems.length) * 100);
+    const score = Math.round((correctAnswers / moduleProblems.length) * 100);
     const passed = score >= 70;
 
     return (
