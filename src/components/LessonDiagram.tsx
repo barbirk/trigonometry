@@ -29,9 +29,9 @@ export default function LessonDiagram({ type }: LessonDiagramProps) {
           {/* Tree top dot */}
           <circle cx="50" cy="30" r="3" fill="#4DFFA4" />
           
-          {/* Angle arc at ground - between hypotenuse (sun ray) and adjacent (shadow) */}
-          <path d="M 50 115 A 15 15 0 0 0 62 123" fill="none" stroke="#FFD166" strokeWidth="2" />
-          <text x="56" y="110" fill="#FFD166" fontSize="12" fontFamily="JetBrains Mono">θ</text>
+          {/* Angle arc at end of shadow - between hypotenuse and adjacent */}
+          <path d="M 155 130 A 15 15 0 0 1 163 118" fill="none" stroke="#FFD166" strokeWidth="2" />
+          <text x="138" y="115" fill="#FFD166" fontSize="12" fontFamily="JetBrains Mono">θ</text>
           
           {/* Right angle mark at tree base */}
           <path d="M 50 120 L 58 120 L 58 128" fill="none" stroke="#4DFFA4" strokeWidth="1.5" />
