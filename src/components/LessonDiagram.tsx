@@ -6,37 +6,43 @@ export default function LessonDiagram({ type }: LessonDiagramProps) {
   switch (type) {
     case 'tree-shadow':
       return (
-        <svg viewBox="0 0 220 140" className="w-full max-w-xs">
+        <svg viewBox="0 0 220 150" className="w-full max-w-xs">
           {/* Ground line */}
-          <line x1="10" y1="120" x2="210" y2="120" stroke="#4DFFA4" strokeWidth="2" />
+          <line x1="10" y1="130" x2="210" y2="130" stroke="#4DFFA4" strokeWidth="2" />
           
-          {/* Tree (vertical line on the left) */}
-          <line x1="50" y1="120" x2="50" y2="20" stroke="#4DFFA4" strokeWidth="3" />
+          {/* Tree (vertical line - opposite side) */}
+          <line x1="50" y1="130" x2="50" y2="30" stroke="#4DFFA4" strokeWidth="3" />
           
-          {/* Shadow (horizontal line from tree base) */}
-          <line x1="50" y1="120" x2="170" y2="120" stroke="#F0F4FF" strokeWidth="4" />
+          {/* Shadow (horizontal from tree base - adjacent side) */}
+          <line x1="50" y1="130" x2="170" y2="130" stroke="#F0F4FF" strokeWidth="4" />
           
-          {/* Sun ray (dotted line from sun to top of tree, extending to end of shadow) */}
-          <line x1="20" y1="20" x2="170" y2="120" stroke="#FFD166" strokeWidth="2" strokeDasharray="5,3" />
+          {/* Sun ray (hypotenuse - from top of tree to end of shadow) */}
+          <line x1="50" y1="30" x2="170" y2="130" stroke="#FFD166" strokeWidth="2" strokeDasharray="5,3" />
           
-          {/* Sun */}
-          <circle cx="20" cy="20" r="8" fill="#FFD166" />
-          <text x="15" y="24" fill="#0F1117" fontSize="10">☀</text>
+          {/* Sun positioned along the dotted line extended upward-left */}
+          <circle cx="20" cy="10" r="10" fill="#FFD166" />
+          <text x="13" y="15" fill="#0F1117" fontSize="12">☀</text>
+          
+          {/* Extended sun ray line showing sun position */}
+          <line x1="20" y1="10" x2="50" y2="30" stroke="#FFD166" strokeWidth="2" strokeDasharray="3,3" />
           
           {/* Tree top dot */}
-          <circle cx="50" cy="20" r="3" fill="#4DFFA4" />
+          <circle cx="50" cy="30" r="3" fill="#4DFFA4" />
           
-          {/* Angle arc at the ground (between sun ray and shadow) */}
-          <path d="M 50 105 A 15 15 0 0 0 62 113" fill="none" stroke="#FFD166" strokeWidth="2" />
-          <text x="58" y="100" fill="#FFD166" fontSize="12" fontFamily="JetBrains Mono">θ</text>
+          {/* Angle arc at ground - between hypotenuse (sun ray) and adjacent (shadow) */}
+          <path d="M 50 115 A 15 15 0 0 0 62 123" fill="none" stroke="#FFD166" strokeWidth="2" />
+          <text x="56" y="110" fill="#FFD166" fontSize="12" fontFamily="JetBrains Mono">θ</text>
+          
+          {/* Right angle mark at tree base */}
+          <path d="M 50 120 L 58 120 L 58 128" fill="none" stroke="#4DFFA4" strokeWidth="1.5" />
           
           {/* Labels */}
-          <text x="25" y="75" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono" textAnchor="middle">12m</text>
-          <text x="110" y="138" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono" textAnchor="middle">15m</text>
+          <text x="32" y="85" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono" textAnchor="middle">12m</text>
+          <text x="110" y="145" fill="#F0F4FF" fontSize="12" fontFamily="JetBrains Mono" textAnchor="middle">15m</text>
           
-          {/* Labels for sides */}
-          <text x="35" y="65" fill="#4DFFA4" fontSize="10" fontFamily="JetBrains Mono">opposé</text>
-          <text x="110" y="108" fill="#F0F4FF" fontSize="10" fontFamily="JetBrains Mono">adjacent</text>
+          {/* Side labels */}
+          <text x="35" y="75" fill="#4DFFA4" fontSize="9" fontFamily="JetBrains Mono">opposé</text>
+          <text x="100" y="118" fill="#F0F4FF" fontSize="9" fontFamily="JetBrains Mono">adjacent</text>
         </svg>
       );
 
