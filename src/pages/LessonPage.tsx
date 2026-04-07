@@ -69,12 +69,14 @@ export default function LessonPage() {
   const item = lesson.content[currentStep];
 
   const handleNext = () => {
+     console.log('[handleNext] Current step:', currentStep, 'of', contentCount, 'lesson:', lesson?.lessonId);
      if (currentStep < contentCount - 1) {
        setCurrentStep(prev => prev + 1);
        setSelectedOption(null);
        setHasValidated(false);
      } else {
        // Finish Lesson
+       console.log('[handleNext] Finishing lesson:', lesson?.lessonId, 'module:', parentModule?.moduleId);
        completeLesson(lesson.lessonId, parentModule.moduleId);
        
        // If last lesson, show teach-back

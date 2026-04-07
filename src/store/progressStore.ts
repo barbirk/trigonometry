@@ -127,8 +127,12 @@ export const useProgressStore = create<ProgressState>()(
       }),
 
       completeLesson: (lessonId: string, moduleId: number) => set((state) => {
+        console.log('[completeLesson] Called with:', { lessonId, moduleId, currentLessons: state.completedLessons });
         const isNew = !state.completedLessons.includes(lessonId);
-        if (!isNew) return state;
+        if (!isNew) {
+          console.log('[completeLesson] Lesson already completed, skipping');
+          return state;
+        }
 
         get().recordActivity();
 
