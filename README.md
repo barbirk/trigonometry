@@ -23,3 +23,4 @@ This application is built as a static client-side PWA. Push to the `main` branch
 npm install
 npm run dev
 ```
+# Build verification
