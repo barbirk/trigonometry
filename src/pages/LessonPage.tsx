@@ -301,7 +301,10 @@ export default function LessonPage() {
              </button>
            ) : (
              <button 
-               onClick={handleNext} 
+               onClick={() => {
+                 console.log('[Button] Clicked! type:', item?.type, 'step:', currentStep, 'isLastStep:', currentStep === contentCount - 1, 'isLastLesson:', isLastLesson);
+                 handleNext();
+               }} 
                className="px-8 py-3 bg-primary text-surface font-display font-bold rounded-xl hover:bg-primary-container disabled:opacity-50 disabled:cursor-not-allowed"
                disabled={item.type === 'check' && (!hasValidated || selectedOption !== item.correct)}
              >
