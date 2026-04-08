@@ -106,7 +106,7 @@ export default function WarmUpQuiz({ onComplete, onSkip }: WarmUpQuizProps) {
     return (
       <div className="bg-surface-container border border-border-subtle rounded-2xl p-8 text-center">
         <Trophy className="w-12 h-12 text-primary mx-auto mb-4" />
-        <p className="text-text-secondary">{t('reviewDeck.allCaughtUp')}</p>
+        <p className="text-text-secondary">{t('review.allCaughtUp')}</p>
         {onSkip && (
           <button onClick={onSkip} className="mt-4 bg-primary text-surface px-6 py-2 rounded-lg">
             {t('common.continue')}

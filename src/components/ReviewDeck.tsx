@@ -101,10 +101,10 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
       <div className="bg-surface-container border border-border-subtle rounded-2xl p-8 text-center">
         <Trophy className="w-16 h-16 text-primary mx-auto mb-4" />
         <h3 className="font-display font-bold text-xl text-white mb-2">
-          {t('reviewDeck.allCaughtUp')}
+          {t('review.allCaughtUp')}
         </h3>
         <p className="text-text-secondary mb-6">
-          {t('reviewDeck.noCardsDue')}
+          {t('review.description')}
         </p>
         {onClose && (
           <button
@@ -127,7 +127,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
         <div className="text-center mb-8">
           <Trophy className="w-16 h-16 text-primary mx-auto mb-4" />
           <h3 className="font-display font-bold text-2xl text-white mb-2">
-            {t('reviewDeck.sessionComplete')}
+            {t('review.sessionComplete')}
           </h3>
           <div className="flex items-center justify-center gap-2 text-text-secondary">
             <Clock className="w-4 h-4" />
@@ -138,15 +138,15 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
         <div className="grid grid-cols-3 gap-4 mb-8">
           <div className="bg-primary/10 rounded-xl p-4 text-center">
             <p className="text-2xl font-display font-bold text-primary">{stats.easy}</p>
-            <p className="text-xs text-text-secondary uppercase tracking-wider">{t('reviewDeck.easy')}</p>
+            <p className="text-xs text-text-secondary uppercase tracking-wider">{t('review.easy')}</p>
           </div>
           <div className="bg-hint/10 rounded-xl p-4 text-center">
             <p className="text-2xl font-display font-bold text-hint">{stats.medium}</p>
-            <p className="text-xs text-text-secondary uppercase tracking-wider">{t('reviewDeck.medium')}</p>
+            <p className="text-xs text-text-secondary uppercase tracking-wider">{t('review.medium')}</p>
           </div>
           <div className="bg-error/10 rounded-xl p-4 text-center">
             <p className="text-2xl font-display font-bold text-error">{stats.hard}</p>
-            <p className="text-xs text-text-secondary uppercase tracking-wider">{t('reviewDeck.hard')}</p>
+            <p className="text-xs text-text-secondary uppercase tracking-wider">{t('review.hard')}</p>
           </div>
         </div>
 
@@ -171,7 +171,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
       {/* Progress */}
       <div className="flex items-center justify-between mb-6">
         <span className="text-text-secondary text-sm">
-          {t('reviewDeck.cardProgress', { current: currentCardIndex + 1, total: sessionCards.length })}
+          {t('review.cardProgress', { current: currentCardIndex + 1, total: sessionCards.length })}
         </span>
         <div className="flex-1 mx-4 h-2 bg-surface rounded-full overflow-hidden">
           <motion.div
@@ -196,14 +196,14 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
             style={{ backfaceVisibility: 'hidden' }}
           >
             <p className="text-text-secondary text-sm mb-4 uppercase tracking-wider">
-              {t('reviewDeck.question')}
+              {t('review.question')}
             </p>
             <p className="text-text-primary text-center text-lg font-body">
               {currentCard.front?.[lang] || currentCard.front?.en}
             </p>
             <p className="text-text-secondary text-xs mt-8 flex items-center gap-2">
               <RotateCw className="w-4 h-4" />
-              {t('reviewDeck.tapToFlip')}
+              {t('review.tapToFlip')}
             </p>
           </div>
 
@@ -213,7 +213,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
             style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
           >
             <p className="text-primary text-sm mb-4 uppercase tracking-wider">
-              {t('reviewDeck.answer')}
+              {t('review.answer')}
             </p>
             <p className="text-text-primary text-center text-lg font-body">
               {currentCard.back?.[lang] || currentCard.back?.en}
@@ -234,19 +234,19 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
               onClick={() => handleRating(3)}
               className="p-3 rounded-xl bg-error/10 border border-error/30 text-error font-display font-bold hover:bg-error/20 transition-colors"
             >
-              {t('reviewDeck.hard')}
+              {t('review.hard')}
             </button>
             <button
               onClick={() => handleRating(4)}
               className="p-3 rounded-xl bg-hint/10 border border-hint/30 text-hint font-display font-bold hover:bg-hint/20 transition-colors"
             >
-              {t('reviewDeck.medium')}
+              {t('review.medium')}
             </button>
             <button
               onClick={() => handleRating(5)}
               className="p-3 rounded-xl bg-primary/10 border border-primary/30 text-primary font-display font-bold hover:bg-primary/20 transition-colors"
             >
-              {t('reviewDeck.easy')}
+              {t('review.easy')}
             </button>
           </motion.div>
         )}
@@ -254,7 +254,7 @@ export default function ReviewDeck({ onClose }: ReviewDeckProps) {
 
       {!isFlipped && (
         <p className="text-center text-text-secondary text-sm">
-          {t('reviewDeck.flipToRate')}
+          {t('review.flipToRate')}
         </p>
       )}
     </div>
