@@ -23,7 +23,12 @@
           {
             "type": "check",
             "question": "Pourquoi les anciens constructeurs avaient-ils besoin de calculer la hauteur d'une pyramide sans l'escalader ?",
-            "options": ["Pour savoir combien de pierres commander", "Pour prédire les ombres pour les cérémonies", "Pour assurer la stabilité structurelle", "Toutes les réponses"],
+            "options": [
+              "Pour savoir combien de pierres commander",
+              "Pour prédire les ombres pour les cérémonies",
+              "Pour assurer la stabilité structurelle",
+              "Toutes les réponses"
+            ],
             "correct": 3,
             "explanation": "Les ingénieurs anciens avaient besoin de la trigonométrie pour la construction pratique, les cérémonies religieuses et la sécurité—toutes des raisons pour lesquelles nous l'utilisons encore aujourd'hui !"
           }
@@ -50,7 +55,12 @@
           {
             "type": "check",
             "question": "Dans un triangle rectangle, quelle est la somme des deux angles non droits ?",
-            "options": ["45°", "90°", "180°", "Ça dépend du triangle"],
+            "options": [
+              "45°",
+              "90°",
+              "180°",
+              "Ça dépend du triangle"
+            ],
             "correct": 1,
             "explanation": "Les trois angles de tout triangle somment à 180°. Comme l'angle droit est 90°, les deux autres doivent aussi sommer à 90°."
           }
@@ -87,7 +97,11 @@
           {
             "type": "check",
             "question": "Si l'angle de référence est en bas à gauche, quel côté est l'Hypoténuse ?",
-            "options": ["Le côté le plus long", "Le côté en face de l'angle", "Le côté à côté de l'angle"],
+            "options": [
+              "Le côté le plus long",
+              "Le côté en face de l'angle",
+              "Le côté à côté de l'angle"
+            ],
             "correct": 0,
             "explanation": "L'hypoténuse est toujours le côté le plus long : c'est le seul qui fait face à l'angle droit, peu importe l'angle de référence."
           }
@@ -109,12 +123,18 @@
           },
           {
             "type": "text",
-            "body": "Hypoténuse (H) : Toujours opposée à l'angle droit, toujours le côté le plus long.\nOpposé (O) : Le côté directement en face de l'angle de référence.\nAdjacent (A) : Le côté à côté de l'angle de référence qui n'est pas l'hypoténuse."
+            "body": "Hypoténuse (H) : Toujours opposée à l'angle droit, toujours le côté le plus long.\nOpposé (O) : Le côté directement en face de l'angle de référence.\nAdjacent (A) : Le côté à côté de l'angle de référence qui n'est pas l'hypoténuse.",
+            "diagram": "right-triangle-labels"
           },
           {
             "type": "check",
             "question": "Pour un angle de référence en bas à gauche, où se trouve le côté Opposé ?",
-            "options": ["À gauche de l'angle", "Au-dessus de l'angle", "En face de l'angle", "À côté de l'angle"],
+            "options": [
+              "À gauche de l'angle",
+              "Au-dessus de l'angle",
+              "En face de l'angle",
+              "À côté de l'angle"
+            ],
             "correct": 2,
             "explanation": "Le côté Opposé est toujours en face de (faisant face à) l'angle de référence, formant le 'côté éloigné' de l'angle."
           }
@@ -171,7 +191,12 @@
           {
             "type": "check",
             "question": "Quand vous agrandissez le triangle mais gardez les mêmes angles, que se passe-t-il avec les ratios ?",
-            "options": ["Ils deviennent plus grands", "Ils deviennent plus petits", "Ils restent les mêmes", "Ils changent aléatoirement"],
+            "options": [
+              "Ils deviennent plus grands",
+              "Ils deviennent plus petits",
+              "Ils restent les mêmes",
+              "Ils changent aléatoirement"
+            ],
             "correct": 2,
             "explanation": "C'est la magie de la trigonométrie ! Les ratios dépendent seulement des angles, pas de la taille du triangle."
           }
@@ -188,12 +213,18 @@
           },
           {
             "type": "text",
-            "body": "SOH : Sinus = Opposé / Hypoténuse\nCAH : Cosinus = Adjacent / Hypoténuse\nTOA : Tangente = Opposé / Adjacent"
+            "body": "SOH : Sinus = Opposé / Hypoténuse\nCAH : Cosinus = Adjacent / Hypoténuse\nTOA : Tangente = Opposé / Adjacent",
+            "diagram": "soh-cah-toa"
           },
           {
             "type": "check",
             "question": "Quel ratio utilise Opposé et Hypoténuse ?",
-            "options": ["Sinus", "Cosinus", "Tangente", "Tous"],
+            "options": [
+              "Sinus",
+              "Cosinus",
+              "Tangente",
+              "Tous"
+            ],
             "correct": 0,
             "explanation": "SOH : Sinus = Opposé / Hypoténuse. Souvenez-vous, SOH commence par S pour Sinus !"
           }
@@ -240,12 +271,18 @@
           },
           {
             "type": "text",
-            "body": "Si sin(θ) = 0.5, alors θ = sin⁻¹(0.5) = 30°\n\nLa fonction inverse 'défait' la fonction originale, nous donnant l'angle à partir du ratio."
+            "body": "Si sin(θ) = 0.5, alors θ = sin⁻¹(0.5) = 30°\n\nLa fonction inverse 'défait' la fonction originale, nous donnant l'angle à partir du ratio.",
+            "diagram": "inverse-trig"
           },
           {
             "type": "check",
             "question": "Si tan(θ) = 1, quelle est la valeur de θ ?",
-            "options": ["30°", "45°", "60°", "90°"],
+            "options": [
+              "30°",
+              "45°",
+              "60°",
+              "90°"
+            ],
             "correct": 1,
             "explanation": "tan(45°) = 1, donc tan⁻¹(1) = 45°. C'est un angle spécial qu'il vaut la peine de mémoriser !"
           }
@@ -322,12 +359,18 @@
           },
           {
             "type": "text",
-            "body": "Angle d'Élévation : Regarder VERS LE HAUT depuis l'horizontal\nAngle de Dépression : Regarder VERS LE BAS depuis l'horizontal\n\nImportant : Ces angles sont toujours mesurés depuis la ligne horizontale, et ils sont égaux quand on regarde le même point !"
+            "body": "Angle d'Élévation : Regarder VERS LE HAUT depuis l'horizontal\nAngle de Dépression : Regarder VERS LE BAS depuis l'horizontal\n\nImportant : Ces angles sont toujours mesurés depuis la ligne horizontale, et ils sont égaux quand on regarde le même point !",
+            "diagram": "elevation-depression"
           },
           {
             "type": "check",
             "question": "Un pilote regarde vers le bas à un angle de 15° pour voir un bateau. Quel est l'angle d'élévation du bateau vers l'avion ?",
-            "options": ["75°", "15°", "165°", "Impossible à déterminer"],
+            "options": [
+              "75°",
+              "15°",
+              "165°",
+              "Impossible à déterminer"
+            ],
             "correct": 1,
             "explanation": "L'angle d'élévation et l'angle de dépression vers le même point sont toujours égaux (angles alternes-internes)."
           }
@@ -351,7 +394,12 @@
           {
             "type": "check",
             "question": "Quel est l'angle d'élévation du soleil (au degré près) ?",
-            "options": ["32°", "39°", "45°", "53°"],
+            "options": [
+              "32°",
+              "39°",
+              "45°",
+              "53°"
+            ],
             "correct": 1,
             "explanation": "tan(θ) = 12/15 = 0.8 → θ = tan⁻¹(0.8) ≈ 38.66° ≈ 39°",
             "diagram": "tree-shadow"
@@ -400,7 +448,8 @@
           },
           {
             "type": "text",
-            "body": "c² = a² + b² - 2ab·cos(C)\n\nQuand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorème de Pythagore) !"
+            "body": "c² = a² + b² - 2ab·cos(C)\n\nQuand l'angle C = 90°, cos(90°) = 0, et cela devient c² = a² + b² (théorème de Pythagore) !",
+            "diagram": "law-of-cosines"
           },
           {
             "type": "text",
@@ -420,14 +469,24 @@
           {
             "type": "check",
             "question": "Vous connaissez deux côtés et l'angle entre eux. Quelle loi ?",
-            "options": ["Loi des Sinus", "Loi des Cosinus", "Théorème de Pythagore", "Impossible à résoudre"],
+            "options": [
+              "Loi des Sinus",
+              "Loi des Cosinus",
+              "Théorème de Pythagore",
+              "Impossible à résoudre"
+            ],
             "correct": 1,
             "explanation": "Deux côtés et l'angle compris (SAS) appelle la Loi des Cosinus."
           },
           {
             "type": "check",
             "question": "Vous connaissez deux angles et un côté. Quelle loi ?",
-            "options": ["Loi des Sinus", "Loi des Cosinus", "Théorème de Pythagore", "Impossible à résoudre"],
+            "options": [
+              "Loi des Sinus",
+              "Loi des Cosinus",
+              "Théorème de Pythagore",
+              "Impossible à résoudre"
+            ],
             "correct": 0,
             "explanation": "Deux angles et un côté (AAS) signifie que vous pouvez trouver le troisième angle, puis utiliser la Loi des Sinus."
           }
@@ -459,7 +518,12 @@
           {
             "type": "check",
             "question": "Si ΔABC ≅ ΔDEF et AB = 5 cm, quelle est la longueur de DE ?",
-            "options": ["3 cm", "5 cm", "10 cm", "Impossible à déterminer"],
+            "options": [
+              "3 cm",
+              "5 cm",
+              "10 cm",
+              "Impossible à déterminer"
+            ],
             "correct": 1,
             "explanation": "Dans des triangles isométriques, les côtés homologues sont égaux. Comme AB correspond à DE, DE doit aussi mesurer 5 cm."
           }
@@ -476,12 +540,18 @@
           },
           {
             "type": "text",
-            "body": "Exemple : Si AB = DE = 5, BC = EF = 7, et AC = DF = 9, alors ΔABC ≅ ΔDEF par CCC. Nous n'avons pas besoin de vérifier les angles — ils doivent être égaux !"
+            "body": "Exemple : Si AB = DE = 5, BC = EF = 7, et AC = DF = 9, alors ΔABC ≅ ΔDEF par CCC. Nous n'avons pas besoin de vérifier les angles — ils doivent être égaux !",
+            "diagram": "sss-congruence"
           },
           {
             "type": "check",
             "question": "Le triangle PQR a des côtés 3, 4, 5. Le triangle XYZ a des côtés 4, 5, 3. Sont-ils isométriques ?",
-            "options": ["Non, l'ordre est différent", "Oui, par CCC", "Seulement si les angles correspondent", "Impossible à déterminer"],
+            "options": [
+              "Non, l'ordre est différent",
+              "Oui, par CCC",
+              "Seulement si les angles correspondent",
+              "Impossible à déterminer"
+            ],
             "correct": 1,
             "explanation": "Oui ! Les côtés ont les mêmes longueurs (simplement listés dans un ordre différent), donc les triangles sont isométriques par CCC."
           }
@@ -498,7 +568,8 @@
           },
           {
             "type": "text",
-            "body": "Important : L'angle doit être ENTRE les deux côtés ! Si vous avez côté-angle-côté où l'angle est compris, l'isométrie est garantie."
+            "body": "Important : L'angle doit être ENTRE les deux côtés ! Si vous avez côté-angle-côté où l'angle est compris, l'isométrie est garantie.",
+            "diagram": "sas-congruence"
           },
           {
             "type": "text",
@@ -507,7 +578,12 @@
           {
             "type": "check",
             "question": "Vous connaissez deux côtés de chaque triangle et un angle non compris. Pouvez-vous prouver l'isométrie ?",
-            "options": ["Oui, toujours", "Oui, par CAC", "Non, c'est le cas ambigu (ACA)", "Seulement pour les triangles rectangles"],
+            "options": [
+              "Oui, toujours",
+              "Oui, par CAC",
+              "Non, c'est le cas ambigu (ACA)",
+              "Seulement pour les triangles rectangles"
+            ],
             "correct": 2,
             "explanation": "ACA (Angle-Côté-Angle avec angle non compris) est le cas ambigu — il ne garantit pas l'isométrie car deux triangles différents pourraient satisfaire aux conditions."
           }
@@ -524,7 +600,8 @@
           },
           {
             "type": "text",
-            "body": "Comme la somme des angles d'un triangle est toujours 180°, connaître deux angles donne automatiquement le troisième. Avec ACA, vous connaissez donc effectivement tous les angles plus un côté."
+            "body": "Comme la somme des angles d'un triangle est toujours 180°, connaître deux angles donne automatiquement le troisième. Avec ACA, vous connaissez donc effectivement tous les angles plus un côté.",
+            "diagram": "asa-congruence"
           },
           {
             "type": "text",
@@ -533,7 +610,12 @@
           {
             "type": "check",
             "question": "Dans ΔABC : ∠A = 40°, ∠B = 70°, côté AB = 8. Dans ΔPQR : ∠P = 40°, ∠Q = 70°, côté PQ = 8. Sont-ils isométriques ?",
-            "options": ["Oui, par ACA", "Oui, par AAA", "Non, nous avons besoin des longueurs des côtés", "Impossible à déterminer"],
+            "options": [
+              "Oui, par ACA",
+              "Oui, par AAA",
+              "Non, nous avons besoin des longueurs des côtés",
+              "Impossible à déterminer"
+            ],
             "correct": 0,
             "explanation": "Oui ! Deux angles et le côté compris sont égaux (ACA). Le troisième angle doit aussi être égal (70°), confirmant l'isométrie."
           }
@@ -559,7 +641,12 @@
           {
             "type": "check",
             "question": "Que justifie l'étape 2 (AD = DB) dans la preuve ci-dessus ?",
-            "options": ["Définition de la médiane", "Propriété du triangle isocèle", "Propriété réflexive", "Isométrie CCC"],
+            "options": [
+              "Définition de la médiane",
+              "Propriété du triangle isocèle",
+              "Propriété réflexive",
+              "Isométrie CCC"
+            ],
             "correct": 0,
             "explanation": "Une médiane relie un sommet au milieu du côté opposé, donc par définition elle divise ce côté en deux segments isométriques."
           }
@@ -586,7 +673,8 @@
           },
           {
             "type": "text",
-            "body": "On écrit ΔABC ~ ΔDEF pour indiquer la similitude. Cela signifie :\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\n• AB/DE = BC/EF = AC/DF = k (le facteur d'échelle)"
+            "body": "On écrit ΔABC ~ ΔDEF pour indiquer la similitude. Cela signifie :\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\n• AB/DE = BC/EF = AC/DF = k (le facteur d'échelle)",
+            "diagram": "similar-triangles"
           },
           {
             "type": "text",
@@ -595,7 +683,12 @@
           {
             "type": "check",
             "question": "Le triangle ABC a des côtés 3, 4, 5. Le triangle DEF a des côtés 6, 8, 10. Quel est le facteur d'échelle ?",
-            "options": ["2", "3", "5", "Les triangles ne sont pas semblables"],
+            "options": [
+              "2",
+              "3",
+              "5",
+              "Les triangles ne sont pas semblables"
+            ],
             "correct": 0,
             "explanation": "Le facteur d'échelle est 2 (car 6/3 = 8/4 = 10/5 = 2). Chaque côté de DEF est le double du côté correspondant de ABC."
           }
@@ -617,7 +710,12 @@
           {
             "type": "check",
             "question": "Le triangle P a des côtés 2, 3, 4. Le triangle Q a des côtés 8, 12, 16. Sont-ils semblables ?",
-            "options": ["Oui, facteur 4", "Oui, facteur 6", "Non, les longueurs diffèrent", "Impossible à déterminer"],
+            "options": [
+              "Oui, facteur 4",
+              "Oui, facteur 6",
+              "Non, les longueurs diffèrent",
+              "Impossible à déterminer"
+            ],
             "correct": 0,
             "explanation": "Oui ! 8/2 = 12/3 = 16/4 = 4. Tous les rapports sont égaux, donc les triangles sont semblables avec facteur d'échelle 4."
           }
@@ -639,7 +737,12 @@
           {
             "type": "check",
             "question": "Deux triangles ont des côtés proportionnels mais les angles isométriques ne sont PAS compris. Peut-on prouver la similitude ?",
-            "options": ["Oui, toujours", "Oui, par CAC", "Non, pas nécessairement", "Seulement s'ils sont rectangles"],
+            "options": [
+              "Oui, toujours",
+              "Oui, par CAC",
+              "Non, pas nécessairement",
+              "Seulement s'ils sont rectangles"
+            ],
             "correct": 2,
             "explanation": "ACA (côtés proportionnels avec angle non compris isométrique) ne garantit pas la similitude, tout comme il ne garantit pas l'isométrie."
           }
@@ -656,7 +759,8 @@
           },
           {
             "type": "text",
-            "body": "C'est puissant car vous n'avez besoin que de deux angles ! Comme la somme des angles d'un triangle est toujours 180°, le troisième angle doit aussi être égal."
+            "body": "C'est puissant car vous n'avez besoin que de deux angles ! Comme la somme des angles d'un triangle est toujours 180°, le troisième angle doit aussi être égal.",
+            "diagram": "aa-similarity"
           },
           {
             "type": "text",
@@ -665,7 +769,12 @@
           {
             "type": "check",
             "question": "ΔABC a des angles 40°, 60°, 80°. ΔDEF a des angles 60°, 80°, 40°. Sont-ils semblables ?",
-            "options": ["Oui, par AA (ou AAA)", "Non, les angles sont dans un ordre différent", "Seulement si les côtés sont proportionnels", "Impossible à déterminer"],
+            "options": [
+              "Oui, par AA (ou AAA)",
+              "Non, les angles sont dans un ordre différent",
+              "Seulement si les côtés sont proportionnels",
+              "Impossible à déterminer"
+            ],
             "correct": 0,
             "explanation": "Oui ! Les deux triangles ont des angles 40°, 60°, 80°. L'ordre n'a pas d'importance — ce qui compte c'est que les angles homologues soient isométriques."
           }
@@ -691,7 +800,12 @@
           {
             "type": "check",
             "question": "Pourquoi ΔADE et ΔACB sont-ils semblables dans l'exemple ci-dessus ?",
-            "options": ["Similitude CCC", "Similitude CAC", "Similitude AA (des parallèles créent des angles correspondants isométriques)", "Ils sont isométriques"],
+            "options": [
+              "Similitude CCC",
+              "Similitude CAC",
+              "Similitude AA (des parallèles créent des angles correspondants isométriques)",
+              "Ils sont isométriques"
+            ],
             "correct": 2,
             "explanation": "Des droites parallèles coupées par une sécante créent des angles correspondants isométriques. Combiné avec l'angle commun en A, nous avons la similitude AA."
           }
@@ -718,7 +832,8 @@
           },
           {
             "type": "text",
-            "body": "Pourquoi sont-ils semblables ? Chaque triangle a :\n• Un angle droit (90°)\n• Un angle commun avec le triangle original\n• Donc, par similitude AA, les trois sont semblables"
+            "body": "Pourquoi sont-ils semblables ? Chaque triangle a :\n• Un angle droit (90°)\n• Un angle commun avec le triangle original\n• Donc, par similitude AA, les trois sont semblables",
+            "diagram": "metric-relations"
           },
           {
             "type": "text",
@@ -727,7 +842,12 @@
           {
             "type": "check",
             "question": "Combien de triangles semblables sont créés lorsqu'on trace la hauteur relative à l'hypoténuse d'un triangle rectangle ?",
-            "options": ["1", "2", "3", "4"],
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "correct": 2,
             "explanation": "Trois ! Le triangle original plus les deux plus petits triangles formés par la hauteur sont tous semblables entre eux."
           }
@@ -753,7 +873,12 @@
           {
             "type": "check",
             "question": "Un triangle rectangle a une hypoténuse de 10. La projection d'une cathète sur l'hypoténuse est 4. Quelle est la longueur de cette cathète ?",
-            "options": ["√40 ou environ 6,32", "6", "8", "√14"],
+            "options": [
+              "√40 ou environ 6,32",
+              "6",
+              "8",
+              "√14"
+            ],
             "correct": 0,
             "explanation": "Par le théorème de la cathète : cathète² = projection × hypoténuse = 4 × 10 = 40. Donc cathète = √40 ≈ 6,32."
           }
@@ -779,7 +904,12 @@
           {
             "type": "check",
             "question": "Une hauteur divise l'hypoténuse en segments de 9 et 4. Quelle est la hauteur ?",
-            "options": ["6", "√13", "√36 = 6", "36"],
+            "options": [
+              "6",
+              "√13",
+              "√36 = 6",
+              "36"
+            ],
             "correct": 2,
             "explanation": "Par le théorème de la hauteur : h² = 9 × 4 = 36, donc h = √36 = 6."
           }
@@ -809,7 +939,12 @@
           {
             "type": "check",
             "question": "Un triangle rectangle a des cathètes 6 et 8, hypoténuse 10. Quelle est la hauteur relative à l'hypoténuse ?",
-            "options": ["4,8", "5", "6", "4"],
+            "options": [
+              "4,8",
+              "5",
+              "6",
+              "4"
+            ],
             "correct": 0,
             "explanation": "Par a·b = c·h : 6 × 8 = 10 × h, donc 48 = 10h, et h = 4,8."
           }
@@ -822,7 +957,8 @@
         "content": [
           {
             "type": "text",
-            "body": "Voici un résumé des trois relations métriques dans un triangle rectangle avec hauteur h relative à l'hypoténuse c :\n\n1. Théorème de la cathète : a² = pa · c et b² = pb · c\n2. Théorème de la hauteur : h² = pa · pb\n3. Théorème du produit : a · b = c · h"
+            "body": "Voici un résumé des trois relations métriques dans un triangle rectangle avec hauteur h relative à l'hypoténuse c :\n\n1. Théorème de la cathète : a² = pa · c et b² = pb · c\n2. Théorème de la hauteur : h² = pa · pb\n3. Théorème du produit : a · b = c · h",
+            "diagram": "metric-relations"
           },
           {
             "type": "text",
@@ -831,7 +967,12 @@
           {
             "type": "check",
             "question": "Donnés : hypoténuse = 25, une projection = 9. Trouver la hauteur relative à l'hypoténuse.",
-            "options": ["12", "15", "16", "20"],
+            "options": [
+              "12",
+              "15",
+              "16",
+              "20"
+            ],
             "correct": 0,
             "explanation": "L'autre projection = 25 - 9 = 16. Par le théorème de la hauteur : h² = 9 × 16 = 144, donc h = 12."
           }

@@ -23,7 +23,12 @@
           {
             "type": "check",
             "question": "Why might ancient builders have needed to calculate the height of a pyramid without climbing it?",
-            "options": ["To know how much stone to order", "To predict shadows for ceremonies", "To ensure structural stability", "All of the above"],
+            "options": [
+              "To know how much stone to order",
+              "To predict shadows for ceremonies",
+              "To ensure structural stability",
+              "All of the above"
+            ],
             "correct": 3,
             "explanation": "Ancient engineers needed trigonometry for practical construction, religious ceremonies, and safety—all reasons we still use it today!"
           }
@@ -50,7 +55,12 @@
           {
             "type": "check",
             "question": "In a right triangle, what is the sum of the two non-right angles?",
-            "options": ["45°", "90°", "180°", "It depends on the triangle"],
+            "options": [
+              "45°",
+              "90°",
+              "180°",
+              "It depends on the triangle"
+            ],
             "correct": 1,
             "explanation": "The three angles in any triangle sum to 180°. Since the right angle is 90°, the other two must also sum to 90°."
           }
@@ -87,7 +97,11 @@
           {
             "type": "check",
             "question": "If the reference angle is at the bottom-left, which side is the Hypotenuse?",
-            "options": ["The longest side", "The side across from the angle", "The side next to the angle"],
+            "options": [
+              "The longest side",
+              "The side across from the angle",
+              "The side next to the angle"
+            ],
             "correct": 0,
             "explanation": "The Hypotenuse is always the longest side — opposite the right angle, not the reference angle."
           }
@@ -109,12 +123,18 @@
           },
           {
             "type": "text",
-            "body": "Hypotenuse (H): Always opposite the right angle, always the longest side.\nOpposite (O): The side directly across from the reference angle.\nAdjacent (A): The side next to the reference angle that isn't the hypotenuse."
+            "body": "Hypotenuse (H): Always opposite the right angle, always the longest side.\nOpposite (O): The side directly across from the reference angle.\nAdjacent (A): The side next to the reference angle that isn't the hypotenuse.",
+            "diagram": "right-triangle-labels"
           },
           {
             "type": "check",
             "question": "For a reference angle at the bottom left, where is the Opposite side?",
-            "options": ["To the left of the angle", "Above the angle", "Across from the angle", "Next to the angle"],
+            "options": [
+              "To the left of the angle",
+              "Above the angle",
+              "Across from the angle",
+              "Next to the angle"
+            ],
             "correct": 2,
             "explanation": "The Opposite side is always across from (facing) the reference angle, forming the 'far side' of the angle."
           }
@@ -171,7 +191,12 @@
           {
             "type": "check",
             "question": "When you make the triangle bigger but keep the angles the same, what happens to the ratios?",
-            "options": ["They get bigger", "They get smaller", "They stay the same", "They change randomly"],
+            "options": [
+              "They get bigger",
+              "They get smaller",
+              "They stay the same",
+              "They change randomly"
+            ],
             "correct": 2,
             "explanation": "This is the magic of trigonometry! The ratios depend only on angles, not on the triangle's size."
           }
@@ -188,12 +213,18 @@
           },
           {
             "type": "text",
-            "body": "SOH: Sine = Opposite / Hypotenuse\nCAH: Cosine = Adjacent / Hypotenuse\nTOA: Tangent = Opposite / Adjacent"
+            "body": "SOH: Sine = Opposite / Hypotenuse\nCAH: Cosine = Adjacent / Hypotenuse\nTOA: Tangent = Opposite / Adjacent",
+            "diagram": "soh-cah-toa"
           },
           {
             "type": "check",
             "question": "Which ratio uses Opposite and Hypotenuse?",
-            "options": ["Sine", "Cosine", "Tangent", "All of them"],
+            "options": [
+              "Sine",
+              "Cosine",
+              "Tangent",
+              "All of them"
+            ],
             "correct": 0,
             "explanation": "SOH: Sine = Opposite / Hypotenuse. Remember, SOH starts with S for Sine!"
           }
@@ -240,12 +271,18 @@
           },
           {
             "type": "text",
-            "body": "If sin(θ) = 0.5, then θ = sin⁻¹(0.5) = 30°\n\nThe inverse function 'undoes' the original function, giving us the angle from the ratio."
+            "body": "If sin(θ) = 0.5, then θ = sin⁻¹(0.5) = 30°\n\nThe inverse function 'undoes' the original function, giving us the angle from the ratio.",
+            "diagram": "inverse-trig"
           },
           {
             "type": "check",
             "question": "If tan(θ) = 1, what is θ?",
-            "options": ["30°", "45°", "60°", "90°"],
+            "options": [
+              "30°",
+              "45°",
+              "60°",
+              "90°"
+            ],
             "correct": 1,
             "explanation": "tan(45°) = 1, so tan⁻¹(1) = 45°. This is a special angle worth memorizing!"
           }
@@ -322,12 +359,18 @@
           },
           {
             "type": "text",
-            "body": "Angle of Elevation: Looking UP from horizontal\nAngle of Depression: Looking DOWN from horizontal\n\nImportant: These angles are always measured from the horizontal line, and they're equal when looking at the same point!"
+            "body": "Angle of Elevation: Looking UP from horizontal\nAngle of Depression: Looking DOWN from horizontal\n\nImportant: These angles are always measured from the horizontal line, and they're equal when looking at the same point!",
+            "diagram": "elevation-depression"
           },
           {
             "type": "check",
             "question": "A pilot looks down at a 15° angle to see a boat. What is the boat's angle of elevation to the plane?",
-            "options": ["75°", "15°", "165°", "Cannot determine"],
+            "options": [
+              "75°",
+              "15°",
+              "165°",
+              "Cannot determine"
+            ],
             "correct": 1,
             "explanation": "Angle of elevation and depression to the same point are always equal (alternate interior angles)."
           }
@@ -349,7 +392,12 @@
           {
             "type": "check",
             "question": "Which trig ratio should you use?",
-            "options": ["Sine", "Cosine", "Tangent", "Any of them"],
+            "options": [
+              "Sine",
+              "Cosine",
+              "Tangent",
+              "Any of them"
+            ],
             "correct": 2,
             "explanation": "You have opposite (tree height) and adjacent (shadow), so use tangent: tan(θ) = 12/15."
           }
@@ -395,7 +443,8 @@
           },
           {
             "type": "text",
-            "body": "c² = a² + b² - 2ab·cos(C)\n\nWhen angle C = 90°, cos(90°) = 0, and this becomes c² = a² + b² (Pythagorean theorem)!"
+            "body": "c² = a² + b² - 2ab·cos(C)\n\nWhen angle C = 90°, cos(90°) = 0, and this becomes c² = a² + b² (Pythagorean theorem)!",
+            "diagram": "law-of-cosines"
           },
           {
             "type": "text",
@@ -415,14 +464,24 @@
           {
             "type": "check",
             "question": "You know two sides and the angle between them. Which law?",
-            "options": ["Law of Sines", "Law of Cosines", "Pythagorean theorem", "Cannot solve"],
+            "options": [
+              "Law of Sines",
+              "Law of Cosines",
+              "Pythagorean theorem",
+              "Cannot solve"
+            ],
             "correct": 1,
             "explanation": "Two sides and the included angle (SAS) calls for the Law of Cosines."
           },
           {
             "type": "check",
             "question": "You know two angles and one side. Which law?",
-            "options": ["Law of Sines", "Law of Cosines", "Pythagorean theorem", "Cannot solve"],
+            "options": [
+              "Law of Sines",
+              "Law of Cosines",
+              "Pythagorean theorem",
+              "Cannot solve"
+            ],
             "correct": 0,
             "explanation": "Two angles and one side (AAS) means you can find the third angle, then use Law of Sines."
           }
@@ -454,7 +513,12 @@
           {
             "type": "check",
             "question": "If ΔABC ≅ ΔDEF and AB = 5 cm, what is DE?",
-            "options": ["3 cm", "5 cm", "10 cm", "Cannot be determined"],
+            "options": [
+              "3 cm",
+              "5 cm",
+              "10 cm",
+              "Cannot be determined"
+            ],
             "correct": 1,
             "explanation": "In congruent triangles, corresponding sides are equal. Since AB corresponds to DE, DE must also be 5 cm."
           }
@@ -471,12 +535,18 @@
           },
           {
             "type": "text",
-            "body": "Example: If AB = DE = 5, BC = EF = 7, and AC = DF = 9, then ΔABC ≅ ΔDEF by SSS. We don't need to check the angles—they must be equal!"
+            "body": "Example: If AB = DE = 5, BC = EF = 7, and AC = DF = 9, then ΔABC ≅ ΔDEF by SSS. We don't need to check the angles—they must be equal!",
+            "diagram": "sss-congruence"
           },
           {
             "type": "check",
             "question": "Triangle PQR has sides 3, 4, 5. Triangle XYZ has sides 4, 5, 3. Are they congruent?",
-            "options": ["No, the order is different", "Yes, by SSS", "Only if the angles match", "Cannot be determined"],
+            "options": [
+              "No, the order is different",
+              "Yes, by SSS",
+              "Only if the angles match",
+              "Cannot be determined"
+            ],
             "correct": 1,
             "explanation": "Yes! The sides are the same lengths (just listed in different order), so the triangles are congruent by SSS."
           }
@@ -493,7 +563,8 @@
           },
           {
             "type": "text",
-            "body": "Important: The angle must be BETWEEN the two sides! If you have side-angle-side where the angle is included, congruence is guaranteed."
+            "body": "Important: The angle must be BETWEEN the two sides! If you have side-angle-side where the angle is included, congruence is guaranteed.",
+            "diagram": "sas-congruence"
           },
           {
             "type": "text",
@@ -502,7 +573,12 @@
           {
             "type": "check",
             "question": "You know two sides of each triangle and a non-included angle. Can you prove congruence?",
-            "options": ["Yes, always", "Yes, by SAS", "No, this is the ambiguous case (SSA)", "Only for right triangles"],
+            "options": [
+              "Yes, always",
+              "Yes, by SAS",
+              "No, this is the ambiguous case (SSA)",
+              "Only for right triangles"
+            ],
             "correct": 2,
             "explanation": "SSA (Side-Side-Angle with non-included angle) is the ambiguous case—it doesn't guarantee congruence because two different triangles might satisfy the conditions."
           }
@@ -519,7 +595,8 @@
           },
           {
             "type": "text",
-            "body": "Since the sum of angles in a triangle is always 180°, knowing two angles automatically gives you the third. So with ASA, you effectively know all three angles plus one side."
+            "body": "Since the sum of angles in a triangle is always 180°, knowing two angles automatically gives you the third. So with ASA, you effectively know all three angles plus one side.",
+            "diagram": "asa-congruence"
           },
           {
             "type": "text",
@@ -528,7 +605,12 @@
           {
             "type": "check",
             "question": "In ΔABC: ∠A = 40°, ∠B = 70°, side AB = 8. In ΔPQR: ∠P = 40°, ∠Q = 70°, side PQ = 8. Are they congruent?",
-            "options": ["Yes, by ASA", "Yes, by AAA", "No, we need side lengths", "Cannot be determined"],
+            "options": [
+              "Yes, by ASA",
+              "Yes, by AAA",
+              "No, we need side lengths",
+              "Cannot be determined"
+            ],
             "correct": 0,
             "explanation": "Yes! Two angles and the included side are equal (ASA). The third angles must also be equal (70°), confirming congruence."
           }
@@ -554,7 +636,12 @@
           {
             "type": "check",
             "question": "What justifies step 2 (AD = DB) in the proof above?",
-            "options": ["Definition of median", "Isosceles triangle property", "Reflexive property", "SSS congruence"],
+            "options": [
+              "Definition of median",
+              "Isosceles triangle property",
+              "Reflexive property",
+              "SSS congruence"
+            ],
             "correct": 0,
             "explanation": "A median connects a vertex to the midpoint of the opposite side, so by definition it divides that side into two equal segments."
           }
@@ -581,7 +668,8 @@
           },
           {
             "type": "text",
-            "body": "We write ΔABC ~ ΔDEF to indicate similarity. This means:\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\n• AB/DE = BC/EF = AC/DF = k (the scale factor)"
+            "body": "We write ΔABC ~ ΔDEF to indicate similarity. This means:\n• ∠A = ∠D, ∠B = ∠E, ∠C = ∠F\n• AB/DE = BC/EF = AC/DF = k (the scale factor)",
+            "diagram": "similar-triangles"
           },
           {
             "type": "text",
@@ -590,7 +678,12 @@
           {
             "type": "check",
             "question": "Triangle ABC has sides 3, 4, 5. Triangle DEF has sides 6, 8, 10. What is the scale factor?",
-            "options": ["2", "3", "5", "The triangles are not similar"],
+            "options": [
+              "2",
+              "3",
+              "5",
+              "The triangles are not similar"
+            ],
             "correct": 0,
             "explanation": "The scale factor is 2 (or 6/3 = 8/4 = 10/5 = 2). Each side of DEF is twice the corresponding side of ABC."
           }
@@ -612,7 +705,12 @@
           {
             "type": "check",
             "question": "Triangle P has sides 2, 3, 4. Triangle Q has sides 8, 12, 16. Are they similar?",
-            "options": ["Yes, scale factor 4", "Yes, scale factor 6", "No, side lengths differ", "Cannot be determined"],
+            "options": [
+              "Yes, scale factor 4",
+              "Yes, scale factor 6",
+              "No, side lengths differ",
+              "Cannot be determined"
+            ],
             "correct": 0,
             "explanation": "Yes! 8/2 = 12/3 = 16/4 = 4. All ratios are equal, so the triangles are similar with scale factor 4."
           }
@@ -634,7 +732,12 @@
           {
             "type": "check",
             "question": "Two triangles have proportional sides but the equal angles are NOT included. Can we prove similarity?",
-            "options": ["Yes, always", "Yes, by SAS", "No, not necessarily", "Only if they're right triangles"],
+            "options": [
+              "Yes, always",
+              "Yes, by SAS",
+              "No, not necessarily",
+              "Only if they're right triangles"
+            ],
             "correct": 2,
             "explanation": "SSA (proportional sides with non-included equal angle) does not guarantee similarity, just as it doesn't guarantee congruence."
           }
@@ -651,7 +754,8 @@
           },
           {
             "type": "text",
-            "body": "This is powerful because you only need two angles! Since the sum of angles in a triangle is always 180°, the third angles must also be equal."
+            "body": "This is powerful because you only need two angles! Since the sum of angles in a triangle is always 180°, the third angles must also be equal.",
+            "diagram": "aa-similarity"
           },
           {
             "type": "text",
@@ -660,7 +764,12 @@
           {
             "type": "check",
             "question": "ΔABC has angles 40°, 60°, 80°. ΔDEF has angles 60°, 80°, 40°. Are they similar?",
-            "options": ["Yes, by AA (or AAA)", "No, angles are in different order", "Only if sides are proportional", "Cannot be determined"],
+            "options": [
+              "Yes, by AA (or AAA)",
+              "No, angles are in different order",
+              "Only if sides are proportional",
+              "Cannot be determined"
+            ],
             "correct": 0,
             "explanation": "Yes! Both triangles have angles 40°, 60°, 80°. The order doesn't matter—what matters is that corresponding angles are equal."
           }
@@ -686,7 +795,12 @@
           {
             "type": "check",
             "question": "Why are ΔADE and ΔACB similar in the example above?",
-            "options": ["SSS similarity", "SAS similarity", "AA similarity (parallel lines create equal corresponding angles)", "They're congruent"],
+            "options": [
+              "SSS similarity",
+              "SAS similarity",
+              "AA similarity (parallel lines create equal corresponding angles)",
+              "They're congruent"
+            ],
             "correct": 2,
             "explanation": "Parallel lines cut by a transversal create equal corresponding angles. Combined with the common angle at A, we have AA similarity."
           }
@@ -713,7 +827,8 @@
           },
           {
             "type": "text",
-            "body": "Why are they similar? Each triangle has:\n• A right angle (90°)\n• An angle in common with the original triangle\n• Therefore, by AA similarity, all three are similar"
+            "body": "Why are they similar? Each triangle has:\n• A right angle (90°)\n• An angle in common with the original triangle\n• Therefore, by AA similarity, all three are similar",
+            "diagram": "metric-relations"
           },
           {
             "type": "text",
@@ -722,7 +837,12 @@
           {
             "type": "check",
             "question": "How many similar triangles are created when you draw the altitude to the hypotenuse of a right triangle?",
-            "options": ["1", "2", "3", "4"],
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
             "correct": 2,
             "explanation": "Three! The original triangle plus the two smaller triangles formed by the altitude are all similar to each other."
           }
@@ -748,7 +868,12 @@
           {
             "type": "check",
             "question": "A right triangle has hypotenuse 10. One leg's projection on the hypotenuse is 4. What is that leg's length?",
-            "options": ["√40 or about 6.32", "6", "8", "√14"],
+            "options": [
+              "√40 or about 6.32",
+              "6",
+              "8",
+              "√14"
+            ],
             "correct": 0,
             "explanation": "Using the leg rule: leg² = projection × hypotenuse = 4 × 10 = 40. So leg = √40 ≈ 6.32."
           }
@@ -774,7 +899,12 @@
           {
             "type": "check",
             "question": "An altitude divides the hypotenuse into segments of 9 and 4. What is the altitude?",
-            "options": ["6", "√13", "√36 = 6", "36"],
+            "options": [
+              "6",
+              "√13",
+              "√36 = 6",
+              "36"
+            ],
             "correct": 2,
             "explanation": "Using the altitude rule: h² = 9 × 4 = 36, so h = √36 = 6."
           }
@@ -804,7 +934,12 @@
           {
             "type": "check",
             "question": "A right triangle has legs 6 and 8, hypotenuse 10. What is the altitude to the hypotenuse?",
-            "options": ["4.8", "5", "6", "4"],
+            "options": [
+              "4.8",
+              "5",
+              "6",
+              "4"
+            ],
             "correct": 0,
             "explanation": "Using a·b = c·h: 6 × 8 = 10 × h, so 48 = 10h, and h = 4.8."
           }
@@ -817,7 +952,8 @@
         "content": [
           {
             "type": "text",
-            "body": "Here's a summary of all three metric relations in a right triangle with altitude h to hypotenuse c:\n\n1. Leg Rule: a² = pa · c and b² = pb · c\n2. Altitude Rule: h² = pa · pb\n3. Product Rule: a · b = c · h"
+            "body": "Here's a summary of all three metric relations in a right triangle with altitude h to hypotenuse c:\n\n1. Leg Rule: a² = pa · c and b² = pb · c\n2. Altitude Rule: h² = pa · pb\n3. Product Rule: a · b = c · h",
+            "diagram": "metric-relations"
           },
           {
             "type": "text",
@@ -826,7 +962,12 @@
           {
             "type": "check",
             "question": "Given: hypotenuse = 25, one projection = 9. Find the altitude to the hypotenuse.",
-            "options": ["12", "15", "16", "20"],
+            "options": [
+              "12",
+              "15",
+              "16",
+              "20"
+            ],
             "correct": 0,
             "explanation": "Other projection = 25 - 9 = 16. Using altitude rule: h² = 9 × 16 = 144, so h = 12."
           }
