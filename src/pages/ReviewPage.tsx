@@ -1,11 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowLeft, BrainCircuit } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ReviewDeck from '../components/ReviewDeck';
 
 export default function ReviewPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-full p-4 md:p-8 max-w-4xl mx-auto">
@@ -59,7 +60,7 @@ export default function ReviewPage() {
       </motion.div>
 
       {/* Review Deck */}
-      <ReviewDeck onClose={() => window.location.href = '/'} />
+      <ReviewDeck onClose={() => navigate('/')} />
     </div>
   );
 }
