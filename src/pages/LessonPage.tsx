@@ -175,7 +175,7 @@ export default function LessonPage() {
       {/* Header */}
       <button onClick={() => navigate('/')} className="text-text-secondary hover:text-white flex items-center gap-2 font-display uppercase tracking-widest text-sm mb-4 w-fit">
         <ArrowLeft className="w-4 h-4" />
-        {t('common.backToMenu')}
+        {t('lesson.backToMenu')}
       </button>
 
       <div className="flex items-center justify-between pb-6 border-b border-border-subtle">
